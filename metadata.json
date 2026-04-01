@@ -1,0 +1,7 @@
+{
+  "name": "Theater Rehearsal Partner",
+  "description": "An interactive web app to help actors rehearse scripts using AI-driven parsing and text-to-speech.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
