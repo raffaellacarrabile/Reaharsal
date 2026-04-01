@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Upload, Play, User, ChevronRight, ChevronLeft, RotateCcw, Mic, MicOff, Volume2 } from 'lucide-react';
+import { Upload, Play, User, ChevronRight, ChevronLeft, RotateCcw, Mic, MicOff, Volume2, Sparkles } from 'lucide-react';
 import { AppState, ScriptLine } from './types';
 import { parseScript } from './services/geminiService';
 import mammoth from 'mammoth';
@@ -179,6 +179,23 @@ export default function App() {
     }
   };
 
+  const loadPreloadedScript = async () => {
+    setIsLoading(true);
+    try {
+      // We'll try to fetch a local pre-parsed script if it exists
+      const response = await fetch('/preloaded_script.json');
+      if (!response.ok) throw new Error("Nessun copione pre-caricato trovato.");
+      const data = await response.json();
+      setScript(data);
+      setState('setup');
+    } catch (error) {
+      console.error("Errore caricamento pre-caricato:", error);
+      alert("Non è stato possibile caricare il copione pre-caricato.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const startRehearsal = () => {
     if (userCharacters.length === 0) {
       alert("Per favore, seleziona almeno un personaggio.");
@@ -335,10 +352,19 @@ export default function App() {
                   )}
                 </div>
               ) : (
-                <label className="btn-primary cursor-pointer inline-flex items-center gap-2">
-                  Scegli File
-                  <input type="file" accept=".txt,.docx" className="hidden" onChange={handleFileUpload} disabled={isLoading} />
-                </label>
+                <div className="flex flex-col gap-4 items-center">
+                  <label className="btn-primary cursor-pointer inline-flex items-center gap-2 w-full max-w-xs justify-center">
+                    Scegli File
+                    <input type="file" accept=".txt,.docx" className="hidden" onChange={handleFileUpload} disabled={isLoading} />
+                  </label>
+                  
+                  <button 
+                    onClick={loadPreloadedScript}
+                    className="text-sm text-brand-purple font-semibold hover:underline flex items-center gap-1"
+                  >
+                    <Sparkles size={16} /> Carica Copione Pre-caricato
+                  </button>
+                </div>
               )}
             </div>
 
@@ -417,33 +443,33 @@ export default function App() {
             key="rehearsal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="w-full max-w-4xl h-[85vh] flex flex-col gap-4"
+            className="w-full max-w-4xl h-[90vh] md:h-[85vh] flex flex-col gap-2 md:gap-4"
           >
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center px-4 gap-4">
-              <div className="flex items-center gap-4">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center px-4 gap-2 md:gap-4">
+              <div className="flex items-center gap-3 w-full md:w-auto">
                 <button onClick={() => setState('setup')} className="p-2 hover:bg-white/50 rounded-full transition-colors">
-                  <RotateCcw size={24} />
+                  <RotateCcw size={20} className="md:w-6 md:h-6" />
                 </button>
-                <h3 className="font-bold text-lg">Ripasso: {userCharacters.join(', ')}</h3>
+                <h3 className="font-bold text-sm md:text-lg truncate flex-1">Ripasso: {userCharacters.join(', ')}</h3>
               </div>
               
-              <div className="flex flex-wrap items-center gap-3">
+              <div className="flex items-center gap-2 w-full md:w-auto overflow-x-auto pb-1 md:pb-0 no-scrollbar">
                 {/* Voice Selection */}
                 <select 
                   value={selectedVoiceURI}
                   onChange={(e) => setSelectedVoiceURI(e.target.value)}
-                  className="text-xs p-2 rounded-lg bg-white border-none shadow-sm focus:ring-2 focus:ring-brand-purple"
+                  className="text-[10px] md:text-xs p-1.5 md:p-2 rounded-lg bg-white border-none shadow-sm focus:ring-2 focus:ring-brand-purple min-w-[100px]"
                 >
                   {availableVoices.map(v => (
                     <option key={v.voiceURI} value={v.voiceURI}>
-                      {v.name} ({v.lang})
+                      {v.name.split(' ')[0]} ({v.lang})
                     </option>
                   ))}
                 </select>
 
                 {/* Speed Control */}
-                <div className="flex items-center gap-2 bg-white p-2 rounded-lg shadow-sm">
-                  <span className="text-[10px] font-bold text-slate-400">VELOCITÀ</span>
+                <div className="flex items-center gap-1.5 md:gap-2 bg-white p-1.5 md:p-2 rounded-lg shadow-sm shrink-0">
+                  <span className="text-[8px] md:text-[10px] font-bold text-slate-400">VEL</span>
                   <input 
                     type="range" 
                     min="0.5" 
@@ -451,26 +477,26 @@ export default function App() {
                     step="0.1" 
                     value={playbackRate}
                     onChange={(e) => setPlaybackRate(parseFloat(e.target.value))}
-                    className="w-20 accent-brand-purple"
+                    className="w-12 md:w-20 accent-brand-purple"
                   />
-                  <span className="text-xs font-mono w-8">{playbackRate}x</span>
+                  <span className="text-[10px] md:text-xs font-mono w-6 md:w-8">{playbackRate}x</span>
                 </div>
 
                 <button 
                   onClick={() => setIsVoiceMode(!isVoiceMode)}
-                  className={`p-2 rounded-lg transition-all flex items-center gap-2 ${isVoiceMode ? 'bg-brand-pink text-white shadow-lg' : 'bg-white text-slate-400'}`}
+                  className={`p-1.5 md:p-2 rounded-lg transition-all flex items-center gap-1 md:gap-2 shrink-0 ${isVoiceMode ? 'bg-brand-pink text-white shadow-lg' : 'bg-white text-slate-400'}`}
                   title="Modalità Vocale (Sperimentale)"
                 >
-                  {isVoiceMode ? <Mic size={18} /> : <MicOff size={18} />}
-                  <span className="text-[10px] font-bold">VOCE</span>
+                  {isVoiceMode ? <Mic size={14} className="md:w-[18px] md:h-[18px]" /> : <MicOff size={14} className="md:w-[18px] md:h-[18px]" />}
+                  <span className="text-[8px] md:text-[10px] font-bold">VOCE</span>
                 </button>
               </div>
             </div>
 
-            <div className="flex-1 flex gap-2 overflow-hidden">
+            <div className="flex-1 flex gap-2 overflow-hidden relative">
               <div 
                 ref={scrollRef}
-                className="flex-1 glass-card overflow-y-auto p-6 md:p-12 space-y-8 scroll-smooth"
+                className="flex-1 glass-card overflow-y-auto p-4 md:p-12 space-y-6 md:space-y-8 scroll-smooth"
               >
                 {script.map((line, idx) => {
                   const isUser = userCharacters.includes(line.character);
@@ -481,7 +507,7 @@ export default function App() {
                       <div 
                         key={idx} 
                         id={`line-${idx}`}
-                        className={`text-center italic text-slate-400 text-sm transition-all duration-500 ${isActive ? 'scale-110 text-brand-orange' : 'opacity-50'}`}
+                        className={`text-center italic text-slate-400 text-xs md:text-sm transition-all duration-500 ${isActive ? 'scale-105 text-brand-orange' : 'opacity-50'}`}
                       >
                         [{line.text}]
                       </div>
@@ -497,14 +523,14 @@ export default function App() {
                         setCurrentIndex(idx);
                         setIsPaused(false);
                       }}
-                      className={`flex flex-col gap-1 transition-all duration-500 cursor-pointer hover:bg-white/30 rounded-xl p-2 ${
-                        isActive ? 'scale-105 opacity-100' : 'opacity-30 blur-[1px]'
+                      className={`flex flex-col gap-1 transition-all duration-500 cursor-pointer hover:bg-white/30 rounded-xl p-1.5 md:p-2 ${
+                        isActive ? 'scale-[1.02] md:scale-105 opacity-100' : 'opacity-30 blur-[0.5px] md:blur-[1px]'
                       } ${isUser ? 'items-end' : 'items-start'}`}
                     >
-                      <span className={`text-[10px] uppercase tracking-widest font-bold ${isUser ? 'text-brand-pink' : 'text-brand-blue'}`}>
+                      <span className={`text-[8px] md:text-[10px] uppercase tracking-widest font-bold ${isUser ? 'text-brand-pink' : 'text-brand-blue'}`}>
                         {line.character}
                       </span>
-                      <div className={`max-w-[80%] p-4 rounded-2xl text-lg md:text-xl font-medium ${
+                      <div className={`max-w-[85%] md:max-w-[80%] p-3 md:p-4 rounded-xl md:rounded-2xl text-base md:text-xl font-medium ${
                         isActive 
                           ? (isUser ? 'bg-brand-pink text-white shadow-xl' : 'bg-brand-blue text-white shadow-xl')
                           : 'bg-white text-slate-700'
@@ -549,32 +575,32 @@ export default function App() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4">
-              <div className="flex items-center gap-2 w-full md:w-auto">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 p-3 md:p-4">
+              <div className="flex items-center gap-2 w-full md:w-auto justify-center">
                 <button
                   onClick={prevLine}
                   disabled={currentIndex === 0}
-                  className="p-4 bg-white text-slate-600 rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 hover:bg-slate-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                  className="p-3 md:p-4 bg-white text-slate-600 rounded-xl md:rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 hover:bg-slate-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                   title="Battuta Precedente"
                 >
-                  <ChevronLeft size={20} />
+                  <ChevronLeft size={18} className="md:w-5 md:h-5" />
                 </button>
 
                 <button
                   onClick={() => setIsPaused(!isPaused)}
-                  className={`flex-1 md:flex-none p-4 rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 transition-all ${
+                  className={`flex-1 md:flex-none p-3 md:p-4 rounded-xl md:rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 transition-all min-w-[100px] ${
                     isPaused ? 'bg-brand-orange text-white' : 'bg-white text-slate-600'
                   }`}
                 >
-                  {isPaused ? <Play size={20} fill="currentColor" /> : <div className="w-5 h-5 flex gap-1 justify-center items-center"><div className="w-1.5 h-4 bg-current rounded-full"/><div className="w-1.5 h-4 bg-current rounded-full"/></div>}
-                  {isPaused ? 'RIPRENDI' : 'PAUSA'}
+                  {isPaused ? <Play size={18} fill="currentColor" /> : <div className="w-4 h-4 md:w-5 md:h-5 flex gap-1 justify-center items-center"><div className="w-1 h-3 md:w-1.5 md:h-4 bg-current rounded-full"/><div className="w-1 h-3 md:w-1.5 md:h-4 bg-current rounded-full"/></div>}
+                  <span className="text-sm md:text-base">{isPaused ? 'RIPRENDI' : 'PAUSA'}</span>
                 </button>
 
                 <button
                   onClick={skipToMyNextLine}
-                  className="flex-1 md:flex-none p-4 bg-white text-slate-600 rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 hover:bg-brand-purple hover:text-white transition-all"
+                  className="flex-1 md:flex-none p-3 md:p-4 bg-white text-slate-600 rounded-xl md:rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 hover:bg-brand-purple hover:text-white transition-all text-xs md:text-base"
                 >
-                  <ChevronRight size={20} /> SALTA ALLA MIA BATTUTA
+                  <ChevronRight size={18} className="md:w-5 md:h-5" /> <span className="hidden md:inline">SALTA ALLA MIA BATTUTA</span><span className="md:hidden">SALTA</span>
                 </button>
               </div>
 
@@ -584,13 +610,13 @@ export default function App() {
                   animate={{ scale: 1, opacity: 1 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={nextLine}
-                  className="w-full max-w-md py-6 bg-brand-pink text-white rounded-2xl shadow-2xl font-bold text-xl flex items-center justify-center gap-3"
+                  className="w-full max-w-md py-4 md:py-6 bg-brand-pink text-white rounded-xl md:rounded-2xl shadow-2xl font-bold text-base md:text-xl flex items-center justify-center gap-2 md:gap-3"
                 >
-                  <Play fill="currentColor" /> TOCCA O SPAZIO QUANDO HAI FINITO
+                  <Play fill="currentColor" size={18} className="md:w-5 md:h-5" /> <span className="text-sm md:text-base">TOCCA QUANDO HAI FINITO</span>
                 </motion.button>
               ) : (
-                <div className="flex items-center gap-3 text-slate-400 font-medium animate-pulse">
-                  {isPaused ? <span className="text-brand-orange">RIPASSO IN PAUSA</span> : <><Volume2 /> Ascoltando {script[currentIndex]?.character}...</>}
+                <div className="flex items-center gap-2 md:gap-3 text-slate-400 font-medium animate-pulse text-xs md:text-base">
+                  {isPaused ? <span className="text-brand-orange">RIPASSO IN PAUSA</span> : <><Volume2 size={16} className="md:w-5 md:h-5" /> Ascoltando {script[currentIndex]?.character}...</>}
                 </div>
               )}
             </div>
