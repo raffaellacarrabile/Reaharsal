@@ -17,10 +17,29 @@ export default function App() {
   const [userCharacters, setUserCharacters] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isReading, setIsReading] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const [playbackRate, setPlaybackRate] = useState(1.0);
+  const [availableVoices, setAvailableVoices] = useState<SpeechSynthesisVoice[]>([]);
+  const [selectedVoiceURI, setSelectedVoiceURI] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [isVoiceMode, setIsVoiceMode] = useState(false);
   const recognitionRef = useRef<any>(null);
+
+  // Load voices
+  useEffect(() => {
+    const loadVoices = () => {
+      const voices = window.speechSynthesis.getVoices();
+      setAvailableVoices(voices);
+      // Default to a "natural" sounding voice if possible
+      const preferred = voices.find(v => v.name.includes('Google') || v.name.includes('Natural') || v.lang.includes('it-IT'));
+      if (preferred && !selectedVoiceURI) {
+        setSelectedVoiceURI(preferred.voiceURI);
+      }
+    };
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+  }, [selectedVoiceURI]);
 
   // Simulated progress timer
   useEffect(() => {
@@ -31,7 +50,8 @@ export default function App() {
         setProgress(prev => {
           if (prev < 30) return prev + 5;
           if (prev < 70) return prev + 2;
-          if (prev < 95) return prev + 0.5;
+          if (prev < 90) return prev + 0.5;
+          if (prev < 99) return prev + 0.1; // Slow down but never stop
           return prev;
         });
       }, 200);
@@ -48,7 +68,7 @@ export default function App() {
       recognitionRef.current = new SpeechRecognition();
       recognitionRef.current.continuous = true;
       recognitionRef.current.interimResults = false;
-      recognitionRef.current.lang = 'en-US'; // Default, could be dynamic
+      recognitionRef.current.lang = 'it-IT'; // Set to Italian for better recognition
 
       recognitionRef.current.onresult = (event: any) => {
         const last = event.results.length - 1;
@@ -56,21 +76,23 @@ export default function App() {
         console.log('Recognized:', text);
         
         // If it's the user's turn, advance on any detected speech (simple heuristic)
-        if (state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character)) {
+        if (state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !isPaused) {
           nextLine();
         }
       };
     }
-  }, [state, currentIndex, script, userCharacters]);
+  }, [state, currentIndex, script, userCharacters, isPaused]);
 
   useEffect(() => {
-    if (isVoiceMode && recognitionRef.current) {
-      recognitionRef.current.start();
+    if (isVoiceMode && recognitionRef.current && !isPaused) {
+      try {
+        recognitionRef.current.start();
+      } catch (e) {}
     } else if (recognitionRef.current) {
       recognitionRef.current.stop();
     }
     return () => recognitionRef.current?.stop();
-  }, [isVoiceMode]);
+  }, [isVoiceMode, isPaused]);
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -120,6 +142,7 @@ export default function App() {
     }
     setState('rehearsal');
     setCurrentIndex(0);
+    setIsPaused(false);
   };
 
   const nextLine = () => {
@@ -128,14 +151,25 @@ export default function App() {
     }
   };
 
+  const skipToMyNextLine = () => {
+    window.speechSynthesis.cancel();
+    const nextUserIndex = script.findIndex((line, idx) => 
+      idx > currentIndex && userCharacters.includes(line.character) && !line.isStageDirection
+    );
+    if (nextUserIndex !== -1) {
+      setCurrentIndex(nextUserIndex);
+    }
+  };
+
   const resetRehearsal = () => {
     setCurrentIndex(0);
     window.speechSynthesis.cancel();
+    setIsPaused(false);
   };
 
   // Handle TTS and Auto-advance
   useEffect(() => {
-    if (state !== 'rehearsal' || currentIndex >= script.length) return;
+    if (state !== 'rehearsal' || currentIndex >= script.length || isPaused) return;
 
     const currentLine = script[currentIndex];
     
@@ -149,14 +183,29 @@ export default function App() {
     // If it's NOT the user's character, read it aloud
     if (!userCharacters.includes(currentLine.character)) {
       setIsReading(true);
-      const utterance = new SpeechSynthesisUtterance(currentLine.text);
       
-      // Try to find a suitable voice
-      const voices = window.speechSynthesis.getVoices();
-      // Simple heuristic for different voices
-      const charIndex = characters.indexOf(currentLine.character);
-      if (voices.length > 0) {
-        utterance.voice = voices[charIndex % voices.length];
+      // CLEAN TEXT: Remove anything inside parentheses or brackets
+      const cleanText = currentLine.text.replace(/\([^)]*\)|\[[^\]]*\]/g, '').trim();
+      
+      if (!cleanText) {
+        nextLine();
+        return;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.rate = playbackRate;
+      
+      // Voice selection
+      const voice = availableVoices.find(v => v.voiceURI === selectedVoiceURI);
+      if (voice) {
+        utterance.voice = voice;
+      } else {
+        // Fallback heuristic
+        const voices = window.speechSynthesis.getVoices();
+        const charIndex = characters.indexOf(currentLine.character);
+        if (voices.length > 0) {
+          utterance.voice = voices[charIndex % voices.length];
+        }
       }
 
       utterance.onend = () => {
@@ -171,7 +220,7 @@ export default function App() {
     }
 
     return () => window.speechSynthesis.cancel();
-  }, [currentIndex, state, script, userCharacters, characters]);
+  }, [currentIndex, state, script, userCharacters, characters, isPaused, playbackRate, selectedVoiceURI, availableVoices]);
 
   // Handle Spacebar
   useEffect(() => {
@@ -224,8 +273,13 @@ export default function App() {
                   />
                 </div>
                 <p className="text-sm font-medium text-brand-blue animate-pulse">
-                  {progress < 30 ? "Reading file..." : progress < 70 ? "Analyzing characters..." : "Structuring script..."}
+                  {progress < 30 ? "Reading file..." : progress < 70 ? "Analyzing characters..." : progress < 90 ? "Structuring script..." : "Almost there, finalizing..."}
                 </p>
+                {progress > 90 && (
+                  <p className="text-xs text-slate-400 mt-2">
+                    This is taking a bit longer for complex scripts. Please wait...
+                  </p>
+                )}
               </div>
             ) : (
               <label className="btn-primary cursor-pointer inline-flex items-center gap-2">
@@ -282,22 +336,52 @@ export default function App() {
             key="rehearsal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="w-full max-w-4xl h-[80vh] flex flex-col gap-4"
+            className="w-full max-w-4xl h-[85vh] flex flex-col gap-4"
           >
-            <div className="flex justify-between items-center px-4">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center px-4 gap-4">
               <div className="flex items-center gap-4">
                 <button onClick={() => setState('setup')} className="p-2 hover:bg-white/50 rounded-full transition-colors">
                   <RotateCcw size={24} />
                 </button>
                 <h3 className="font-bold text-lg">Rehearsing: {userCharacters.join(', ')}</h3>
               </div>
-              <div className="flex items-center gap-2">
+              
+              <div className="flex flex-wrap items-center gap-3">
+                {/* Voice Selection */}
+                <select 
+                  value={selectedVoiceURI}
+                  onChange={(e) => setSelectedVoiceURI(e.target.value)}
+                  className="text-xs p-2 rounded-lg bg-white border-none shadow-sm focus:ring-2 focus:ring-brand-purple"
+                >
+                  {availableVoices.map(v => (
+                    <option key={v.voiceURI} value={v.voiceURI}>
+                      {v.name} ({v.lang})
+                    </option>
+                  ))}
+                </select>
+
+                {/* Speed Control */}
+                <div className="flex items-center gap-2 bg-white p-2 rounded-lg shadow-sm">
+                  <span className="text-[10px] font-bold text-slate-400">SPEED</span>
+                  <input 
+                    type="range" 
+                    min="0.5" 
+                    max="2" 
+                    step="0.1" 
+                    value={playbackRate}
+                    onChange={(e) => setPlaybackRate(parseFloat(e.target.value))}
+                    className="w-20 accent-brand-purple"
+                  />
+                  <span className="text-xs font-mono w-8">{playbackRate}x</span>
+                </div>
+
                 <button 
                   onClick={() => setIsVoiceMode(!isVoiceMode)}
-                  className={`p-3 rounded-full transition-all ${isVoiceMode ? 'bg-brand-pink text-white shadow-lg' : 'bg-white text-slate-400'}`}
+                  className={`p-2 rounded-lg transition-all flex items-center gap-2 ${isVoiceMode ? 'bg-brand-pink text-white shadow-lg' : 'bg-white text-slate-400'}`}
                   title="Voice Mode (Experimental)"
                 >
-                  {isVoiceMode ? <Mic size={20} /> : <MicOff size={20} />}
+                  {isVoiceMode ? <Mic size={18} /> : <MicOff size={18} />}
+                  <span className="text-[10px] font-bold">VOICE</span>
                 </button>
               </div>
             </div>
@@ -345,7 +429,26 @@ export default function App() {
               })}
             </div>
 
-            <div className="flex justify-center p-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4">
+              <div className="flex items-center gap-2 w-full md:w-auto">
+                <button
+                  onClick={() => setIsPaused(!isPaused)}
+                  className={`flex-1 md:flex-none p-4 rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 transition-all ${
+                    isPaused ? 'bg-brand-orange text-white' : 'bg-white text-slate-600'
+                  }`}
+                >
+                  {isPaused ? <Play size={20} fill="currentColor" /> : <div className="w-5 h-5 flex gap-1 justify-center items-center"><div className="w-1.5 h-4 bg-current rounded-full"/><div className="w-1.5 h-4 bg-current rounded-full"/></div>}
+                  {isPaused ? 'RESUME' : 'PAUSE'}
+                </button>
+
+                <button
+                  onClick={skipToMyNextLine}
+                  className="flex-1 md:flex-none p-4 bg-white text-slate-600 rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 hover:bg-brand-purple hover:text-white transition-all"
+                >
+                  <ChevronRight size={20} /> SKIP TO MY CUE
+                </button>
+              </div>
+
               {userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection ? (
                 <motion.button
                   initial={{ scale: 0.9, opacity: 0 }}
@@ -358,7 +461,7 @@ export default function App() {
                 </motion.button>
               ) : (
                 <div className="flex items-center gap-3 text-slate-400 font-medium animate-pulse">
-                  <Volume2 /> Listening to {script[currentIndex]?.character}...
+                  {isPaused ? <span className="text-brand-orange">REHEARSAL PAUSED</span> : <><Volume2 /> Listening to {script[currentIndex]?.character}...</>}
                 </div>
               )}
             </div>

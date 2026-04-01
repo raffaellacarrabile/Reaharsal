@@ -16,14 +16,15 @@ export async function parseScript(text: string): Promise<ScriptLine[]> {
     3. "text" is the actual line or description.
     4. "isStageDirection" is true if it's a stage direction, false if it's a dialogue.
     
-    Script text:
-    ${text}
+    Script text (truncated if necessary):
+    ${text.slice(0, 20000)}
   `;
 
   try {
+    console.log("Sending request to Gemini...");
     const response = await genAI.models.generateContent({
       model,
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      contents: prompt,
       config: {
         responseMimeType: "application/json",
         responseSchema: {
@@ -41,7 +42,13 @@ export async function parseScript(text: string): Promise<ScriptLine[]> {
       },
     });
 
-    return JSON.parse(response.text || "[]");
+    const resultText = response.text;
+    if (!resultText) {
+      throw new Error("Empty response from Gemini");
+    }
+    
+    console.log("Received response from Gemini");
+    return JSON.parse(resultText);
   } catch (error) {
     console.error("Error parsing script:", error);
     throw error;
