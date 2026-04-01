@@ -18,6 +18,7 @@ export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isReading, setIsReading] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+  const [showUserLine, setShowUserLine] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(1.2);
   const [availableVoices, setAvailableVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceURI, setSelectedVoiceURI] = useState<string>('');
@@ -100,21 +101,38 @@ export default function App() {
     if (SpeechRecognition) {
       recognitionRef.current = new SpeechRecognition();
       recognitionRef.current.continuous = true;
-      recognitionRef.current.interimResults = false;
-      recognitionRef.current.lang = 'it-IT'; // Set to Italian for better recognition
+      recognitionRef.current.interimResults = true; // Set to true for faster feedback
+      recognitionRef.current.lang = 'it-IT';
 
       recognitionRef.current.onresult = (event: any) => {
         const last = event.results.length - 1;
-        const text = event.results[last][0].transcript;
-        console.log('Recognized:', text);
+        const transcript = event.results[last][0].transcript.toLowerCase().trim();
+        console.log('Recognized:', transcript);
         
-        // If it's the user's turn, advance on any detected speech (simple heuristic)
+        // If it's the user's turn, check if they said the line
         if (state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !isPaused) {
-          nextLine();
+          const targetText = script[currentIndex].text.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").trim();
+          
+          // Split into words for better matching
+          const targetWords = targetText.split(/\s+/);
+          const transcriptWords = transcript.split(/\s+/);
+          
+          // Check if at least 60% of the target words are present in the transcript
+          const matchedWords = targetWords.filter(word => transcript.includes(word));
+          const matchRatio = matchedWords.length / targetWords.length;
+          
+          if (matchRatio >= 0.6 || transcript.includes(targetText)) {
+             nextLine();
+          }
         }
       };
     }
   }, [state, currentIndex, script, userCharacters, isPaused]);
+
+  // Reset revealed state on line change
+  useEffect(() => {
+    setShowUserLine(false);
+  }, [currentIndex]);
 
   useEffect(() => {
     if (isVoiceMode && recognitionRef.current && !isPaused) {
@@ -184,13 +202,18 @@ export default function App() {
     try {
       // We'll try to fetch a local pre-parsed script if it exists
       const response = await fetch('/preloaded_script.json');
-      if (!response.ok) throw new Error("Nessun copione pre-caricato trovato.");
+      if (!response.ok) {
+        throw new Error("Nessun copione pre-caricato trovato. Per favore, carica il file DOCX o PDF in chat così posso prepararlo per te.");
+      }
       const data = await response.json();
+      if (!Array.isArray(data) || data.length === 0) {
+        throw new Error("Il copione pre-caricato è vuoto o non è nel formato corretto.");
+      }
       setScript(data);
       setState('setup');
-    } catch (error) {
+    } catch (error: any) {
       console.error("Errore caricamento pre-caricato:", error);
-      alert("Non è stato possibile caricare il copione pre-caricato.");
+      alert(error.message || "Non è stato possibile caricare o analizzare il copione pre-caricato.");
     } finally {
       setIsLoading(false);
     }
@@ -309,7 +332,7 @@ export default function App() {
     }
   }, [currentIndex]);
 
-  const APP_VERSION = "1.4.0";
+  const APP_VERSION = "1.6.0";
   const isUserTurn = state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection;
 
   return (
@@ -530,12 +553,27 @@ export default function App() {
                       <span className={`text-[8px] md:text-[10px] uppercase tracking-widest font-bold ${isUser ? 'text-brand-pink' : 'text-brand-blue'}`}>
                         {line.character}
                       </span>
-                      <div className={`max-w-[85%] md:max-w-[80%] p-3 md:p-4 rounded-xl md:rounded-2xl text-base md:text-xl font-medium ${
+                      <div className={`max-w-[85%] md:max-w-[80%] p-3 md:p-4 rounded-xl md:rounded-2xl text-base md:text-xl font-medium relative ${
                         isActive 
                           ? (isUser ? 'bg-brand-pink text-white shadow-xl' : 'bg-brand-blue text-white shadow-xl')
                           : 'bg-white text-slate-700'
                       }`}>
-                        {line.text}
+                        {isUser && isActive && !showUserLine ? (
+                          <div className="flex flex-col items-center gap-2 py-2">
+                            <span className="opacity-20 select-none">••••••••••••••••</span>
+                            <button 
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setShowUserLine(true);
+                              }}
+                              className="text-[10px] bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full transition-colors"
+                            >
+                              MOSTRA SUGGERIMENTO
+                            </button>
+                          </div>
+                        ) : (
+                          line.text
+                        )}
                       </div>
                     </div>
                   );
@@ -605,15 +643,22 @@ export default function App() {
               </div>
 
               {userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection ? (
-                <motion.button
-                  initial={{ scale: 0.9, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={nextLine}
-                  className="w-full max-w-md py-4 md:py-6 bg-brand-pink text-white rounded-xl md:rounded-2xl shadow-2xl font-bold text-base md:text-xl flex items-center justify-center gap-2 md:gap-3"
-                >
-                  <Play fill="currentColor" size={18} className="md:w-5 md:h-5" /> <span className="text-sm md:text-base">TOCCA QUANDO HAI FINITO</span>
-                </motion.button>
+                <div className="flex flex-col items-center gap-2 w-full max-w-md">
+                  <motion.button
+                    initial={{ scale: 0.9, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={nextLine}
+                    className="w-full py-4 md:py-6 bg-brand-pink text-white rounded-xl md:rounded-2xl shadow-2xl font-bold text-base md:text-xl flex items-center justify-center gap-2 md:gap-3"
+                  >
+                    <Play fill="currentColor" size={18} className="md:w-5 md:h-5" /> <span className="text-sm md:text-base">TOCCA QUANDO HAI FINITO</span>
+                  </motion.button>
+                  {isVoiceMode && !isPaused && (
+                    <div className="flex items-center gap-2 text-brand-pink text-[10px] font-bold animate-pulse">
+                      <Mic size={12} /> STO ASCOLTANDO LA TUA BATTUTA...
+                    </div>
+                  )}
+                </div>
               ) : (
                 <div className="flex items-center gap-2 md:gap-3 text-slate-400 font-medium animate-pulse text-xs md:text-base">
                   {isPaused ? <span className="text-brand-orange">RIPASSO IN PAUSA</span> : <><Volume2 size={16} className="md:w-5 md:h-5" /> Ascoltando {script[currentIndex]?.character}...</>}
