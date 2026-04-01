@@ -1,7 +1,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { ScriptLine } from "./types";
 
-const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+const genAI = new GoogleGenAI({ 
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY || "" 
+});
 
 export async function parseScript(text: string): Promise<ScriptLine[]> {
   const model = "gemini-3-flash-preview";
