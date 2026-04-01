@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Upload, Play, User, ChevronRight, RotateCcw, Mic, MicOff, Volume2 } from 'lucide-react';
+import { Upload, Play, User, ChevronRight, ChevronLeft, RotateCcw, Mic, MicOff, Volume2 } from 'lucide-react';
 import { AppState, ScriptLine } from './types';
 import { parseScript } from './services/geminiService';
 import mammoth from 'mammoth';
@@ -192,6 +192,14 @@ export default function App() {
   const nextLine = () => {
     if (currentIndex < script.length - 1) {
       setCurrentIndex(prev => prev + 1);
+    }
+  };
+
+  const prevLine = () => {
+    if (currentIndex > 0) {
+      window.speechSynthesis.cancel();
+      setCurrentIndex(prev => prev - 1);
+      setIsPaused(false);
     }
   };
 
@@ -459,56 +467,99 @@ export default function App() {
               </div>
             </div>
 
-            <div 
-              ref={scrollRef}
-              className="flex-1 glass-card overflow-y-auto p-6 md:p-12 space-y-8 scroll-smooth"
-            >
-              {script.map((line, idx) => {
-                const isUser = userCharacters.includes(line.character);
-                const isActive = idx === currentIndex;
-                
-                if (line.isStageDirection) {
+            <div className="flex-1 flex gap-2 overflow-hidden">
+              <div 
+                ref={scrollRef}
+                className="flex-1 glass-card overflow-y-auto p-6 md:p-12 space-y-8 scroll-smooth"
+              >
+                {script.map((line, idx) => {
+                  const isUser = userCharacters.includes(line.character);
+                  const isActive = idx === currentIndex;
+                  
+                  if (line.isStageDirection) {
+                    return (
+                      <div 
+                        key={idx} 
+                        id={`line-${idx}`}
+                        className={`text-center italic text-slate-400 text-sm transition-all duration-500 ${isActive ? 'scale-110 text-brand-orange' : 'opacity-50'}`}
+                      >
+                        [{line.text}]
+                      </div>
+                    );
+                  }
+
                   return (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       id={`line-${idx}`}
-                      className={`text-center italic text-slate-400 text-sm transition-all duration-500 ${isActive ? 'scale-110 text-brand-orange' : 'opacity-50'}`}
+                      onClick={() => {
+                        window.speechSynthesis.cancel();
+                        setCurrentIndex(idx);
+                        setIsPaused(false);
+                      }}
+                      className={`flex flex-col gap-1 transition-all duration-500 cursor-pointer hover:bg-white/30 rounded-xl p-2 ${
+                        isActive ? 'scale-105 opacity-100' : 'opacity-30 blur-[1px]'
+                      } ${isUser ? 'items-end' : 'items-start'}`}
                     >
-                      [{line.text}]
+                      <span className={`text-[10px] uppercase tracking-widest font-bold ${isUser ? 'text-brand-pink' : 'text-brand-blue'}`}>
+                        {line.character}
+                      </span>
+                      <div className={`max-w-[80%] p-4 rounded-2xl text-lg md:text-xl font-medium ${
+                        isActive 
+                          ? (isUser ? 'bg-brand-pink text-white shadow-xl' : 'bg-brand-blue text-white shadow-xl')
+                          : 'bg-white text-slate-700'
+                      }`}>
+                        {line.text}
+                      </div>
                     </div>
                   );
-                }
+                })}
+              </div>
 
-                return (
-                  <div
-                    key={idx}
-                    id={`line-${idx}`}
-                    onClick={() => {
-                      window.speechSynthesis.cancel();
-                      setCurrentIndex(idx);
-                      setIsPaused(false);
-                    }}
-                    className={`flex flex-col gap-1 transition-all duration-500 cursor-pointer hover:bg-white/30 rounded-xl p-2 ${
-                      isActive ? 'scale-105 opacity-100' : 'opacity-30 blur-[1px]'
-                    } ${isUser ? 'items-end' : 'items-start'}`}
-                  >
-                    <span className={`text-[10px] uppercase tracking-widest font-bold ${isUser ? 'text-brand-pink' : 'text-brand-blue'}`}>
-                      {line.character}
-                    </span>
-                    <div className={`max-w-[80%] p-4 rounded-2xl text-lg md:text-xl font-medium ${
-                      isActive 
-                        ? (isUser ? 'bg-brand-pink text-white shadow-xl' : 'bg-brand-blue text-white shadow-xl')
-                        : 'bg-white text-slate-700'
-                    }`}>
-                      {line.text}
-                    </div>
-                  </div>
-                );
-              })}
+              {/* Script Minimap / Scroll Indicators */}
+              <div className="hidden md:flex flex-col w-3 bg-white/20 rounded-full overflow-hidden relative my-12 mr-2">
+                {script.map((line, idx) => {
+                  const isUser = userCharacters.includes(line.character);
+                  if (!isUser || line.isStageDirection) return null;
+                  
+                  const topPercent = (idx / script.length) * 100;
+                  const isActive = idx === currentIndex;
+
+                  return (
+                    <button
+                      key={idx}
+                      onClick={() => {
+                        window.speechSynthesis.cancel();
+                        setCurrentIndex(idx);
+                        setIsPaused(false);
+                      }}
+                      className={`absolute left-0 w-full h-1 rounded-full transition-all ${
+                        isActive ? 'bg-brand-pink scale-y-150 z-10' : 'bg-brand-pink/40 hover:bg-brand-pink/70'
+                      }`}
+                      style={{ top: `${topPercent}%` }}
+                      title={`Battuta di ${line.character}`}
+                    />
+                  );
+                })}
+                {/* Current Position Indicator */}
+                <div 
+                  className="absolute left-0 w-full h-0.5 bg-slate-400/50 transition-all duration-300"
+                  style={{ top: `${(currentIndex / script.length) * 100}%` }}
+                />
+              </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4">
               <div className="flex items-center gap-2 w-full md:w-auto">
+                <button
+                  onClick={prevLine}
+                  disabled={currentIndex === 0}
+                  className="p-4 bg-white text-slate-600 rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 hover:bg-slate-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                  title="Battuta Precedente"
+                >
+                  <ChevronLeft size={20} />
+                </button>
+
                 <button
                   onClick={() => setIsPaused(!isPaused)}
                   className={`flex-1 md:flex-none p-4 rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 transition-all ${
