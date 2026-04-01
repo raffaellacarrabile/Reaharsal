@@ -5,9 +5,9 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Upload, Play, User, ChevronRight, RotateCcw, Mic, MicOff, Volume2 } from 'lucide-react';
+import { Upload, Play, User, ChevronRight, RotateCcw, Mic, MicOff, Volume2, Sparkles } from 'lucide-react';
 import { AppState, ScriptLine } from './types';
-import { parseScript } from './services/geminiService';
+import { parseScript, generateSpeech } from './services/geminiService';
 import mammoth from 'mammoth';
 
 export default function App() {
@@ -18,6 +18,7 @@ export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isReading, setIsReading] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+  const [isGeminiVoice, setIsGeminiVoice] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(1.0);
   const [availableVoices, setAvailableVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceURI, setSelectedVoiceURI] = useState<string>('');
@@ -155,7 +156,17 @@ export default function App() {
         throw new Error("Il file è vuoto.");
       }
 
-      const parsed = await parseScript(text);
+      // Fix common encoding issues for Italian accented characters
+      const fixedText = text
+        .replace(/Ã /g, 'à')
+        .replace(/Ã¨/g, 'è')
+        .replace(/Ã©/g, 'é')
+        .replace(/Ã¬/g, 'ì')
+        .replace(/Ã²/g, 'ò')
+        .replace(/Ã¹/g, 'ù')
+        .replace(/â€™/g, "'");
+
+      const parsed = await parseScript(fixedText);
       setScript(parsed);
       saveScript(file.name, parsed);
       setState('setup');
@@ -204,19 +215,23 @@ export default function App() {
     if (state !== 'rehearsal' || currentIndex >= script.length || isPaused) return;
 
     const currentLine = script[currentIndex];
+    let isMounted = true;
     
     // If it's a stage direction, skip it (or show it briefly)
     if (currentLine.isStageDirection) {
-      // Auto-advance stage directions after a small delay
-      const timer = setTimeout(() => nextLine(), 1500);
-      return () => clearTimeout(timer);
+      const timer = setTimeout(() => {
+        if (isMounted) nextLine();
+      }, 1500);
+      return () => {
+        isMounted = false;
+        clearTimeout(timer);
+      };
     }
 
     // If it's NOT the user's character, read it aloud
     if (!userCharacters.includes(currentLine.character)) {
       setIsReading(true);
       
-      // CLEAN TEXT: Remove anything inside parentheses or brackets
       const cleanText = currentLine.text.replace(/\([^)]*\)|\[[^\]]*\]/g, '').trim();
       
       if (!cleanText) {
@@ -224,35 +239,57 @@ export default function App() {
         return;
       }
 
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.rate = playbackRate;
-      
-      // Voice selection
-      const voice = availableVoices.find(v => v.voiceURI === selectedVoiceURI);
-      if (voice) {
-        utterance.voice = voice;
-      } else {
-        // Fallback heuristic
-        const voices = window.speechSynthesis.getVoices();
+      if (isGeminiVoice) {
+        // Use Gemini TTS
+        const voices: ('Puck' | 'Charon' | 'Kore' | 'Fenrir' | 'Zephyr')[] = ['Kore', 'Puck', 'Charon', 'Fenrir', 'Zephyr'];
         const charIndex = characters.indexOf(currentLine.character);
-        if (voices.length > 0) {
-          utterance.voice = voices[charIndex % voices.length];
-        }
+        const selectedVoice = voices[charIndex % voices.length];
+
+        generateSpeech(cleanText, selectedVoice).then(base64 => {
+          if (!isMounted) return;
+          const audio = new Audio(`data:audio/mp3;base64,${base64}`);
+          audio.playbackRate = playbackRate;
+          audio.onended = () => {
+            if (isMounted) {
+              setIsReading(false);
+              nextLine();
+            }
+          };
+          audio.play().catch(e => {
+            console.error("Errore riproduzione audio Gemini:", e);
+            // Fallback to browser TTS if audio fails
+            fallbackTTS(cleanText);
+          });
+        }).catch(e => {
+          console.error("Errore generazione voce Gemini:", e);
+          fallbackTTS(cleanText);
+        });
+      } else {
+        fallbackTTS(cleanText);
       }
 
-      utterance.onend = () => {
-        setIsReading(false);
-        nextLine();
-      };
-
-      window.speechSynthesis.speak(utterance);
+      function fallbackTTS(text: string) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = playbackRate;
+        const voice = availableVoices.find(v => v.voiceURI === selectedVoiceURI);
+        if (voice) utterance.voice = voice;
+        utterance.onend = () => {
+          if (isMounted) {
+            setIsReading(false);
+            nextLine();
+          }
+        };
+        window.speechSynthesis.speak(utterance);
+      }
     } else {
-      // It's the user's turn. Wait for input.
       setIsReading(false);
     }
 
-    return () => window.speechSynthesis.cancel();
-  }, [currentIndex, state, script, userCharacters, characters, isPaused, playbackRate, selectedVoiceURI, availableVoices]);
+    return () => {
+      isMounted = false;
+      window.speechSynthesis.cancel();
+    };
+  }, [currentIndex, state, script, userCharacters, characters, isPaused, playbackRate, selectedVoiceURI, availableVoices, isGeminiVoice]);
 
   // Handle Spacebar
   useEffect(() => {
@@ -277,10 +314,13 @@ export default function App() {
     }
   }, [currentIndex]);
 
-  const APP_VERSION = "1.2.0";
+  const APP_VERSION = "1.3.0";
+  const isUserTurn = state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 relative">
+    <div className={`min-h-screen flex flex-col items-center justify-center p-4 md:p-8 relative transition-colors duration-1000 ${
+      isUserTurn ? 'bg-brand-pink/20' : 'bg-slate-50'
+    }`}>
       <AnimatePresence mode="wait">
         {state === 'upload' && (
           <motion.div
@@ -445,6 +485,15 @@ export default function App() {
                 >
                   {isVoiceMode ? <Mic size={18} /> : <MicOff size={18} />}
                   <span className="text-[10px] font-bold">VOCE</span>
+                </button>
+
+                <button 
+                  onClick={() => setIsGeminiVoice(!isGeminiVoice)}
+                  className={`p-2 rounded-lg transition-all flex items-center gap-2 ${isGeminiVoice ? 'bg-brand-blue text-white shadow-lg' : 'bg-white text-slate-400'}`}
+                  title="Voce Gemini (Alta Qualità)"
+                >
+                  <Sparkles size={18} className={isGeminiVoice ? 'animate-pulse' : ''} />
+                  <span className="text-[10px] font-bold">GEMINI</span>
                 </button>
               </div>
             </div>
