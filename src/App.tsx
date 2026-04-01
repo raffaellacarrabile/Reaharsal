@@ -24,7 +24,38 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [isVoiceMode, setIsVoiceMode] = useState(false);
+  const [savedScripts, setSavedScripts] = useState<{name: string, data: ScriptLine[], date: string}[]>([]);
   const recognitionRef = useRef<any>(null);
+
+  // Load saved scripts from localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem('rehearsal_scripts');
+    if (saved) {
+      try {
+        setSavedScripts(JSON.parse(saved));
+      } catch (e) {
+        console.error("Errore nel caricamento dei copioni salvati", e);
+      }
+    }
+  }, []);
+
+  // Save script to localStorage when a new one is parsed
+  const saveScript = (name: string, data: ScriptLine[]) => {
+    const newSaved = [{ name, data, date: new Date().toLocaleDateString('it-IT') }, ...savedScripts].slice(0, 5);
+    setSavedScripts(newSaved);
+    localStorage.setItem('rehearsal_scripts', JSON.stringify(newSaved));
+  };
+
+  const deleteSavedScript = (index: number) => {
+    const newSaved = savedScripts.filter((_, i) => i !== index);
+    setSavedScripts(newSaved);
+    localStorage.setItem('rehearsal_scripts', JSON.stringify(newSaved));
+  };
+
+  const loadSavedScript = (saved: {name: string, data: ScriptLine[]}) => {
+    setScript(saved.data);
+    setState('setup');
+  };
 
   // Load voices
   useEffect(() => {
@@ -121,15 +152,16 @@ export default function App() {
       }
 
       if (!text.trim()) {
-        throw new Error("The file is empty.");
+        throw new Error("Il file è vuoto.");
       }
 
       const parsed = await parseScript(text);
       setScript(parsed);
+      saveScript(file.name, parsed);
       setState('setup');
     } catch (error) {
-      console.error("File processing error:", error);
-      alert("Failed to process script. Please ensure it's a valid TXT or DOCX file.");
+      console.error("Errore elaborazione file:", error);
+      alert("Errore nell'elaborazione del copione. Assicurati che sia un file TXT o DOCX valido.");
     } finally {
       setIsLoading(false);
     }
@@ -137,7 +169,7 @@ export default function App() {
 
   const startRehearsal = () => {
     if (userCharacters.length === 0) {
-      alert("Please select at least one character.");
+      alert("Per favore, seleziona almeno un personaggio.");
       return;
     }
     setState('rehearsal');
@@ -245,8 +277,10 @@ export default function App() {
     }
   }, [currentIndex]);
 
+  const APP_VERSION = "1.2.0";
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 relative">
       <AnimatePresence mode="wait">
         {state === 'upload' && (
           <motion.div
@@ -254,38 +288,67 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="glass-card p-8 w-full max-w-md text-center"
+            className="w-full max-w-2xl space-y-6"
           >
-            <div className="w-20 h-20 bg-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
-              <Upload className={`text-white w-10 h-10 ${isLoading ? 'animate-bounce' : ''}`} />
-            </div>
-            <h1 className="text-3xl font-bold mb-2">Upload Script</h1>
-            <p className="text-slate-500 mb-8">Let's get started. Upload your theater script (TXT or DOCX) to begin rehearsing.</p>
-            
-            {isLoading ? (
-              <div className="space-y-4">
-                <div className="w-full bg-slate-100 h-3 rounded-full overflow-hidden">
-                  <motion.div 
-                    className="h-full bg-brand-blue"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${progress}%` }}
-                    transition={{ ease: "linear" }}
-                  />
-                </div>
-                <p className="text-sm font-medium text-brand-blue animate-pulse">
-                  {progress < 30 ? "Reading file..." : progress < 70 ? "Analyzing characters..." : progress < 90 ? "Structuring script..." : "Almost there, finalizing..."}
-                </p>
-                {progress > 90 && (
-                  <p className="text-xs text-slate-400 mt-2">
-                    This is taking a bit longer for complex scripts. Please wait...
-                  </p>
-                )}
+            <div className="glass-card p-8 text-center">
+              <div className="w-20 h-20 bg-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
+                <Upload className={`text-white w-10 h-10 ${isLoading ? 'animate-bounce' : ''}`} />
               </div>
-            ) : (
-              <label className="btn-primary cursor-pointer inline-flex items-center gap-2">
-                Choose File
-                <input type="file" accept=".txt,.docx" className="hidden" onChange={handleFileUpload} disabled={isLoading} />
-              </label>
+              <h1 className="text-3xl font-bold mb-2">Carica Copione</h1>
+              <p className="text-slate-500 mb-8">Iniziamo. Carica il tuo copione teatrale (TXT o DOCX) per iniziare il ripasso.</p>
+              
+              {isLoading ? (
+                <div className="space-y-4">
+                  <div className="w-full bg-slate-100 h-3 rounded-full overflow-hidden">
+                    <motion.div 
+                      className="h-full bg-brand-blue"
+                      initial={{ width: 0 }}
+                      animate={{ width: `${progress}%` }}
+                      transition={{ ease: "linear" }}
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-brand-blue animate-pulse">
+                    {progress < 30 ? "Lettura file..." : progress < 70 ? "Analisi personaggi..." : progress < 90 ? "Strutturazione copione..." : "Quasi fatto, sto finalizzando..."}
+                  </p>
+                  {progress > 90 && (
+                    <p className="text-xs text-slate-400 mt-2">
+                      L'operazione sta richiedendo più tempo per copioni complessi. Per favore attendi...
+                    </p>
+                  )}
+                </div>
+              ) : (
+                <label className="btn-primary cursor-pointer inline-flex items-center gap-2">
+                  Scegli File
+                  <input type="file" accept=".txt,.docx" className="hidden" onChange={handleFileUpload} disabled={isLoading} />
+                </label>
+              )}
+            </div>
+
+            {savedScripts.length > 0 && !isLoading && (
+              <div className="glass-card p-6">
+                <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <RotateCcw className="text-brand-purple" size={20} /> Copioni Recenti
+                </h2>
+                <div className="space-y-3">
+                  {savedScripts.map((s, i) => (
+                    <div key={i} className="flex items-center justify-between p-3 bg-white/50 rounded-xl hover:bg-white transition-colors group">
+                      <button 
+                        onClick={() => loadSavedScript(s)}
+                        className="flex-1 text-left"
+                      >
+                        <p className="font-semibold text-slate-700">{s.name}</p>
+                        <p className="text-xs text-slate-400">{s.date}</p>
+                      </button>
+                      <button 
+                        onClick={() => deleteSavedScript(i)}
+                        className="p-2 text-slate-300 hover:text-red-400 transition-colors"
+                      >
+                        <RotateCcw size={16} className="rotate-45" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
             )}
           </motion.div>
         )}
@@ -299,7 +362,7 @@ export default function App() {
             className="glass-card p-8 w-full max-w-2xl"
           >
             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <User className="text-brand-purple" /> Select Your Character
+              <User className="text-brand-purple" /> Seleziona il Tuo Personaggio
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
               {characters.map(char => (
@@ -322,10 +385,10 @@ export default function App() {
             </div>
             <div className="flex justify-between items-center">
               <button onClick={() => setState('upload')} className="text-slate-400 hover:text-slate-600 flex items-center gap-1">
-                <RotateCcw size={18} /> Back
+                <RotateCcw size={18} /> Indietro
               </button>
               <button onClick={startRehearsal} className="btn-primary flex items-center gap-2">
-                Start Rehearsal <ChevronRight size={20} />
+                Inizia Ripasso <ChevronRight size={20} />
               </button>
             </div>
           </motion.div>
@@ -343,7 +406,7 @@ export default function App() {
                 <button onClick={() => setState('setup')} className="p-2 hover:bg-white/50 rounded-full transition-colors">
                   <RotateCcw size={24} />
                 </button>
-                <h3 className="font-bold text-lg">Rehearsing: {userCharacters.join(', ')}</h3>
+                <h3 className="font-bold text-lg">Ripasso: {userCharacters.join(', ')}</h3>
               </div>
               
               <div className="flex flex-wrap items-center gap-3">
@@ -362,7 +425,7 @@ export default function App() {
 
                 {/* Speed Control */}
                 <div className="flex items-center gap-2 bg-white p-2 rounded-lg shadow-sm">
-                  <span className="text-[10px] font-bold text-slate-400">SPEED</span>
+                  <span className="text-[10px] font-bold text-slate-400">VELOCITÀ</span>
                   <input 
                     type="range" 
                     min="0.5" 
@@ -378,10 +441,10 @@ export default function App() {
                 <button 
                   onClick={() => setIsVoiceMode(!isVoiceMode)}
                   className={`p-2 rounded-lg transition-all flex items-center gap-2 ${isVoiceMode ? 'bg-brand-pink text-white shadow-lg' : 'bg-white text-slate-400'}`}
-                  title="Voice Mode (Experimental)"
+                  title="Modalità Vocale (Sperimentale)"
                 >
                   {isVoiceMode ? <Mic size={18} /> : <MicOff size={18} />}
-                  <span className="text-[10px] font-bold">VOICE</span>
+                  <span className="text-[10px] font-bold">VOCE</span>
                 </button>
               </div>
             </div>
@@ -438,14 +501,14 @@ export default function App() {
                   }`}
                 >
                   {isPaused ? <Play size={20} fill="currentColor" /> : <div className="w-5 h-5 flex gap-1 justify-center items-center"><div className="w-1.5 h-4 bg-current rounded-full"/><div className="w-1.5 h-4 bg-current rounded-full"/></div>}
-                  {isPaused ? 'RESUME' : 'PAUSE'}
+                  {isPaused ? 'RIPRENDI' : 'PAUSA'}
                 </button>
 
                 <button
                   onClick={skipToMyNextLine}
                   className="flex-1 md:flex-none p-4 bg-white text-slate-600 rounded-2xl shadow-lg font-bold flex items-center justify-center gap-2 hover:bg-brand-purple hover:text-white transition-all"
                 >
-                  <ChevronRight size={20} /> SKIP TO MY CUE
+                  <ChevronRight size={20} /> SALTA ALLA MIA BATTUTA
                 </button>
               </div>
 
@@ -457,11 +520,11 @@ export default function App() {
                   onClick={nextLine}
                   className="w-full max-w-md py-6 bg-brand-pink text-white rounded-2xl shadow-2xl font-bold text-xl flex items-center justify-center gap-3"
                 >
-                  <Play fill="currentColor" /> TAP OR SPACE WHEN DONE
+                  <Play fill="currentColor" /> TOCCA O SPAZIO QUANDO HAI FINITO
                 </motion.button>
               ) : (
                 <div className="flex items-center gap-3 text-slate-400 font-medium animate-pulse">
-                  {isPaused ? <span className="text-brand-orange">REHEARSAL PAUSED</span> : <><Volume2 /> Listening to {script[currentIndex]?.character}...</>}
+                  {isPaused ? <span className="text-brand-orange">RIPASSO IN PAUSA</span> : <><Volume2 /> Ascoltando {script[currentIndex]?.character}...</>}
                 </div>
               )}
             </div>
@@ -474,6 +537,11 @@ export default function App() {
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-brand-blue/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-brand-purple/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
         <div className="absolute top-[20%] right-[10%] w-[20%] h-[20%] bg-brand-pink/10 rounded-full blur-3xl" />
+      </div>
+
+      {/* Version Indicator */}
+      <div className="fixed bottom-4 right-4 text-[10px] font-mono text-slate-400 bg-white/50 px-2 py-1 rounded-md backdrop-blur-sm shadow-sm z-50">
+        v{APP_VERSION}
       </div>
     </div>
   );
