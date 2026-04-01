@@ -5,9 +5,9 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Upload, Play, User, ChevronRight, RotateCcw, Mic, MicOff, Volume2, Sparkles } from 'lucide-react';
+import { Upload, Play, User, ChevronRight, RotateCcw, Mic, MicOff, Volume2 } from 'lucide-react';
 import { AppState, ScriptLine } from './types';
-import { parseScript, generateSpeech } from './services/geminiService';
+import { parseScript } from './services/geminiService';
 import mammoth from 'mammoth';
 
 export default function App() {
@@ -18,8 +18,7 @@ export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isReading, setIsReading] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const [isGeminiVoice, setIsGeminiVoice] = useState(false);
-  const [playbackRate, setPlaybackRate] = useState(1.0);
+  const [playbackRate, setPlaybackRate] = useState(1.2);
   const [availableVoices, setAvailableVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceURI, setSelectedVoiceURI] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
@@ -63,8 +62,10 @@ export default function App() {
     const loadVoices = () => {
       const voices = window.speechSynthesis.getVoices();
       setAvailableVoices(voices);
-      // Default to a "natural" sounding voice if possible
-      const preferred = voices.find(v => v.name.includes('Google') || v.name.includes('Natural') || v.lang.includes('it-IT'));
+      // Default to Google Italiano if possible
+      const preferred = voices.find(v => v.name.includes('Google') && v.lang.includes('it-IT')) || 
+                        voices.find(v => v.lang.includes('it-IT')) ||
+                        voices.find(v => v.name.includes('Natural'));
       if (preferred && !selectedVoiceURI) {
         setSelectedVoiceURI(preferred.voiceURI);
       }
@@ -239,48 +240,17 @@ export default function App() {
         return;
       }
 
-      if (isGeminiVoice) {
-        // Use Gemini TTS
-        const voices: ('Puck' | 'Charon' | 'Kore' | 'Fenrir' | 'Zephyr')[] = ['Kore', 'Puck', 'Charon', 'Fenrir', 'Zephyr'];
-        const charIndex = characters.indexOf(currentLine.character);
-        const selectedVoice = voices[charIndex % voices.length];
-
-        generateSpeech(cleanText, selectedVoice).then(base64 => {
-          if (!isMounted) return;
-          const audio = new Audio(`data:audio/mp3;base64,${base64}`);
-          audio.playbackRate = playbackRate;
-          audio.onended = () => {
-            if (isMounted) {
-              setIsReading(false);
-              nextLine();
-            }
-          };
-          audio.play().catch(e => {
-            console.error("Errore riproduzione audio Gemini:", e);
-            // Fallback to browser TTS if audio fails
-            fallbackTTS(cleanText);
-          });
-        }).catch(e => {
-          console.error("Errore generazione voce Gemini:", e);
-          fallbackTTS(cleanText);
-        });
-      } else {
-        fallbackTTS(cleanText);
-      }
-
-      function fallbackTTS(text: string) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.rate = playbackRate;
-        const voice = availableVoices.find(v => v.voiceURI === selectedVoiceURI);
-        if (voice) utterance.voice = voice;
-        utterance.onend = () => {
-          if (isMounted) {
-            setIsReading(false);
-            nextLine();
-          }
-        };
-        window.speechSynthesis.speak(utterance);
-      }
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.rate = playbackRate;
+      const voice = availableVoices.find(v => v.voiceURI === selectedVoiceURI);
+      if (voice) utterance.voice = voice;
+      utterance.onend = () => {
+        if (isMounted) {
+          setIsReading(false);
+          nextLine();
+        }
+      };
+      window.speechSynthesis.speak(utterance);
     } else {
       setIsReading(false);
     }
@@ -289,7 +259,7 @@ export default function App() {
       isMounted = false;
       window.speechSynthesis.cancel();
     };
-  }, [currentIndex, state, script, userCharacters, characters, isPaused, playbackRate, selectedVoiceURI, availableVoices, isGeminiVoice]);
+  }, [currentIndex, state, script, userCharacters, characters, isPaused, playbackRate, selectedVoiceURI, availableVoices]);
 
   // Handle Spacebar
   useEffect(() => {
@@ -314,7 +284,7 @@ export default function App() {
     }
   }, [currentIndex]);
 
-  const APP_VERSION = "1.3.0";
+  const APP_VERSION = "1.4.0";
   const isUserTurn = state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection;
 
   return (
@@ -486,15 +456,6 @@ export default function App() {
                   {isVoiceMode ? <Mic size={18} /> : <MicOff size={18} />}
                   <span className="text-[10px] font-bold">VOCE</span>
                 </button>
-
-                <button 
-                  onClick={() => setIsGeminiVoice(!isGeminiVoice)}
-                  className={`p-2 rounded-lg transition-all flex items-center gap-2 ${isGeminiVoice ? 'bg-brand-blue text-white shadow-lg' : 'bg-white text-slate-400'}`}
-                  title="Voce Gemini (Alta Qualità)"
-                >
-                  <Sparkles size={18} className={isGeminiVoice ? 'animate-pulse' : ''} />
-                  <span className="text-[10px] font-bold">GEMINI</span>
-                </button>
               </div>
             </div>
 
@@ -522,7 +483,12 @@ export default function App() {
                   <div
                     key={idx}
                     id={`line-${idx}`}
-                    className={`flex flex-col gap-1 transition-all duration-500 ${
+                    onClick={() => {
+                      window.speechSynthesis.cancel();
+                      setCurrentIndex(idx);
+                      setIsPaused(false);
+                    }}
+                    className={`flex flex-col gap-1 transition-all duration-500 cursor-pointer hover:bg-white/30 rounded-xl p-2 ${
                       isActive ? 'scale-105 opacity-100' : 'opacity-30 blur-[1px]'
                     } ${isUser ? 'items-end' : 'items-start'}`}
                   >

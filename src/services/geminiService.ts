@@ -19,7 +19,7 @@ export async function parseScript(text: string): Promise<ScriptLine[]> {
     4. "isStageDirection" is true if it's a stage direction, false if it's a dialogue.
     
     Script text (truncated if necessary):
-    ${text.slice(0, 40000)}
+    ${text.slice(0, 120000)}
   `;
 
   try {
@@ -53,32 +53,6 @@ export async function parseScript(text: string): Promise<ScriptLine[]> {
     return JSON.parse(resultText);
   } catch (error) {
     console.error("Error parsing script:", error);
-    throw error;
-  }
-}
-
-export async function generateSpeech(text: string, voiceName: 'Puck' | 'Charon' | 'Kore' | 'Fenrir' | 'Zephyr' = 'Kore'): Promise<string> {
-  try {
-    const response = await genAI.models.generateContent({
-      model: "gemini-2.5-flash-preview-tts",
-      contents: [{ parts: [{ text: `Dì con tono naturale e recitativo: ${text}` }] }],
-      config: {
-        responseModalities: ["AUDIO"],
-        speechConfig: {
-          voiceConfig: {
-            prebuiltVoiceConfig: { voiceName },
-          },
-        },
-      },
-    });
-
-    const base64Audio = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
-    if (!base64Audio) {
-      throw new Error("Nessun dato audio ricevuto da Gemini");
-    }
-    return base64Audio;
-  } catch (error) {
-    console.error("Errore nella generazione del parlato:", error);
     throw error;
   }
 }
