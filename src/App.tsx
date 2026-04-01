@@ -332,7 +332,7 @@ export default function App() {
     }
   }, [currentIndex]);
 
-  const APP_VERSION = "1.6.0";
+  const APP_VERSION = "1.6.1";
   const isUserTurn = state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection;
 
   return (
@@ -558,18 +558,20 @@ export default function App() {
                           ? (isUser ? 'bg-brand-pink text-white shadow-xl' : 'bg-brand-blue text-white shadow-xl')
                           : 'bg-white text-slate-700'
                       }`}>
-                        {isUser && isActive && !showUserLine ? (
+                        {isUser && idx >= currentIndex && !showUserLine ? (
                           <div className="flex flex-col items-center gap-2 py-2">
                             <span className="opacity-20 select-none">••••••••••••••••</span>
-                            <button 
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                setShowUserLine(true);
-                              }}
-                              className="text-[10px] bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full transition-colors"
-                            >
-                              MOSTRA SUGGERIMENTO
-                            </button>
+                            {isActive && (
+                              <button 
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setShowUserLine(true);
+                                }}
+                                className="text-[10px] bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full transition-colors"
+                              >
+                                MOSTRA SUGGERIMENTO
+                              </button>
+                            )}
                           </div>
                         ) : (
                           line.text
