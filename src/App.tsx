@@ -197,23 +197,29 @@ export default function App() {
     }
   };
 
-  const loadPreloadedScript = async () => {
+  const loadPreloadedScript = async (filename: string = 'arsenico.json') => {
     setIsLoading(true);
     try {
-      // We'll try to fetch a local pre-parsed script if it exists
-      const response = await fetch('/preloaded_script.json');
+      // Use relative path to be consistent with base: './' in vite.config.ts
+      const response = await fetch(filename);
       if (!response.ok) {
-        throw new Error("Nessun copione pre-caricato trovato. Per favore, carica il file DOCX o PDF in chat così posso prepararlo per te.");
+        throw new Error("Copione non trovato. Per favore, carica il file DOCX o PDF in chat così posso prepararlo per te.");
       }
+      
+      const contentType = response.headers.get("content-type");
+      if (contentType && contentType.includes("text/html")) {
+        throw new Error("Errore del server: il file richiesto non è stato trovato (restituito HTML invece di JSON).");
+      }
+
       const data = await response.json();
       if (!Array.isArray(data) || data.length === 0) {
-        throw new Error("Il copione pre-caricato è vuoto o non è nel formato corretto.");
+        throw new Error("Il copione è vuoto o non è nel formato corretto.");
       }
       setScript(data);
       setState('setup');
     } catch (error: any) {
-      console.error("Errore caricamento pre-caricato:", error);
-      alert(error.message || "Non è stato possibile caricare o analizzare il copione pre-caricato.");
+      console.error("Errore caricamento:", error);
+      alert(error.message || "Non è stato possibile caricare il copione.");
     } finally {
       setIsLoading(false);
     }
@@ -332,7 +338,7 @@ export default function App() {
     }
   }, [currentIndex]);
 
-  const APP_VERSION = "1.6.1";
+  const APP_VERSION = "1.6.4";
   const isUserTurn = state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection;
 
   return (
@@ -375,18 +381,36 @@ export default function App() {
                   )}
                 </div>
               ) : (
-                <div className="flex flex-col gap-4 items-center">
+                <div className="flex flex-col gap-4 items-center w-full">
                   <label className="btn-primary cursor-pointer inline-flex items-center gap-2 w-full max-w-xs justify-center">
-                    Scegli File
+                    <Upload size={20} /> Scegli File (TXT/DOCX)
                     <input type="file" accept=".txt,.docx" className="hidden" onChange={handleFileUpload} disabled={isLoading} />
                   </label>
                   
-                  <button 
-                    onClick={loadPreloadedScript}
-                    className="text-sm text-brand-purple font-semibold hover:underline flex items-center gap-1"
-                  >
-                    <Sparkles size={16} /> Carica Copione Pre-caricato
-                  </button>
+                  <div className="w-full max-w-xs space-y-2">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider text-center">Copioni Pre-caricati</p>
+                    <button 
+                      onClick={() => loadPreloadedScript('arsenico.json')}
+                      className="w-full py-2 px-4 text-sm bg-white border border-slate-200 text-slate-700 rounded-xl font-semibold hover:bg-slate-50 flex items-center justify-between group transition-all"
+                    >
+                      <span className="flex items-center gap-2"><Sparkles size={16} className="text-brand-purple" /> Arsenico e vecchi merletti</span>
+                      <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </button>
+                    <button 
+                      onClick={() => loadPreloadedScript('rumors.json')}
+                      className="w-full py-2 px-4 text-sm bg-white border border-slate-200 text-slate-700 rounded-xl font-semibold hover:bg-slate-50 flex items-center justify-between group transition-all"
+                    >
+                      <span className="flex items-center gap-2"><Sparkles size={16} className="text-brand-blue" /> Rumors</span>
+                      <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </button>
+                    <button 
+                      onClick={() => loadPreloadedScript('ladri.json')}
+                      className="w-full py-2 px-4 text-sm bg-white border border-slate-200 text-slate-700 rounded-xl font-semibold hover:bg-slate-50 flex items-center justify-between group transition-all"
+                    >
+                      <span className="flex items-center gap-2"><Sparkles size={16} className="text-brand-orange" /> Non tutti i ladri...</span>
+                      <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </button>
+                  </div>
                 </div>
               )}
             </div>
