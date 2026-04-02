@@ -338,11 +338,11 @@ export default function App() {
     }
   }, [currentIndex]);
 
-  const APP_VERSION = "1.6.5";
+  const APP_VERSION = "1.6.6";
   const isUserTurn = state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection;
 
   return (
-    <div className={`min-h-screen flex flex-col items-center justify-center p-4 md:p-8 relative transition-colors duration-1000 ${
+    <div className={`min-h-dvh flex flex-col items-center justify-center p-4 md:p-8 pb-[calc(1rem+env(safe-area-inset-bottom))] relative transition-colors duration-1000 ${
       isUserTurn ? 'bg-brand-pink/20' : 'bg-slate-50'
     }`}>
       <AnimatePresence mode="wait">
@@ -490,7 +490,7 @@ export default function App() {
             key="rehearsal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="w-full max-w-4xl h-[90vh] md:h-[85vh] flex flex-col gap-2 md:gap-4"
+            className="w-full max-w-4xl h-[85dvh] md:h-[85vh] flex flex-col gap-2 md:gap-4"
           >
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center px-4 gap-2 md:gap-4">
               <div className="flex items-center gap-3 w-full md:w-auto">
@@ -703,7 +703,7 @@ export default function App() {
       </div>
 
       {/* Version Indicator */}
-      <div className="fixed bottom-4 right-4 text-[10px] font-mono text-slate-400 bg-white/50 px-2 py-1 rounded-md backdrop-blur-sm shadow-sm z-50">
+      <div className="fixed bottom-2 right-2 md:bottom-4 md:right-4 text-[10px] font-mono text-slate-400 bg-white/50 px-2 py-1 rounded-md backdrop-blur-sm shadow-sm z-50">
         v{APP_VERSION}
       </div>
     </div>
