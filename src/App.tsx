@@ -338,7 +338,7 @@ export default function App() {
     }
   }, [currentIndex]);
 
-  const APP_VERSION = "1.6.4";
+  const APP_VERSION = "1.6.5";
   const isUserTurn = state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection;
 
   return (
