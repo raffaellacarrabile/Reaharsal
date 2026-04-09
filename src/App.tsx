@@ -26,7 +26,25 @@ export default function App() {
   const [progress, setProgress] = useState(0);
   const [isVoiceMode, setIsVoiceMode] = useState(false);
   const [savedScripts, setSavedScripts] = useState<{name: string, data: ScriptLine[], date: string}[]>([]);
+  const [lastTranscript, setLastTranscript] = useState("");
   const recognitionRef = useRef<any>(null);
+  const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
+
+  // Refs to avoid stale closures in speech recognition
+  const stateRef = useRef(state);
+  const currentIndexRef = useRef(currentIndex);
+  const scriptRef = useRef(script);
+  const userCharactersRef = useRef(userCharacters);
+  const isPausedRef = useRef(isPaused);
+  const isVoiceModeRef = useRef(isVoiceMode);
+  const lastAdvancedIndexRef = useRef(-1);
+
+  useEffect(() => { stateRef.current = state; }, [state]);
+  useEffect(() => { currentIndexRef.current = currentIndex; }, [currentIndex]);
+  useEffect(() => { scriptRef.current = script; }, [script]);
+  useEffect(() => { userCharactersRef.current = userCharacters; }, [userCharacters]);
+  useEffect(() => { isPausedRef.current = isPaused; }, [isPaused]);
+  useEffect(() => { isVoiceModeRef.current = isVoiceMode; }, [isVoiceMode]);
 
   // Load saved scripts from localStorage
   useEffect(() => {
@@ -95,55 +113,124 @@ export default function App() {
     return () => clearInterval(interval);
   }, [isLoading]);
 
-  // Initialize Speech Recognition
+  // Initialize Speech Recognition once
   useEffect(() => {
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (SpeechRecognition) {
-      recognitionRef.current = new SpeechRecognition();
-      recognitionRef.current.continuous = true;
-      recognitionRef.current.interimResults = true; // Set to true for faster feedback
-      recognitionRef.current.lang = 'it-IT';
+    if (SpeechRecognition && !recognitionRef.current) {
+      const recognition = new SpeechRecognition();
+      recognition.continuous = true;
+      recognition.interimResults = true;
+      recognition.lang = 'it-IT';
 
-      recognitionRef.current.onresult = (event: any) => {
+      recognition.onresult = (event: any) => {
+        if (!isVoiceModeRef.current || isPausedRef.current || stateRef.current !== 'rehearsal') return;
+
         const last = event.results.length - 1;
         const transcript = event.results[last][0].transcript.toLowerCase().trim();
-        console.log('Recognized:', transcript);
+        setLastTranscript(transcript);
         
+        const currentIdx = currentIndexRef.current;
+        const currentScript = scriptRef.current;
+        const currentUserChars = userCharactersRef.current;
+
+        // Don't advance if we already advanced for this index
+        if (lastAdvancedIndexRef.current === currentIdx) return;
+
         // If it's the user's turn, check if they said the line
-        if (state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !isPaused) {
-          const targetText = script[currentIndex].text.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").trim();
+        if (currentUserChars.includes(currentScript[currentIdx]?.character) && !currentScript[currentIdx]?.isStageDirection) {
+          const targetText = currentScript[currentIdx].text.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").trim();
           
+          if (!targetText) return;
+
           // Split into words for better matching
-          const targetWords = targetText.split(/\s+/);
-          const transcriptWords = transcript.split(/\s+/);
+          // For Italian, we keep short words (1+ chars) because they are meaningful (e.g., "e", "a", "sì")
+          const targetWords = targetText.split(/\s+/).filter(w => w.length >= 1);
           
-          // Check if at least 60% of the target words are present in the transcript
+          if (targetWords.length === 0) {
+            if (transcript.includes(targetText)) {
+              lastAdvancedIndexRef.current = currentIdx;
+              setCurrentIndex(prev => prev + 1);
+              setShowUserLine(false);
+              setLastTranscript("");
+            }
+            return;
+          }
+
+          // Check if enough target words are present in the transcript
           const matchedWords = targetWords.filter(word => transcript.includes(word));
           const matchRatio = matchedWords.length / targetWords.length;
           
-          if (matchRatio >= 0.6 || transcript.includes(targetText)) {
-             nextLine();
+          // Filter out very common 1-letter Italian words for a "significant" ratio
+          // This helps with short lines like "E sarebbe?" where "E" might be missed
+          const significantTargetWords = targetWords.filter(w => w.length > 1);
+          const matchedSignificantWords = significantTargetWords.filter(word => transcript.includes(word));
+          const significantMatchRatio = significantTargetWords.length > 0 
+            ? matchedSignificantWords.length / significantTargetWords.length 
+            : matchRatio;
+
+          // Check for the end of the line (last 2-3 significant words)
+          const lastWordsCount = Math.min(3, targetWords.length);
+          const lastWords = targetWords.slice(-lastWordsCount);
+          const lastWordsMatched = lastWords.filter(word => transcript.includes(word));
+          const lastWordsRatio = lastWordsMatched.length / lastWords.length;
+
+          // Conditions to advance:
+          // 1. High overall match ratio (0.75) OR high significant match ratio
+          // 2. Good overall match (0.45) AND the end of the line is detected
+          // 3. For very short lines (1-2 words), require full inclusion or high significant ratio
+          // 4. The transcript contains the full target text
+          const isShortLine = targetWords.length <= 2;
+          const shouldAdvance = isShortLine 
+            ? transcript.includes(targetText) || significantMatchRatio >= 0.8 || matchRatio >= 0.9
+            : matchRatio >= 0.75 || significantMatchRatio >= 0.7 || (matchRatio >= 0.45 && lastWordsRatio >= 0.66) || transcript.includes(targetText);
+
+          if (shouldAdvance) {
+             console.log('Match found! Advancing...', { transcript, matchRatio, lastWordsRatio });
+             lastAdvancedIndexRef.current = currentIdx;
+             setCurrentIndex(prev => prev + 1);
+             setShowUserLine(false);
+             setLastTranscript(""); // Clear transcript after match
           }
         }
       };
+
+      recognition.onend = () => {
+        // Restart if voice mode is still on
+        if (isVoiceModeRef.current && !isPausedRef.current && stateRef.current === 'rehearsal') {
+          try {
+            recognition.start();
+          } catch (e) {
+            // Already started or other error
+          }
+        }
+      };
+
+      recognition.onerror = (event: any) => {
+        console.error('Speech recognition error:', event.error);
+        if (event.error === 'not-allowed') {
+          setIsVoiceMode(false);
+          alert("Accesso al microfono negato. Per favore abilitalo nelle impostazioni del browser.");
+        }
+      };
+
+      recognitionRef.current = recognition;
     }
-  }, [state, currentIndex, script, userCharacters, isPaused]);
+  }, []);
 
-  // Reset revealed state on line change
+  // Control recognition start/stop
   useEffect(() => {
-    setShowUserLine(false);
-  }, [currentIndex]);
-
-  useEffect(() => {
-    if (isVoiceMode && recognitionRef.current && !isPaused) {
-      try {
-        recognitionRef.current.start();
-      } catch (e) {}
+    if (isVoiceMode && recognitionRef.current) {
+      if (!isPaused && state === 'rehearsal') {
+        try {
+          recognitionRef.current.start();
+        } catch (e) {}
+      } else {
+        recognitionRef.current.stop();
+      }
     } else if (recognitionRef.current) {
       recognitionRef.current.stop();
     }
-    return () => recognitionRef.current?.stop();
-  }, [isVoiceMode, isPaused]);
+  }, [isVoiceMode, isPaused, state]);
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -230,6 +317,16 @@ export default function App() {
       alert("Per favore, seleziona almeno un personaggio.");
       return;
     }
+    
+    // Warm up TTS for mobile - essential to unlock audio context on user interaction
+    try {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance('');
+      window.speechSynthesis.speak(utterance);
+    } catch (e) {
+      console.error("TTS Warmup failed", e);
+    }
+
     setState('rehearsal');
     setCurrentIndex(0);
     setIsPaused(false);
@@ -238,14 +335,32 @@ export default function App() {
   const nextLine = () => {
     if (currentIndex < script.length - 1) {
       setCurrentIndex(prev => prev + 1);
+      setShowUserLine(false);
     }
   };
 
   const prevLine = () => {
-    if (currentIndex > 0) {
-      window.speechSynthesis.cancel();
+    window.speechSynthesis.cancel();
+    // Find the previous user line (before the current index)
+    let prevUserIndex = -1;
+    for (let i = currentIndex - 1; i >= 0; i--) {
+      if (userCharacters.includes(script[i].character) && !script[i].isStageDirection) {
+        prevUserIndex = i;
+        break;
+      }
+    }
+
+    if (prevUserIndex !== -1) {
+      // Go to the line BEFORE the previous user line for context (attack)
+      const targetIndex = Math.max(0, prevUserIndex - 1);
+      setCurrentIndex(targetIndex);
+      setIsPaused(false);
+      setShowUserLine(false);
+    } else if (currentIndex > 0) {
+      // If no previous user line, just go back one line
       setCurrentIndex(prev => prev - 1);
       setIsPaused(false);
+      setShowUserLine(false);
     }
   };
 
@@ -255,7 +370,11 @@ export default function App() {
       idx > currentIndex && userCharacters.includes(line.character) && !line.isStageDirection
     );
     if (nextUserIndex !== -1) {
-      setCurrentIndex(nextUserIndex);
+      // Go to the line BEFORE the next user line for context (attack)
+      const targetIndex = Math.max(0, nextUserIndex - 1);
+      setCurrentIndex(targetIndex);
+      setIsPaused(false);
+      setShowUserLine(false);
     }
   };
 
@@ -287,24 +406,75 @@ export default function App() {
     if (!userCharacters.includes(currentLine.character)) {
       setIsReading(true);
       
-      const cleanText = currentLine.text.replace(/\([^)]*\)|\[[^\]]*\]/g, '').trim();
+      // Clean text for TTS (remove parenthetical stage directions)
+      let cleanText = currentLine.text.replace(/\([^)]*\)|\[[^\]]*\]/g, '').trim();
       
+      // If cleanText is empty (e.g. the line was just a parenthetical), use the original text
+      if (!cleanText) {
+        cleanText = currentLine.text.trim();
+      }
+
+      // If it's still empty, skip to next line
       if (!cleanText) {
         nextLine();
         return;
       }
 
       const utterance = new SpeechSynthesisUtterance(cleanText);
+      utteranceRef.current = utterance;
       utterance.rate = playbackRate;
       const voice = availableVoices.find(v => v.voiceURI === selectedVoiceURI);
       if (voice) utterance.voice = voice;
+      
+      utterance.onstart = () => {
+        if (isMounted) setIsReading(true);
+      };
+
       utterance.onend = () => {
         if (isMounted) {
           setIsReading(false);
           nextLine();
         }
       };
-      window.speechSynthesis.speak(utterance);
+
+      utterance.onerror = (e: any) => {
+        // If the error is 'interrupted' or 'canceled', it's likely due to manual navigation
+        // We shouldn't advance in these cases to avoid double-skipping
+        if (e.error === 'interrupted' || e.error === 'canceled') {
+          console.log("TTS Interrupted/Canceled (expected during navigation)");
+          return;
+        }
+
+        console.error("TTS Error Detail:", e.error, e);
+        if (isMounted) {
+          setIsReading(false);
+          // For other errors (like 'network' or 'voice-unavailable'), try to skip after a delay
+          setTimeout(() => {
+            if (isMounted && !isPaused && stateRef.current === 'rehearsal') {
+              console.log("Attempting to recover from TTS error by skipping line...");
+              nextLine();
+            }
+          }, 1000);
+        }
+      };
+
+      // Ensure we cancel any previous speech before starting new one
+      // window.speechSynthesis.cancel(); // Removed to prevent potential race conditions on some browsers
+      
+      // Small delay after cancel to let the browser's speech engine reset
+      const speakTimer = setTimeout(() => {
+        if (isMounted && !isPaused) {
+          // On some mobile browsers, calling resume() helps unlock a stuck engine
+          window.speechSynthesis.resume();
+          window.speechSynthesis.speak(utterance);
+        }
+      }, 100);
+
+      return () => {
+        isMounted = false;
+        clearTimeout(speakTimer);
+        window.speechSynthesis.cancel();
+      };
     } else {
       setIsReading(false);
     }
@@ -338,7 +508,7 @@ export default function App() {
     }
   }, [currentIndex]);
 
-  const APP_VERSION = "1.6.6";
+  const APP_VERSION = "1.7.8";
   const isUserTurn = state === 'rehearsal' && userCharacters.includes(script[currentIndex]?.character) && !script[currentIndex]?.isStageDirection;
 
   return (
@@ -680,8 +850,15 @@ export default function App() {
                     <Play fill="currentColor" size={18} className="md:w-5 md:h-5" /> <span className="text-sm md:text-base">TOCCA QUANDO HAI FINITO</span>
                   </motion.button>
                   {isVoiceMode && !isPaused && (
-                    <div className="flex items-center gap-2 text-brand-pink text-[10px] font-bold animate-pulse">
-                      <Mic size={12} /> STO ASCOLTANDO LA TUA BATTUTA...
+                    <div className="flex flex-col items-center gap-2 w-full">
+                      <div className="flex items-center gap-2 text-brand-pink text-[10px] font-bold animate-pulse">
+                        <Mic size={12} /> STO ASCOLTANDO LA TUA BATTUTA...
+                      </div>
+                      {lastTranscript && (
+                        <div className="text-[10px] text-slate-400 bg-white/50 px-3 py-1 rounded-full max-w-full truncate italic">
+                          "{lastTranscript}..."
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>

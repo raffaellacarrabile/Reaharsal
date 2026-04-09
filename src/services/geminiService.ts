@@ -12,14 +12,15 @@ export async function parseScript(text: string): Promise<ScriptLine[]> {
     Analyze the following theater script text and convert it into a structured JSON array.
     Identify characters, their lines, and stage directions.
     
-    Rules:
-    1. Return an array of objects with keys: "character", "text", "isStageDirection".
-    2. "character" should be the name of the character speaking, or "STAGE" for stage directions.
-    3. "text" is the actual line or description.
-    4. "isStageDirection" is true if it's a stage direction, false if it's a dialogue.
-    
-    Script text (truncated if necessary):
-    ${text.slice(0, 120000)}
+    CRITICAL RULES:
+    1. DO NOT OMIT ANY TEXT. Every single word of the script must be present in the output.
+    2. Return an array of objects with keys: "character", "text", "isStageDirection".
+    3. "character" should be the name of the character speaking, or "STAGE" for stage directions.
+    4. "text" is the actual line or description.
+    5. "isStageDirection" is true if it's a stage direction (even if it's in the middle of a scene), false if it's a dialogue.
+    6. Preserve the exact order of the script.
+    7. If a line has a character name followed by text, separate them correctly.
+    ${text.slice(0, 200000)}
   `;
 
   try {
