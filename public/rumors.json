@@ -1,422 +1,2077 @@
 [
-  {"character": "SCENA", "text": "Rumors. Serata. Casa elegante. Chris è nervosissima, Kim scende di corsa dalle scale.", "isStageDirection": true},
-  {"character": "KIM", "text": "Hai chiamato il dottore?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "No, Kim, sto aspettando che squilli da solo!", "isStageDirection": false},
-  {"character": "KIM", "text": "Bene, bene. Charley sanguina come un fontanone. La stanza è piena di sangue, sembra una galleria d'arte moderna.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Dobbiamo chiamare qualcuno.", "isStageDirection": false},
-  {"character": "KIM", "text": "No. È vicesindaco. Un suicidio sarebbe uno scandalo.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "E se muore?", "isStageDirection": false},
-  {"character": "KIM", "text": "Allora sarà un omicidio. Meglio, no?", "isStageDirection": false},
-  {"character": "SCENA", "text": "Squilla il telefono.", "isStageDirection": true},
-  {"character": "CHRIS", "text": "Pronto? Sì, dottor Marks! Grazie a Dio… Sì, Charley è caduto dalle scale… No, niente di rotto… Solo un bernoccolo… Sì, si muove tutto… No, nessun ronzio… Grazie, arrivederci.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Riaggancia, furiosa.", "isStageDirection": true},
-  {"character": "CHRIS", "text": "Perché mi hai fatto mentire? E perché dovevo dire che non aveva il ronzio?", "isStageDirection": false},
-  {"character": "KIM", "text": "Perché “sparato all’orecchio” non suona bene nel giornale di domani. E il ronzio lo rende più tragico.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Ma è vero! Ha il ronzio!", "isStageDirection": false},
-  {"character": "KIM", "text": "Allora diglielo la prossima volta! Ora calmati.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Ho bisogno di una sigaretta.", "isStageDirection": false},
-  {"character": "KIM", "text": "Dopo diciotto mesi? Sei matta. Cerca di controllarti.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Suonano alla porta.", "isStageDirection": true},
-  {"character": "CHRIS", "text": "Oh, no. Sono gli altri.", "isStageDirection": false},
-  {"character": "KIM", "text": "Tu intrattienili. Io torno da Charley.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Cosa gli dico? Che stiamo giocando a mosca cieca?", "isStageDirection": false},
-  {"character": "KIM", "text": "Qualcosa del genere. Sei avvocato, inventati una clausola.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Io faccio contratti editoriali! Se uno arriva e vuole un contratto, quello lo so fare!", "isStageDirection": false},
-  {"character": "KIM", "text": "Allora fallo. Ma senza sigarette.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Kim corre su. Chris apre. Entrano Claire e Lenny, lei con un labbro gonfio, lui rigido.", "isStageDirection": true},
-  {"character": "CLAIRE", "text": "Incidente! La BMW è nuova, due giorni, e ora sembra un accordion!", "isStageDirection": false},
-  {"character": "LENNY", "text": "Un pazzo è uscito dal garage come un razzo. Ho il collo di pietra. Non riesco a guardare in basso.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Venite, vi do qualcosa.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Prima chiamo il mio dottore. Questa è un’emergenza.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Mentre Lenny telefona, Claire si avvicina a Chris.", "isStageDirection": true},
-  {"character": "CLAIRE", "text": "C’è qualcosa che non va. Hai le mani di ghiaccio.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Charley si è sparato.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Cosa?!", "isStageDirection": false},
-  {"character": "CHRIS", "text": "All’orecchio. Myra è sparita. La servitù pure.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Mio Dio. E adesso?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Facciamo finta di niente. Per ora.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "E Kim?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "È di sopra a medicarlo. Con un asciugamano e tante bestemmie.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Sì, è urgente. Ho un colpo di frusta… Capisco, sa… in quale teatro?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Oh, Dio, ho proprio bisogno di una sigaretta.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Proprio non può? E’ importante… Grazie infinite. Niente. Il dottore è a teatro.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Tipico. I medici sempre in vacanza. Charly si è sparato.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Cosa?!", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "All’orecchio. Myra è sparita. La servitù pure.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Mio Dio. E adesso?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Facciamo finta di niente. Per ora.", "isStageDirection": false},
-  {"character": "LENNY", "text": "E Kim?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "È di sopra a medicarlo. Con un asciugamano e tante bestemmie.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entrano Ernie e Cocca. Cocca ha un cuscino a salsiccia.", "isStageDirection": true},
-  {"character": "ERNIE", "text": "Scusate il ritardo. Abbiamo fatto un giro panoramico.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Che casa meravigliosa! Dov’è Myra?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "È uscita… suo padre si è rotto un femore, in California.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "In California?", "isStageDirection": false},
-  {"character": "KIM", "text": "Sì, ma è una storia lunga e noiosa. Molto tecnica.", "isStageDirection": false},
-  {"character": "COCCA", "text": "E Charley?", "isStageDirection": false},
-  {"character": "KIM", "text": "Dorme. Ha… una verruca all’orecchio. Molto fastidiosa.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Una verruca? Strano, da fuori qualche minuto fa ho sentito uno sparo.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Silenzio di ghiaccio.", "isStageDirection": true},
-  {"character": "LENNY", "text": "Chi vuole un drink? Io ne ho bisogno.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Io devo sedermi. La schiena… ah!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si siede con un gemito.", "isStageDirection": true},
-  {"character": "ERNIE", "text": "Stai bene, tesoro?", "isStageDirection": false},
-  {"character": "COCCA", "text": "Sto benissimo, amore. È solo che non riesco a muovermi.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Perfetto. Siamo in cinque e mezzo.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Dov’è Kim?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "È in bagno.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Non c’è un bagno qui sotto?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Sì, ma… le è scappata di corsa. Sai com’è.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Qui la corsa è più breve.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Cocca, non siamo mica alle Olimpiadi, non è necessario arrivare primi.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Ma prima che esca si!", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Perché intanto non mangiamo qualcosa, così giusto per fermare lo stomaco.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Veramente non vedo niente.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Non c’è niente da mangiare? Un tramezzino?", "isStageDirection": false},
-  {"character": "COCCA", "text": "E la cuoca, Mai Li? Fa dei tramezzini favolosi.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Mai Li? Credo sia dovuta tornare in Giappone. Sua madre stava male.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Mai Li è cinese.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Ah. Beh, in ogni caso non c’è.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Spero che a questa festa vengano solo persone alte. Io posso guardare solo in su.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Io ho una gastrite. Non posso mangiare dopo le dieci.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Kim lancia un'occhiata a Chris.", "isStageDirection": true},
-  {"character": "KIM", "text": "Chris, puoi venire su un attimo? Charley ti cerca.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Me? Perché?", "isStageDirection": false},
-  {"character": "KIM", "text": "Vuole te. Per piangere. Io non so confortarlo.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Sanguina ancora? Questo vestito mi costa 1200 dollari.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Chris sale. Kim sorride forzatamente agli altri.", "isStageDirection": true},
-  {"character": "KIM", "text": "Allora, com’è andata con la macchina?", "isStageDirection": false},
-  {"character": "LENNY", "text": "La BMW? Un disastro. E tu, com’è andata col bagno?", "isStageDirection": false},
-  {"character": "KIM", "text": "Oh, bene, bene. Molto… liberatorio.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Mi sa che devo andare anch’io. Dov’è il bagno?", "isStageDirection": false},
-  {"character": "KIM", "text": "Credo che sia occupato.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Non ce n’è uno nella camera di servizio?", "isStageDirection": false},
-  {"character": "COCCA", "text": "Detesto usare i bagni della servitù. Sono gli unici che non puliscono.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Tesoro, forse è meglio se aspetti.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si sente un tonfo da sopra. Tutti trasaliscono.", "isStageDirection": true},
-  {"character": "COCCA", "text": "Cos’è stato ora?", "isStageDirection": false},
-  {"character": "KIM", "text": "Niente! Probabilmente Charley è caduto dal letto.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Ma non doveva stare seduto?", "isStageDirection": false},
-  {"character": "KIM", "text": "Sì, ma… si sarà stancato.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Qui c’è sotto qualcosa di grosso.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Lo so. Ma finiamola di fare domande, non mi sembra opportuno.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Io intanto cerco qualcosa da mangiare.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si alza con fatica e si dirige verso la cucina.", "isStageDirection": true},
-  {"character": "ERNIE", "text": "Ti aiuto, amore.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Dobbiamo parlare. La storia della verruca non regge. So tutto!", "isStageDirection": false},
-  {"character": "KIM", "text": "Ecco, sapevo che Chris non poteva starsene zitta. Hai idee migliori?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Sì. Diciamo che Charley è sordo perché ha fatto esplodere un tombino.", "isStageDirection": false},
-  {"character": "KIM", "text": "Geniale. E Myra?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Myra è in Giappone a visitare la madre di Mai Li.", "isStageDirection": false},
-  {"character": "KIM", "text": "Mai Li è cinese.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Appunto. Nessuno controllerà.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Arrivano Glenn e Cassie, tesi. La tensione tra loro è palpabile.", "isStageDirection": true},
-  {"character": "GLENN", "text": "Salve a tutti.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Perché mi guardi così?", "isStageDirection": false},
-  {"character": "GLENN", "text": "Non ti guardo.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "È sempre così. Non mi sostieni mai.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Qualcuno vuole un drink? Offro io.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Allora, come va?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Bene, Claire. E Charley dov’è, ancora non l’ho visto?", "isStageDirection": false},
-  {"character": "COCCA", "text": "Si, vero.. come mai il padrone di casa non si è fatto ancora vedere?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Charley? Sta… seduto sul letto. A guardare la tv.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "ehmm, sta guardando un programma nel quale è stato ospite… sapete è molto importante per lui… tra poco si unirà a noi!", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Esatto.", "isStageDirection": false},
-  {"character": "COCCA", "text": "E Myra?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Myra è con lui?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "E’ uscita poco fa a comprare lo yogurt.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Ma perché? Vuole farci mangiare lo yogurt a cena?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Ma no, è per il dolce…", "isStageDirection": false},
-  {"character": "COCCA", "text": "Tornerà presto, si?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Oh, sì… tornerà… a momenti.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Siete tutti molto strani stasera.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Noi? Strani? Mai stato più normale.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Allora nel frattempo cucino io. In cucina c’è di tutto, ma non c’è nulla di pronto. È tutto a scongelarsi sul tavolo.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Possiamo aiutarci tutti. Come ai vecchi tempi.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Già, prima che diventassimo ricchi e incapaci di cucinare un uovo.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Come mai vuoi aiutare tutti ma quando siamo a casa devo fare tutto da sola?", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, per favore, non ricominciamo. Siamo già in ritardo di quarantacinque minuti.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Siamo in ritardo perché ho dovuto provare dieci vestiti prima che la tua testa si muovesse dall’alto in basso invece che da destra a sinistra.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Non ho fiatato su nessuno dei vestiti!", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Appunto. Il silenzio è più offensivo di qualsiasi critica.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Tranquilli, sono un analista. So gestire le crisi.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Questa non è una crisi, è un disastro.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si sente uno sparo da sopra. Kim e Chris tornano.", "isStageDirection": true},
-  {"character": "TUTTI", "text": "Cos’è stato?!", "isStageDirection": false},
-  {"character": "KIM", "text": "Niente, niente! Charley ha fatto esplodere un tombino.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Esplodere un tombino?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Esatto.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Incredibile.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Ma cosa ci fa un tombino di sopra?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Ci si controllano le fognature no?", "isStageDirection": false},
-  {"character": "COCCA", "text": "Ah giusto.", "isStageDirection": false},
-  {"character": "GLENN", "text": "E Charley sta bene?", "isStageDirection": false},
-  {"character": "KIM", "text": "Sì, sì. È solo un po’… sordo.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Sordo?", "isStageDirection": false},
-  {"character": "KIM", "text": "Sì, il tombino è esploso vicino a noi.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Ma che tombino? E’ impossibile che ci sia un tombino di sopra.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Appunto. È stato uno shock. Comunque… Io non mi preoccuperei… Allora, per la cena… cosa facciamo?", "isStageDirection": false},
-  {"character": "COCCA", "text": "L’oca è congelata, il maiale è crudo, la pasta è nell’acqua senza sale.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Perfetto. Sembra la mia vita matrimoniale.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Almeno tu hai un matrimonio.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, ti prego.", "isStageDirection": false},
-  {"character": "KIM", "text": "Sentite un ronzio?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "No, Kim.", "isStageDirection": false},
-  {"character": "KIM", "text": "A me sembra di avere un ronzio.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Forse è lo shock.", "isStageDirection": false},
-  {"character": "KIM", "text": "Cosa? Non sento bene.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Forse dovremmo farla sedere.", "isStageDirection": false},
-  {"character": "KIM", "text": "Sedere? Sì, mi siedo.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Kim si siede, disorientata.", "isStageDirection": true},
-  {"character": "COCCA", "text": "Allora, io comincio a cucinare. Qualcuno mi aiuta?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Ci penso io, tesoro.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Io taglio qualcosa. Dove sono i coltelli?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Non ci sono coltelli.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Allora uso la carta di credito.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Sei un genio, Lenny.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Dov’è Mai Li? Di solito è qui a preparare tutto.", "isStageDirection": false},
-  {"character": "LENNY", "text": "È dovuta tornare in Giappone. Sua madre stava male.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Mai Li è cinese.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Ah, ecco. Quindi niente cena cinese.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Niente cena di nessun tipo, se non ci diamo da fare.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Che serata romantica. Marito che non mi guarda, amici che nascondono spari, e niente da mangiare.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, non esagerare.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Esagerare? Tu parli con me solo quando ci sono testimoni.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Ma cos’era lo sparo di prima?", "isStageDirection": false},
-  {"character": "KIM", "text": "Come?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Lo sparo di prima!!", "isStageDirection": false},
-  {"character": "KIM", "text": "Charley ha ripreso la pistola e ha sparato di nuovo. Sento delle voci… da sopra.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Sarà Charley che parla da solo.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "O forse sta chiamando Myra.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Myra non c’è, Ernie. L’abbiamo già stabilito.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Ah, già. Dimentico sempre i dettagli.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Kim, perché non vai a controllare Charley?", "isStageDirection": false},
-  {"character": "KIM", "text": "Cosa? “Controllare il bar?” Non c’è più niente da bere?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Non il bar, Kim! Charley!", "isStageDirection": false},
-  {"character": "KIM", "text": "Ah, Charley! Sì, vado.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Kim si avvia barcollando verso le scale.", "isStageDirection": true},
-  {"character": "CLAIRE", "text": "Sta peggiorando.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Lo so. E il dottore non risponde.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Forse è ancora a teatro.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Che spettacolo sarà mai così importante?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Il Fantasma dell’Opera. Ci sono andato la settimana scorsa.", "isStageDirection": false},
-  {"character": "GLENN", "text": "E com’era?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Buio. E c’era un fantasma.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Io mi tengo occupata con questo.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, non iniziare con i cristalli.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Perché? Funzionano meglio di te.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "I cristalli possono avere un effetto placebo molto potente.", "isStageDirection": false},
-  {"character": "COCCA", "text": "A me fanno solo venire il mal di testa.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si sente un tonfo da sopra, seguito da un “Oh, merda!” di Kim.", "isStageDirection": true},
-  {"character": "TUTTI", "text": "Kim!", "isStageDirection": false},
-  {"character": "KIM", "text": "Tutto bene! Sono solo inciampata nelle pantofole di Charley!", "isStageDirection": false},
-  {"character": "LENNY", "text": "Pantofole assassine.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Dovremmo mettere tutto in sicurezza.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Allora, ricapitoliamo: Charley è ferito, Kim non sente, noi mentiamo a tutti, e non c’è cena.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Io sto aiutando per la cena, ma ci vorrà un po’.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Possiamo aspettare. Tanto nessuno se ne va.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Purtroppo.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Sentite, io ho un’idea. Perché non chiamiamo un ristorante e facciamo portare qualcosa?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "A quest’ora? Siamo nel nulla.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "E poi come lo spiegheremmo a Charley e Myra?", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Potremmo dire che è parte della sorpresa.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Finalmente un’idea utile.", "isStageDirection": false},
-  {"character": "KIM", "text": "Charley… dorme. Succhia il pollice.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Improvvisamente, un altro sparo più forte.", "isStageDirection": true},
-  {"character": "COCCA", "text": "Oh, mio Dio, un altro!", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Questo non era un tombino!", "isStageDirection": false},
-  {"character": "LENNY", "text": "Forse è la televisione.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Sembrava reale.", "isStageDirection": false},
-  {"character": "KIM", "text": "Adesso sì che non sento proprio niente!", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Kim, stai bene?", "isStageDirection": false},
-  {"character": "KIM", "text": "COSA?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Sta diventando sorda sul serio.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Forse è meglio così.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Momento di pausa, Cassie torna e Chris dice la verità.", "isStageDirection": true},
-  {"character": "CHRIS", "text": "Allora, la verità: Charley si è sparato, Myra è sparita, la servitù pure.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Lo sapevo. Gli asciugamani erano in disordine.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Dobbiamo decidere cosa fare. La polizia?", "isStageDirection": false},
-  {"character": "LENNY", "text": "No, sarebbe la fine per Charley.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "E per noi.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Ma non possiamo tenere nascosta una cosa del genere.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Se teniamo nascosta la cosa, siamo complici.", "isStageDirection": false},
-  {"character": "COCCA", "text": "E se la raccontiamo, roviniamo la carriera di Charley.", "isStageDirection": false},
-  {"character": "GLENN", "text": "E la mia, visto che sono candidato.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Ah, finalmente pensi alla tua carriera.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, non è il momento.", "isStageDirection": false},
-  {"character": "KIM", "text": "Sentite? Un gatto.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Non c’è un gatto, Kim.", "isStageDirection": false},
-  {"character": "KIM", "text": "Un ratto? Dove?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Nella tua testa, Kim.", "isStageDirection": false},
-  {"character": "KIM", "text": "Ah. Nella testa. Sì, infatti mi fa male.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Dobbiamo fare qualcosa. Charley è di sopra, solo e ferito.", "isStageDirection": false},
-  {"character": "COCCA", "text": "E Myra? Dov’è finita?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Forse è scappata.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "O forse è stata lei a sparare.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Ma no, Charley si è sparato. Kim è entrato per primo in casa, forse l’ha visto.", "isStageDirection": false},
-  {"character": "KIM", "text": "Cosa? Chi ha visto?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Tu, Kim. Hai visto Charley.", "isStageDirection": false},
-  {"character": "KIM", "text": "Ah, sì. C’era sangue.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Io intanto cerco il mio cristallo. L’ho perso in bagno.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, lascia perdere il cristallo.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Non puoi capire. Ha due milioni di anni.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Potremmo far venire un idraulico. Loro recuperano tutto.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Tesoro, non è il momento per gli idraulici.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Meglio di no. L’ultima volta mi hanno chiesto se volevo anche una doccia nuova.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Allora, riassumiamo: Charley ferito, Myra sparita, servitù assente.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "E Kim che non sente.", "isStageDirection": false},
-  {"character": "KIM", "text": "Cosa? “Non sente”? Chi?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Tu, Kim!", "isStageDirection": false},
-  {"character": "KIM", "text": "Ah. Sì, è vero.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Kim l’ha visto. Com’era, Kim?", "isStageDirection": false},
-  {"character": "KIM", "text": "Chi? Charley? Sì, sanguinava… ma sorrideva.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Sanguinava e sorrideva? È un miracolo.", "isStageDirection": false},
-  {"character": "KIM", "text": "No. Stava a letto, seduto. La televisione era accesa. Sul comodino c’era un flacone di Valium. Lui era semi-intontito. Deve aver preso un paio di pillole per addormentarsi, ha puntato la pistola contro la testa e, mentre si stava addormentando, si è sparato all’orecchio.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Quindi era sotto effetto del Valium.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Ne ha preso tanto?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Non importa. Il punto è: possiamo fidarci di quello che Charley dirà quando si sveglierà?", "isStageDirection": false},
-  {"character": "GLENN", "text": "E se non si sveglia?", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Allora saremo in otto a dover spiegare un cadavere.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie!", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Sto solo dicendo la verità. A differenza di tutti voi.", "isStageDirection": false},
-  {"character": "KIM", "text": "Sento delle voci… da fuori.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Fuori?", "isStageDirection": false},
-  {"character": "KIM", "text": "Sì… come un motore.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Sarà un’altra macchina che arriva.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Chi altro potrebbe venire? Abbiamo detto che la festa è annullata?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Nessuno ha detto niente a nessuno.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Perfetto. Quindi potremmo avere altri ospiti da intrattenere con la nostra bugia collettiva.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Io intanto vado in bagno a cercare il cristallo.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, ti prego, rimani qui.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Perché? Così puoi parlare di me con gli altri?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Forse è meglio che resti. Non vorrei che cadessi anche tu in cantina.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "In cantina? C’è qualcuno in cantina?", "isStageDirection": false},
-  {"character": "GLENN", "text": "No, tesoro, era una metafora.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Ah. Io odio le metafore. Preferisco i fatti.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "I fatti sono: Charley ha un buco nell’orecchio, Myra è sparita, e noi siamo qui a fare finta di niente.", "isStageDirection": false},
-  {"character": "LENNY", "text": "E Kim è sorda.", "isStageDirection": false},
-  {"character": "KIM", "text": "COSA?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Niente, Kim. Riposati.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Sentite, io credo che dovremmo chiamare un avvocato.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Siamo pieni di avvocati qui! Chris, Kim…", "isStageDirection": false},
-  {"character": "KIM", "text": "Cosa? “Avvocati?” Chi ha bisogno di un avvocato?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Tu, Kim, se continuiamo così.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "E poi c’è la questione della pistola. Dov’è la pistola?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Kim l’ha nascosta.", "isStageDirection": false},
-  {"character": "KIM", "text": "Io? Dove?", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Nell’armadio.", "isStageDirection": false},
-  {"character": "KIM", "text": "Ah, sì. L’armadio. Per sicurezza.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Oh, questa schiena… mi sta uccidendo.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Vuoi che ti porti il cuscino, tesoro?", "isStageDirection": false},
-  {"character": "COCCA", "text": "Sì, per favore. Quello a forma di salsiccia.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Che romantico. Un cuscino a salsiccia.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, smettila.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Ecco.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Grazie, amore. Sai, a volte penso che tu sia l’unica cosa che mi tiene insieme.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Oh, Cocca…", "isStageDirection": false},
-  {"character": "CASSIE", "text": "E noi siamo qui a vomitare.", "isStageDirection": false},
-  {"character": "KIM", "text": "Io non ce la faccio più. Le orecchie… il ronzio…", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Forse dovresti sdraiarti.", "isStageDirection": false},
-  {"character": "KIM", "text": "Dove? Qui sul pavimento?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Perché no? Tanto il tappeto è già sporco di… beh, di tutto.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Non dirlo.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Allora, cosa decidiamo? Chiamiamo la polizia o no?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Io voto no.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Anch’io.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Io sì.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Io no.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Io non voto. Sono neutrale.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Due sì, tre no, un’astensione.", "isStageDirection": false},
-  {"character": "KIM", "text": "COSA?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Niente, Kim. Riposa.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Bussano alla porta. Entra l’agente Welch, seguito dal giovane Pudney.", "isStageDirection": true},
-  {"character": "WELCH", "text": "Buonasera. Polizia. Indago su un incidente con una Porsche rubata. Di chi è la BMW fuori?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Mia. Un pazzo me l’ha distrutta.", "isStageDirection": false},
-  {"character": "WELCH", "text": "Mi dispiace. E gli spari qui dentro?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Spari? No, ballavamo. La musica era altissima.", "isStageDirection": false},
-  {"character": "WELCH", "text": "Ballavano tutti? Anche lei?", "isStageDirection": false},
-  {"character": "COCCA", "text": "Quando ballo, non mi fa male la schiena. È miracoloso.", "isStageDirection": false},
-  {"character": "WELCH", "text": "Capisco. E il padrone di casa?", "isStageDirection": false},
-  {"character": "KIM", "text": "Dorme.", "isStageDirection": false},
-  {"character": "WELCH", "text": "Lo voglio vedere.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Kim e Lenny si consultano freneticamente.", "isStageDirection": true},
-  {"character": "LENNY", "text": "È… in una fase delicata. Ha una verruca.", "isStageDirection": false},
-  {"character": "WELCH", "text": "Una verruca che spara? Ho sentito chiaramente dei colpi di pistola!", "isStageDirection": false},
-  {"character": "ERNIE", "text": "In realtà è una storia complessa. Vede, c’è un fattore psicologico…", "isStageDirection": false},
-  {"character": "WELCH", "text": "La psicologa sono io, qui. Fatelo scendere.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Va bene. Charley? Scendi, c’è la polizia!", "isStageDirection": false},
-  {"character": "WELCH", "text": "Non vi muovete.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Lenny corre su e torna travestito da Charley, con una benda vistosa all’orecchio.", "isStageDirection": true},
-  {"character": "LENNY/CHARLEY", "text": "Mi scusi, agente. La verità è che… Ho avuto una discussione con un fornitore, ho preso il Valium per sbaglio, confuso ho preso la pistola, ed è partito un colpo. Mia moglie è scappata in cantina e io ho chiuso la porta della cantina senza saperlo.", "isStageDirection": false},
-  {"character": "WELCH", "text": "Tutto qui?", "isStageDirection": false},
-  {"character": "LENNY/CHARLEY", "text": "Sì.", "isStageDirection": false},
-  {"character": "WELCH", "text": "Beh, è una bella storia. Me la segno. Buonanotte.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Esce con Pudney. Tutti respirano.", "isStageDirection": true},
-  {"character": "GLENN", "text": "Per poco.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Tu eri pallidissimo.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Tu eri verde.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Io ero beige. Mi sta bene.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Per un momento ho pensato che ci portasse via tutti.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Io ero pronta a fingere un altro attacco di schiena.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Lenny, sei stato incredibile. Quella del Valium…", "isStageDirection": false},
-  {"character": "LENNY", "text": "L’ho inventata sul momento.", "isStageDirection": false},
-  {"character": "KIM", "text": "COSA?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Niente, Kim.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Se ne sta andando.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Grazie al cielo.", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Peccato, mi stavo affezionando all’agente. E’ stata molto simpatica.", "isStageDirection": false},
-  {"character": "COCCA", "text": "A me sembrava un po’ stressata.", "isStageDirection": false},
-  {"character": "KIM", "text": "Le orecchie… ancora quel ronzio.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Forse dovresti davvero farti vedere da un dottore.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Il dottore è ancora a teatro, ricordi?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Com’è possibile che uno medico sia così impegnato?", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Forse è lui che ha bisogno di cure.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Allora, cosa facciamo adesso?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Aspettiamo che Myra torni dalla cantina.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Myra è in cantina?", "isStageDirection": false},
-  {"character": "ERNIE", "text": "No, tesoro, era una battuta.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Ah. Io non le capisco mai.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si sente bussare dalla porta della cantina.", "isStageDirection": true},
-  {"character": "TUTTI", "text": "Oh, no…", "isStageDirection": false},
-  {"character": "MYRA", "text": "Aiuto! Sono chiusa qui dentro!", "isStageDirection": false},
-  {"character": "LENNY", "text": "Myra?!", "isStageDirection": false},
-  {"character": "CHRIS", "text": "È viva!", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Allora non era in Giappone.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Nè in California.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Era sotto i nostri piedi.", "isStageDirection": false},
-  {"character": "KIM", "text": "COSA? “SOTTO I NOSTRI PIEDI”?", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Sì, Kim. Sotto i tuoi piedi.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Tutti corrono ad aprire la porta della cantina. Myra esce, spettinata e furiosa.", "isStageDirection": true},
-  {"character": "MYRA", "text": "Finalmente! Sono stata chiusa lì dentro per ore! Chi è stato?", "isStageDirection": false},
-  {"character": "LENNY", "text": "Charley. Ma non l’ha fatto apposta.", "isStageDirection": false},
-  {"character": "MYRA", "text": "Charley? Dov’è?", "isStageDirection": false},
-  {"character": "KIM", "text": "Di sopra. Si è sparato all’orecchio.", "isStageDirection": false},
-  {"character": "MYRA", "text": "Cosa?!", "isStageDirection": false},
-  {"character": "CHRIS", "text": "È vero, Myra. Però sta bene. Solo un po’… sanguinante.", "isStageDirection": false},
-  {"character": "MYRA", "text": "Charley! Charley, amore!", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Che serata romantica.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Sì, se sei una fan dei film dell’orrore.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Allora, adesso che Myra è tornata, possiamo chiarire tutto.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Sì, perché io ho fame.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Myra ridiscende, più calma, con Charley che la segue barcollando, una benda sull’orecchio.", "isStageDirection": true},
-  {"character": "CHARLEY", "text": "Scusate tutti… non so cosa mi sia preso.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Charley, stai bene?", "isStageDirection": false},
-  {"character": "CHARLEY", "text": "Sì, sì. Solo un po’ di ronzio.", "isStageDirection": false},
-  {"character": "MYRA", "text": "Mi ha spiegato tutto. Aveva avuto una discussione con un fornitore, ha preso il Valium e per sbaglio, confuso, ha fatto partire un colpo di pistola.", "isStageDirection": false},
-  {"character": "LENNY", "text": "E tu perché sei finita in cantina?", "isStageDirection": false},
-  {"character": "MYRA", "text": "Sono scappata quando ho sentito lo sparo, sono scivolata e qualcuno ha chiuso la porta. Probabilmente Charley, confuso.", "isStageDirection": false},
-  {"character": "CHARLEY", "text": "Mi dispiace, tesoro.", "isStageDirection": false},
-  {"character": "KIM", "text": "Allora non era un tentativo di…", "isStageDirection": false},
-  {"character": "CHARLEY", "text": "Suicidio? No, no. Solo una stupidata.", "isStageDirection": false},
-  {"character": "ERNIE", "text": "Meno male. Per un momento abbiamo pensato al peggio.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Il mio cristallo l’ho ritrovato. Era nel water.", "isStageDirection": false},
-  {"character": "GLENN", "text": "Cassie, non è il momento.", "isStageDirection": false},
-  {"character": "CASSIE", "text": "Per me sì. Questo cristallo ha visto cose che voi umani…", "isStageDirection": false},
-  {"character": "CLAIRE", "text": "Lascia perdere, Cassie.", "isStageDirection": false},
-  {"character": "COCCA", "text": "Allora, festa finita?", "isStageDirection": false},
-  {"character": "CHARLEY", "text": "Festa finita. Ma grazie per essere venuti. E per… aver cercato di coprirmi.", "isStageDirection": false},
-  {"character": "LENNY", "text": "Beh, non è stato facile.", "isStageDirection": false},
-  {"character": "CHRIS", "text": "Soprattutto con Kim sorda.", "isStageDirection": false},
-  {"character": "KIM", "text": "COSA?", "isStageDirection": false},
-  {"character": "SCENA", "text": "SIPARIO", "isStageDirection": true}
+  {
+    "character": "STAGE",
+    "text": "Rumors",
+    "isStageDirection": true
+  },
+  {
+    "character": "STAGE",
+    "text": "Serata. Casa elegante. Chris è nervosissima, Kim scende di corsa dalle scale.",
+    "isStageDirection": true
+  },
+  {
+    "character": "KIM",
+    "text": "Hai chiamato il dottore?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "No, Kim, sto aspettando che squilli da solo!",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Bene, bene. Charley sanguina come un fontanone. La stanza è piena di sangue, sembra una galleria d'arte moderna.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Dobbiamo chiamare qualcuno.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "No. È vicesindaco. Un suicidio sarebbe uno scandalo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "E se muore?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Allora sarà un omicidio. Meglio, no?",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Squilla il telefono.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "CHRIS",
+    "text": "Pronto? Sì, dottor Marks! Grazie a Dio… Sì, Charley è caduto dalle scale… No, niente di rotto… Solo un bernoccolo… Sì, si muove tutto… No, nessun ronzio… Grazie, arrivederci. (Riaggancia, furiosa.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Perché mi hai fatto mentire? E perché dovevo dire che non aveva il ronzio?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Perché “sparato all’orecchio” non suona bene nel giornale di domani. E il ronzio lo rende più tragico.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Ma è vero! Ha il ronzio!",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Allora diglielo la prossima volta! Ora calmati.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Ho bisogno di una sigaretta.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Dopo diciotto mesi? Sei matta. Cerca di controllarti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Suonano alla porta.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "CHRIS",
+    "text": "Oh, no. Sono gli altri.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Tu intrattienili. Io torno da Charley.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Cosa gli dico? Che stiamo giocando a mosca cieca?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Qualcosa del genere. Sei avvocato, inventati una clausola.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Io faccio contratti editoriali! Se uno arriva e vuole un contratto, quello lo so fare!",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Allora fallo. Ma senza sigarette. (Kim corre su. Chris apre. Entrano Claire e Lenny, lei con un labbro gonfio, lui rigido.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Incidente! La BMW è nuova, due giorni, e ora sembra un accordion!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Un pazzo è uscito dal garage come un razzo. Ho il collo di pietra. Non riesco a guardare in basso.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Venite, vi do qualcosa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Prima chiamo il mio dottore. Questa è un’emergenza. (Mentre Lenny telefona, Claire si avvicina a Chris.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "C’è qualcosa che non va. Hai le mani di ghiaccio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "(sussurra) Charley si è sparato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Cosa?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "All’orecchio. Myra è sparita. La servitù pure.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Mio Dio. E adesso?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Facciamo finta di niente. Per ora.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "E Kim?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "È di sopra a medicarlo. Con un asciugamano e tante bestemmie.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "(al telefono) Sì, è urgente. Ho un colpo di frusta… Capisco, sa… in quale teatro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Oh, Dio, ho proprio bisogno di una sigaretta.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Proprio non può? E’ importante… Grazie infinite. (Riaggancia) Niente. Il dottore è a teatro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Tipico. I medici sempre in vacanza. (a Lenny, sottovoce) Charly si è sparato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Cosa?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "All’orecchio. Myra è sparita. La servitù pure.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Mio Dio. E adesso?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Facciamo finta di niente. Per ora.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "E Kim?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "È di sopra a medicarlo. Con un asciugamano e tante bestemmie.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Entrano Ernie e Cocca. Cocca ha un cuscino a salsiccia.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "ERNIE",
+    "text": "Scusate il ritardo. Abbiamo fatto un giro panoramico.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Che casa meravigliosa! Dov’è Myra?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "È uscita… suo padre si è rotto un femore, in California.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "In California?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "(scende, forzatamente allegra) Sì, ma è una storia lunga e noiosa. Molto tecnica.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "E Charley?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Dorme. Ha… una verruca all’orecchio. Molto fastidiosa. (risale sopra)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Una verruca? Strano, da fuori qualche minuto fa ho sentito uno sparo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Silenzio di ghiaccio.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "LENNY",
+    "text": "Chi vuole un drink? Io ne ho bisogno.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Io devo sedermi. La schiena… ah! (Si siede con un gemito.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Stai bene, tesoro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Sto benissimo, amore. È solo che non riesco a muovermi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Perfetto. Siamo in cinque e mezzo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Dov’è Kim?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "È in bagno.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Non c’è un bagno qui sotto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Sì, ma… le è scappata di corsa. Sai com’è.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Qui la corsa è più breve.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Cocca, non siamo mica alle Olimpiadi, non è necessario arrivare primi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Ma prima che esca si!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Perché intanto non mangiamo qualcosa, così giusto per fermare lo stomaco.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Veramente non vedo niente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "(guardandosi intorno) Non c’è niente da mangiare? Un tramezzino?",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "E la cuoca, Mai Li? Fa dei tramezzini favolosi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Mai Li? Credo sia dovuta tornare in Giappone. Sua madre stava male.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Mai Li è cinese.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Ah. Beh, in ogni caso non c’è.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Spero che a questa festa vengano solo persone alte. Io posso guardare solo in su.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Io ho una gastrite. Non posso mangiare dopo le dieci.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Kim lancia un'occhiata a Chris.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "KIM",
+    "text": "Chris, puoi venire su un attimo? Charley ti cerca.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Me? Perché?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Vuole te. Per piangere. Io non so confortarlo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Sanguina ancora? Questo vestito mi costa 1200 dollari. (Chris sale. Kim sorride forzatamente agli altri.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Allora, com’è andata con la macchina?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "La BMW? Un disastro. E tu, com’è andata col bagno?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Oh, bene, bene. Molto… liberatorio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Mi sa che devo andare anch’io. Dov’è il bagno?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Credo che sia occupato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Non ce n’è uno nella camera di servizio?",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Detesto usare i bagni della servitù. Sono gli unici che non puliscono.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Tesoro, forse è meglio se aspetti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Si sente un tonfo da sopra. Tutti trasaliscono.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "COCCA",
+    "text": "Cos’è stato ora?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Niente! Probabilmente Charley è caduto dal letto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Ma non doveva stare seduto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Sì, ma… si sarà stancato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "(a Lenny, sottovoce) Qui c’è sotto qualcosa di grosso.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Lo so. Ma finiamola di fare domande, non mi sembra opportuno.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Io intanto cerco qualcosa da mangiare. (Si alza con fatica e si dirige verso la cucina.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Ti aiuto, amore.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "(a Kim, quando gli altri sono distratti) Dobbiamo parlare. La storia della verruca non regge. So tutto!",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Ecco, sapevo che Chris non poteva starsene zitta. Hai idee migliori?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Sì. Diciamo che Charley è sordo perché ha fatto esplodere un tombino.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Geniale. E Myra?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Myra è in Giappone a visitare la madre di Mai Li.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Mai Li è cinese.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Appunto. Nessuno controllerà. (Kim torna di sopra)",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Arrivano Glenn e Cassie, tesi. La tensione tra loro è palpabile.",
+    "isStageDirection": true
+  },
+  {
+    "character": "GLENN",
+    "text": "Salve a tutti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "(a Glenn, sottovoce) Perché mi guardi così?",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Non ti guardo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "È sempre così. Non mi sostieni mai.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(saluti generali)",
+    "isStageDirection": true
+  },
+  {
+    "character": "ERNIE",
+    "text": "Qualcuno vuole un drink? Offro io.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Allora, come va?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Bene, Claire. E Charley dov’è, ancora non l’ho visto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Si, vero.. come mai il padrone di casa non si è fatto ancora vedere?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Charley? Sta… seduto sul letto. A guardare la tv.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "(nervosa) ehmm, sta guardando un programma nel quale è stato ospite… sapete è molto importante per lui… tra poco si unirà a noi!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Esatto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "E Myra?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Myra è con lui?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "E’ uscita poco fa a comprare lo yogurt.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Ma perché? Vuole farci mangiare lo yogurt a cena?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Ma no, è per il dolce…",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Tornerà presto, si?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Oh, sì… tornerà… a momenti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "(sospettoso) Siete tutti molto strani stasera.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Noi? Strani? Mai stato più normale.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Allora nel frattempo cucino io. In cucina c’è di tutto, ma non c’è nulla di pronto. È tutto a scongelarsi sul tavolo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Possiamo aiutarci tutti. Come ai vecchi tempi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Già, prima che diventassimo ricchi e incapaci di cucinare un uovo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Come mai vuoi aiutare tutti ma quando siamo a casa devo fare tutto da sola?",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, per favore, non ricominciamo. Siamo già in ritardo di quarantacinque minuti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Siamo in ritardo perché ho dovuto provare dieci vestiti prima che la tua testa si muovesse dall’alto in basso invece che da destra a sinistra.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Non ho fiatato su nessuno dei vestiti!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Appunto. Il silenzio è più offensivo di qualsiasi critica.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Tranquilli, sono un analista. So gestire le crisi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Questa non è una crisi, è un disastro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Si sente uno sparo da sopra.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "TUTTI",
+    "text": "Cos’è stato?! (Kim e Chris tornano)",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Niente, niente! Charley ha fatto esplodere un tombino.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Esplodere un tombino?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Esatto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Incredibile.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "(preoccupata) Ma cosa ci fa un tombino di sopra?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Ci si controllano le fognature no?",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Ah giusto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "E Charley sta bene?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Sì, sì. È solo un po’… sordo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Sordo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Sì, il tombino è esploso vicino a noi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Ma che tombino? E’ impossibile che ci sia un tombino di sopra.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Appunto. È stato uno shock. Comunque… Io non mi preoccuperei… Allora, per la cena… cosa facciamo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "L’oca è congelata, il maiale è crudo, la pasta è nell’acqua senza sale.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Perfetto. Sembra la mia vita matrimoniale.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Almeno tu hai un matrimonio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, ti prego.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Sentite un ronzio?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "No, Kim.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "A me sembra di avere un ronzio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Forse è lo shock.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Cosa? Non sento bene.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Forse dovremmo farla sedere.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Sedere? Sì, mi siedo. (Kim si siede, disorientata.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Allora, io comincio a cucinare. Qualcuno mi aiuta?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Ci penso io, tesoro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Io taglio qualcosa. Dove sono i coltelli?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Non ci sono coltelli.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Allora uso la carta di credito.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Sei un genio, Lenny.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "(guardandosi intorno) Dov’è Mai Li? Di solito è qui a preparare tutto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "È dovuta tornare in Giappone. Sua madre stava male.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Mai Li è cinese.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Ah, ecco. Quindi niente cena cinese.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Niente cena di nessun tipo, se non ci diamo da fare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "(sarcastica) Che serata romantica. Marito che non mi guarda, amici che nascondono spari, e niente da mangiare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, non esagerare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Esagerare? Tu parli con me solo quando ci sono testimoni.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "(a parte con Kim) Ma cos’era lo sparo di prima?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Come?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Lo sparo di prima!!",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Charley ha ripreso la pistola e ha sparato di nuovo (si alza di nuovo) Sento delle voci… da sopra.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Sarà Charley che parla da solo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "O forse sta chiamando Myra.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Myra non c’è, Ernie. L’abbiamo già stabilito.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Ah, già. Dimentico sempre i dettagli.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "(a Kim) Kim, perché non vai a controllare Charley?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Cosa? “Controllare il bar?” Non c’è più niente da bere?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Non il bar, Kim! Charley!",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Ah, Charley! Sì, vado. (Kim si avvia barcollando verso le scale.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "(a Chris, sottovoce) Sta peggiorando.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Lo so. E il dottore non risponde.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Forse è ancora a teatro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Che spettacolo sarà mai così importante?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Il Fantasma dell’Opera . Ci sono andato la settimana scorsa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "E com’era?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Buio. E c’era un fantasma.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "(estrae un cristallo dalla borsetta) Io mi tengo occupata con questo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, non iniziare con i cristalli.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Perché? Funzionano meglio di te.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "(da analista) I cristalli possono avere un effetto placebo molto potente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "A me fanno solo venire il mal di testa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Si sente un tonfo da sopra, seguito da un “Oh, merda!” di Kim.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "TUTTI",
+    "text": "Kim!",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "(grida da sopra) Tutto bene! Sono solo inciampata nelle pantofole di Charley!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Pantofole assassine.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Dovremmo mettere tutto in sicurezza.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Allora, ricapitoliamo: Charley è ferito, Kim non sente, noi mentiamo a tutti, e non c’è cena.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Io sto aiutando per la cena, ma ci vorrà un po’.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Possiamo aspettare. Tanto nessuno se ne va.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Purtroppo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Sentite, io ho un’idea. Perché non chiamiamo un ristorante e facciamo portare qualcosa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "A quest’ora? Siamo nel nulla.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "E poi come lo spiegheremmo a Charley e Myra?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Potremmo dire che è parte della sorpresa. (va in bagno)",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Finalmente un’idea utile.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "(ridiscende, ancora più confusa) Charley… dorme. Succhia il pollice.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Improvvisamente, un altro sparo più forte.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "COCCA",
+    "text": "Oh, mio Dio, un altro!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Questo non era un tombino!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Forse è la televisione.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Sembrava reale.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "(si porta le mani alle orecchie) Adesso sì che non sento proprio niente!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Kim, stai bene?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "COSA?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Sta diventando sorda sul serio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Forse è meglio così.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(momento di pausa, Cassie torna e Chris dice la verità)",
+    "isStageDirection": true
+  },
+  {
+    "character": "CHRIS",
+    "text": "Allora, la verità: Charley si è sparato, Myra è sparita, la servitù pure.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Lo sapevo. Gli asciugamani erano in disordine.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Dobbiamo decidere cosa fare. La polizia?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "No, sarebbe la fine per Charley.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "E per noi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Ma non possiamo tenere nascosta una cosa del genere.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Se teniamo nascosta la cosa, siamo complici.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "E se la raccontiamo, roviniamo la carriera di Charley.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "E la mia, visto che sono candidato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Ah, finalmente pensi alla tua carriera.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, non è il momento.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Sentite? Un gatto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Non c’è un gatto, Kim.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Un ratto? Dove?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Nella tua testa, Kim.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Ah. Nella testa. Sì, infatti mi fa male.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Dobbiamo fare qualcosa. Charley è di sopra, solo e ferito.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "E Myra? Dov’è finita?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Forse è scappata.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "O forse è stata lei a sparare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Ma no, Charley si è sparato. Kim è entrato per primo in casa, forse l’ha visto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Cosa? Chi ha visto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Tu, Kim. Hai visto Charley.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Ah, sì. C’era sangue.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Io intanto cerco il mio cristallo. L’ho perso in bagno.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, lascia perdere il cristallo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Non puoi capire. Ha due milioni di anni.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Potremmo far venire un idraulico. Loro recuperano tutto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Tesoro, non è il momento per gli idraulici.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Meglio di no. L’ultima volta mi hanno chiesto se volevo anche una doccia nuova.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Allora, riassumiamo: Charley ferito, Myra sparita, servitù assente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "E Kim che non sente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Cosa? “Non sente”? Chi?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Tu, Kim!",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Ah. Sì, è vero.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Kim l’ha visto. Com’era, Kim?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Chi? Charley? Sì, sanguinava… ma sorrideva.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Sanguinava e sorrideva? È un miracolo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "No. Stava a letto, seduto. La televisione era accesa. Sul comodino c’era un flacone di Valium. Lui era semi-intontito. Deve aver preso un paio di pillole per addormentarsi, ha puntato la pistola contro la testa e, mentre si stava addormentando, si è sparato all’orecchio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Quindi era sotto effetto del Valium.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Ne ha preso tanto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Non importa. Il punto è: possiamo fidarci di quello che Charley dirà quando si sveglierà?",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "E se non si sveglia?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Allora saremo in otto a dover spiegare un cadavere.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Sto solo dicendo la verità. A differenza di tutti voi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "(si alza) Sento delle voci… da fuori. (si può fare impro di ripetizione)",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Fuori?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Sì… come un motore.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Sarà un’altra macchina che arriva.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Chi altro potrebbe venire? Abbiamo detto che la festa è annullata?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Nessuno ha detto niente a nessuno.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Perfetto. Quindi potremmo avere altri ospiti da intrattenere con la nostra bugia collettiva.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Io intanto vado in bagno a cercare il cristallo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, ti prego, rimani qui.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Perché? Così puoi parlare male di me con gli altri!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Forse è meglio che resti. Non vorrei che cadessi anche tu in cantina.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "In cantina? C’è qualcuno in cantina?",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "No, tesoro, era una metafora.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Ah. Io odio le metafore. Preferisco i fatti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "I fatti sono: Charley ha un buco nell’orecchio, Myra è sparita, e noi siamo qui a fare finta di niente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "E Kim è sorda.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "COSA?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Niente, Kim. Riposati.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Sentite, io credo che dovremmo chiamare un avvocato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Siamo pieni di avvocati qui! Chris, Kim…",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Cosa? “Avvocati”? Chi ha bisogno di un avvocato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Tu, Kim, se continuiamo così.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "E poi c’è la questione della pistola. Dov’è la pistola?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Kim l’ha nascosta.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Io? Dove?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Nell’armadio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Ah, sì. L’armadio. Per sicurezza.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "(si massaggia la schiena) Oh, questa schiena… mi sta uccidendo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Vuoi che ti porti il cuscino, tesoro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Sì, per favore. Quello a forma di salsiccia.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "(sarcastica) Che romantico. Un cuscino a salsiccia.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, smettila.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "(tornando con il cuscino) Ecco.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Grazie, amore. Sai, a volte penso che tu sia l’unica cosa che mi tiene insieme.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "(commosso) Oh, Cocca…",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "E noi siamo qui a vomitare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "(si siede di nuovo, esausta) Io non ce la faccio più. Le orecchie… il ronzio…",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Forse dovresti sdraiarti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Dove? Qui sul pavimento?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Perché no? Tanto il tappeto è già sporco di….",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Non dirlo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "beh, di tutto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "(dopo un silenzio) Allora, cosa decidiamo? Chiamiamo la polizia o no?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Io voto no.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Anch’io.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Io sì.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Io no.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Io non voto. Sono neutrale.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Due sì, tre no, un’astensione.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "COSA?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Niente, Kim. Riposa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Bussano alla porta. Entra l’agente Welch, seguito dal giovane Pudney.",
+    "isStageDirection": true
+  },
+  {
+    "character": "WELCH",
+    "text": "Buonasera. Polizia. Indago su un incidente con una Porsche rubata. Di chi è la BMW fuori?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Mia. Un pazzo me l’ha distrutta.",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "Mi dispiace. E gli spari qui dentro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Spari? No, ballavamo. La musica era altissima.",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "Ballavano tutti? Anche lei? (indica Cocca)",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Quando ballo, non mi fa male la schiena. È miracoloso.",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "Capisco. E il padrone di casa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Dorme.",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "Lo voglio vedere.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Kim e Lenny si consultano freneticamente.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "LENNY",
+    "text": "È… in una fase delicata. Ha una verruca.",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "Una verruca che spara? Ho sentito chiaramente dei colpi di pistola!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "In realtà è una storia complessa. Vede, c’è un fattore psicologico…",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "La psicologa sono io, qui. Fatelo scendere.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Va bene. (chiama e nel frattempo sale) Charley? Scendi, c’è la polizia!",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "(osservandoli tutti) Non vi muovete.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Lenny corre su e torna travestito da Charley, con una benda vistosa all’orecchio.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "LENNY/CHARLEY",
+    "text": "Mi scusi, agente. La verità è che… Ho avuto una discussione con un fornitore, ho preso il Valium per sbaglio, confuso ho preso la pistola, ed è partito un colpo. Mia moglie è scappata in cantina e io ho chiuso la porta della cantina senza saperlo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "Tutto qui?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY/CHARLEY",
+    "text": "Sì.",
+    "isStageDirection": false
+  },
+  {
+    "character": "WELCH",
+    "text": "Beh, è una bella storia. Me la segno. Buonanotte. (Esce con Pudney.)",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Tutti respirano.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "GLENN",
+    "text": "Per poco.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Tu eri pallidissimo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Tu eri verde.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Io ero beige. Mi sta bene.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "(si asciuga la fronte) Per un momento ho pensato che ci portasse via tutti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Io ero pronta a fingere un altro attacco di schiena.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Lenny, sei stato incredibile. Quella del Valium…",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "L’ho inventata sul momento.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "COSA?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Niente, Kim.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "(si avvicina alla finestra) Se ne sta andando.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Grazie al cielo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Peccato, mi stavo affezionando all’agente. E’ stata molto simpatica.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "A me sembrava un po’ stressata.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "(si siede, sfinita) Le orecchie… ancora quel ronzio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Forse dovresti davvero farti vedere da un dottore.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Il dottore è ancora a teatro, ricordi?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Com’è possibile che uno medico sia così impegnato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Forse è lui che ha bisogno di cure.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "(si versa un drink) Allora, cosa facciamo adesso?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Aspettiamo che Myra torni dalla cantina.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Myra è in cantina?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "No, tesoro, era una battuta.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Ah. Io non le capisco mai.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Si sente bussare dalla porta della cantina.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "TUTTI",
+    "text": "(trasalendo) Oh, no…",
+    "isStageDirection": false
+  },
+  {
+    "character": "MYRA",
+    "text": "(da dentro) Aiuto! Sono chiusa qui dentro!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Myra?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "È viva!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Allora non era in Giappone.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Nè in California.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Era sotto i nostri piedi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "COSA? “SOTTO I NOSTRI PIEDI”?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Sì, Kim. Sotto i tuoi piedi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Tutti corrono ad aprire la porta della cantina. Myra esce, spettinata e furiosa.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "MYRA",
+    "text": "Finalmente! Sono stata chiusa lì dentro per ore! Chi è stato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Charley. Ma non l’ha fatto apposta.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MYRA",
+    "text": "Charley? Dov’è?",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Di sopra. Si è sparato all’orecchio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MYRA",
+    "text": "Cosa?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "È vero, Myra. Però sta bene. Solo un po’… sanguinante.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MYRA",
+    "text": "(sale le scale di corsa) Charley! Charley, amore!",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "(sospira) Che serata romantica.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Sì, se sei una fan dei film dell’orrore.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Allora, adesso che Myra è tornata, possiamo chiarire tutto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Sì, perché io ho fame.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(Myra ridiscende, più calma, con Charley che la segue barcollando, una benda sull’orecchio.)",
+    "isStageDirection": true
+  },
+  {
+    "character": "CHARLEY",
+    "text": "Scusate tutti… non so cosa mi sia preso.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Charley, stai bene?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHARLEY",
+    "text": "Sì, sì. Solo un po’ di ronzio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MYRA",
+    "text": "Mi ha spiegato tutto. Aveva avuto una discussione con un fornitore, ha preso il Valium e per sbaglio, confuso, ha fatto partire un colpo di pistola.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "E tu perché sei finita in cantina?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MYRA",
+    "text": "Sono scappata quando ho sentito lo sparo, sono scivolata e qualcuno ha chiuso la porta. Probabilmente Charley, confuso.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHARLEY",
+    "text": "(annuisce) Mi dispiace, tesoro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "Allora non era un tentativo di…",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHARLEY",
+    "text": "Suicidio? No, no. Solo una stupidata.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ERNIE",
+    "text": "Meno male. Per un momento abbiamo pensato al peggio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "(estrae il cristallo) Il mio cristallo l’ho ritrovato. Era nel water.",
+    "isStageDirection": false
+  },
+  {
+    "character": "GLENN",
+    "text": "Cassie, non è il momento.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CASSIE",
+    "text": "Per me sì. Questo cristallo ha visto cose che voi umani…",
+    "isStageDirection": false
+  },
+  {
+    "character": "CLAIRE",
+    "text": "Lascia perdere, Cassie.",
+    "isStageDirection": false
+  },
+  {
+    "character": "COCCA",
+    "text": "Allora, festa finita?",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHARLEY",
+    "text": "Festa finita. Ma grazie per essere venuti. E per… aver cercato di coprirmi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LENNY",
+    "text": "Beh, non è stato facile.",
+    "isStageDirection": false
+  },
+  {
+    "character": "CHRIS",
+    "text": "Soprattutto con Kim sorda.",
+    "isStageDirection": false
+  },
+  {
+    "character": "KIM",
+    "text": "COSA?",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "SIPARIO",
+    "isStageDirection": true
+  }
 ]

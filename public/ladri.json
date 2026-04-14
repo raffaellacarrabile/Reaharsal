@@ -1,96 +1,1617 @@
 [
-  {"character": "SCENA", "text": "Non tutti i ladri vengono per nuocere. Notte. Un appartamento elegante. Un LADRO sta scassinando la finestra. Entra in casa con circospezione.", "isStageDirection": true},
-  {"character": "LADRO", "text": "Eccoci qua. Finalmente un po' di pace e tranquillità per lavorare. Niente cani, niente allarmi... solo io e l'argenteria.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Inizia a frugare nei cassetti. Squilla il telefono. Il ladro sobbalza.", "isStageDirection": true},
-  {"character": "LADRO", "text": "Maledizione! Chi è a quest'ora? Pronto? No, signora, ha sbagliato numero... No, non sono il signor Rossi... Sì, sono un ladro, ma non è questo il punto! Metta giù!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Riaggancia. Il telefono squilla di nuovo.", "isStageDirection": true},
-  {"character": "LADRO", "text": "Ancora? Pronto! Maria? Sei tu? Ma ti ho detto che sto lavorando! Sì, lo so che è tardi... No, non ho ancora trovato niente di buono... Un candelabro? Sì, ne ho visto uno... D'accordo, lo prendo. Ora lasciami in pace!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Mentre riaggancia, sente dei passi. Si nasconde dietro una tenda. Entrano l'UOMO e la DONNA (l'amante).", "isStageDirection": true},
-  {"character": "UOMO", "text": "Vieni, cara. Mia moglie è in campagna dai suoi. Siamo soli.", "isStageDirection": false},
-  {"character": "DONNA", "text": "Sei sicuro, Giorgio? Ho sempre paura che torni all'improvviso.", "isStageDirection": false},
-  {"character": "UOMO", "text": "Tranquilla. Ha portato con sé anche il gatto. E quando porta il gatto, resta via almeno tre giorni.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si abbracciano. Il ladro starnutisce dietro la tenda.", "isStageDirection": true},
-  {"character": "DONNA", "text": "Cos'è stato?", "isStageDirection": false},
-  {"character": "UOMO", "text": "Niente, sarà stata una corrente d'aria. Le vecchie case, sai...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Il ladro esce allo scoperto, rassegnato.", "isStageDirection": true},
-  {"character": "LADRO", "text": "Buonasera. Scusate l'interruzione.", "isStageDirection": false},
-  {"character": "DONNA", "text": "Aiuto! Un ladro!", "isStageDirection": false},
-  {"character": "UOMO", "text": "Zitta! Vuoi svegliare tutto il vicinato?", "isStageDirection": false},
-  {"character": "LADRO", "text": "Ha ragione il signore. La discrezione è tutto in certi momenti.", "isStageDirection": false},
-  {"character": "UOMO", "text": "Cosa vuole lei? Soldi? Oro? Prenda tutto e se ne vada!", "isStageDirection": false},
-  {"character": "LADRO", "text": "Veramente stavo aspettando che finiste... ma visto che ci siamo, potrei avere un bicchiere d'acqua? Questo lavoro mette una sete...", "isStageDirection": false},
-  {"character": "DONNA", "text": "Ma è incredibile! Un ladro che chiede da bere!", "isStageDirection": false},
-  {"character": "UOMO", "text": "Tenga, beva e sparisca. E non una parola di quello che ha visto, intesi?", "isStageDirection": false},
-  {"character": "LADRO", "text": "Parola di ladro. La mia etica professionale me lo impedisce.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Squilla di nuovo il telefono. Tutti sobbalzano.", "isStageDirection": true},
-  {"character": "UOMO", "text": "Chi può essere? Se è mia moglie, siamo rovinati!", "isStageDirection": false},
-  {"character": "LADRO", "text": "Rispondo io. Dirò che sono il tecnico del telefono.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Il ladro risponde.", "isStageDirection": true},
-  {"character": "LADRO", "text": "Pronto? Sì, ufficio guasti... No, signora, stiamo facendo delle prove sulla linea... Sì, il segnale è debole... Provi a richiamare tra un'ora. Grazie.", "isStageDirection": false},
-  {"character": "UOMO", "text": "Bravo! Lei è un genio.", "isStageDirection": false},
-  {"character": "LADRO", "text": "Grazie. È l'abitudine a mentire alle guardie.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si sente un rumore di chiavi alla porta.", "isStageDirection": true},
-  {"character": "UOMO", "text": "Mio Dio! È lei! Mia moglie è tornata!", "isStageDirection": false},
-  {"character": "DONNA", "text": "E io dove vado? Mi nasconda!", "isStageDirection": false},
-  {"character": "UOMO", "text": "Presto, nell'armadio!", "isStageDirection": false},
-  {"character": "LADRO", "text": "E io? Non posso mica restare qui a fare il tecnico a vita!", "isStageDirection": false},
-  {"character": "UOMO", "text": "Lei faccia finta di essere mio fratello! Quello che vive all'estero!", "isStageDirection": false},
-  {"character": "LADRO", "text": "Ma non so nemmeno come si chiama!", "isStageDirection": false},
-  {"character": "UOMO", "text": "Si chiama Alberto! Presto, si sieda e faccia finta di leggere!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra la MOGLIE (Anna).", "isStageDirection": true},
-  {"character": "ANNA", "text": "Giorgio! Sono tornata prima! Il gatto è scappato e non ho potuto resistere...", "isStageDirection": false},
-  {"character": "UOMO", "text": "Cara! Che sorpresa... Guarda chi c'è, è tornato Alberto!", "isStageDirection": false},
-  {"character": "ANNA", "text": "Alberto? Ma non eri in Australia?", "isStageDirection": false},
-  {"character": "LADRO", "text": "Sì... cioè, no. Mi mancava l'aria di casa. E l'argenteria di famiglia.", "isStageDirection": false},
-  {"character": "ANNA", "text": "Ma come sei cambiato... sembri quasi un'altra persona.", "isStageDirection": false},
-  {"character": "LADRO", "text": "Il sole dell'Australia, sa... brucia i lineamenti.", "isStageDirection": false},
-  {"character": "ANNA", "text": "E perché sei vestito così? Sembri pronto per un colpo in banca.", "isStageDirection": false},
-  {"character": "LADRO", "text": "È la moda di Sydney. Molto pratica per le escursioni notturne.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Dall'armadio arriva un rumore di qualcosa che cade.", "isStageDirection": true},
-  {"character": "ANNA", "text": "Cos'è stato? C'è qualcuno nell'armadio?", "isStageDirection": false},
-  {"character": "UOMO", "text": "No! Saranno le tarme... tarme australiane, molto aggressive. Alberto le ha portate in valigia.", "isStageDirection": false},
-  {"character": "LADRO", "text": "Sì, esatto. Mangiano anche il legno massiccio.", "isStageDirection": false},
-  {"character": "ANNA", "text": "Voglio vedere. Non mi fido.", "isStageDirection": false},
-  {"character": "UOMO", "text": "No, cara! Sono pericolose! Mordono!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Squilla di nuovo il telefono. Il ladro si fionda a rispondere.", "isStageDirection": true},
-  {"character": "LADRO", "text": "Pronto? Maria? Ti ho detto di no! Non posso parlare ora, c'è la padrona di casa! Sì, il candelabro è al sicuro... Ciao!", "isStageDirection": false},
-  {"character": "ANNA", "text": "Chi era? Maria? La tua fidanzata australiana?", "isStageDirection": false},
-  {"character": "LADRO", "text": "Sì... Maria la Cangura. Molto gelosa.", "isStageDirection": false},
-  {"character": "ANNA", "text": "Che nome strano. Comunque, Alberto, visto che sei qui, potresti aiutarmi a portare su le valigie?", "isStageDirection": false},
-  {"character": "LADRO", "text": "Veramente avrei un impegno... un appuntamento con un ricettatore... cioè, con un vecchio amico.", "isStageDirection": false},
-  {"character": "ANNA", "text": "Ma resti a cena, vero? Ho preparato un pasticcio di carne.", "isStageDirection": false},
-  {"character": "LADRO", "text": "Pasticcio? Mi sembra che ce ne sia già abbastanza qui dentro.", "isStageDirection": false},
-  {"character": "SCENA", "text": "L'armadio si apre e ne esce la donna amante, spettinata.", "isStageDirection": true},
-  {"character": "DONNA", "text": "Non ne posso più! Qui dentro si soffoca!", "isStageDirection": false},
-  {"character": "ANNA", "text": "E lei chi è? Un'altra tarma australiana?", "isStageDirection": false},
-  {"character": "UOMO", "text": "Cara, posso spiegare...", "isStageDirection": false},
-  {"character": "LADRO", "text": "È la moglie di Alberto! È venuta a fargli una sorpresa!", "isStageDirection": false},
-  {"character": "DONNA", "text": "Sì, esatto! Alberto, caro, perché non mi hai detto che eri qui?", "isStageDirection": false},
-  {"character": "LADRO", "text": "Volevo farti una sorpresa, tesoro. Una sorpresa... d'oro.", "isStageDirection": false},
-  {"character": "ANNA", "text": "Ma Alberto non era scapolo?", "isStageDirection": false},
-  {"character": "UOMO", "text": "Si è sposato in volo! Sopra l'oceano indiano! Molto romantico.", "isStageDirection": false},
-  {"character": "ANNA", "text": "Questa casa sta diventando un albergo. Giorgio, perché non mi hai detto niente?", "isStageDirection": false},
-  {"character": "UOMO", "text": "Volevo che fosse una sorpresa anche per te, cara.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra un altro uomo dalla finestra. È il MARITO della donna amante (Anna).", "isStageDirection": true},
-  {"character": "MARITO", "text": "Anna! Ti ho trovata! Sapevo che eri qui con il tuo amante!", "isStageDirection": false},
-  {"character": "ANNA", "text": "Ma io sono la moglie di Giorgio! Chi è lei?", "isStageDirection": false},
-  {"character": "MARITO", "text": "Ah, scusi. Ho sbagliato finestra. Cercavo la signora Maria.", "isStageDirection": false},
-  {"character": "LADRO", "text": "Maria? La mia Maria? Ma allora lei è il suo complice!", "isStageDirection": false},
-  {"character": "MARITO", "text": "Complice? Io sono suo marito! E lei chi è?", "isStageDirection": false},
-  {"character": "LADRO", "text": "Io sono Alberto, il fratello australiano. E questa è mia moglie.", "isStageDirection": false},
-  {"character": "MARITO", "text": "Ma quella è mia moglie! Giulia!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Caos totale. Tutti urlano contemporaneamente.", "isStageDirection": true},
-  {"character": "LADRO", "text": "Silenzio! Se non state zitti, chiamo la polizia!", "isStageDirection": false},
-  {"character": "TUTTI", "text": "La polizia?!", "isStageDirection": false},
-  {"character": "LADRO", "text": "Sì! Così ci arrestano tutti per disturbo della quiete pubblica e adulterio aggravato!", "isStageDirection": false},
-  {"character": "UOMO", "text": "Ha ragione. Calmiamoci. Alberto, lei cosa suggerisce?", "isStageDirection": false},
-  {"character": "LADRO", "text": "Suggerisco che ognuno torni al proprio posto. Io prendo l'argenteria come parcella per la consulenza e sparisco.", "isStageDirection": false},
-  {"character": "ANNA", "text": "Ma l'argenteria è mia!", "isStageDirection": false},
-  {"character": "LADRO", "text": "Consideratelo un investimento per la vostra pace familiare.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Il ladro raccoglie il bottino e si avvia verso la finestra.", "isStageDirection": true},
-  {"character": "LADRO", "text": "Buonanotte a tutti. E ricordate: non tutti i ladri vengono per nuocere. Alcuni portano anche un po' di chiarezza.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Esce dalla finestra. Gli altri restano a guardarsi, imbarazzati.", "isStageDirection": true},
-  {"character": "ANNA", "text": "Giorgio... chi era veramente quell'uomo?", "isStageDirection": false},
-  {"character": "UOMO", "text": "Non lo so, cara. Ma credo che l'Australia gli abbia fatto molto male.", "isStageDirection": false},
-  {"character": "SCENA", "text": "SIPARIO", "isStageDirection": true}
+  {
+    "character": "STAGE",
+    "text": "Non tutti i ladri vengono per nuocere",
+    "isStageDirection": true
+  },
+  {
+    "character": "STAGE",
+    "text": "PERSONAGGI \nLADRO\nMOGLIE DEL LADRO UOMO DONNA ANNA\nANTONIO SECONDO LADRO",
+    "isStageDirection": true
+  },
+  {
+    "character": "STAGE",
+    "text": "Un ladro sta entrando, dopo aver forzato la finestra, nell’ appartamento al terzo piano di una casa signorile, con la classica lampada oscurata. Da uno sguardo intorno. Dal buio vediamo affiorare mobili, tendaggi, quadri antichi e preziosi. Il ladro accosta le imposte, quindi accende la luce.",
+    "isStageDirection": true
+  },
+  {
+    "character": "STAGE",
+    "text": "Proprio mentre sta per aprire un cassetto, suona il telefono. In un primo impulso, il ladro; preso dal panico, starebbe per battere velocemente in ritirata, ma poi, resosi conto che nessuno della casa si fa vivo e che perciò nulla ha di che temere, torna sui suoi passi. Vorrebbe ignorare gli squilli del telefono, ma non ci riesce. Quatto quatto, il ladro si avvicina al telefono e con un balzo gli è addosso. Strappa il ricevitore e quasi lo volesse soffocare, se lo stringe al petto coprendolo con la giacca. E, quasi a rendere più probabile il delitto, ecco uscire dal ricevitore, sempre più flebile e “soffocato “ un",
+    "isStageDirection": true
+  },
+  {
+    "character": "VOCE",
+    "text": "Pronto, pronto, rispondete... con chi parlo? (il Ladro può finalmente emettere un sospiro di sollievo. La VOCE ha cessato di vivere. Il Ladro estrae da sotto la giacca il ricevitore, lo solleva con cautela, lo avvicina all'orecchio: poi lo scuote ripetutamente ed ecco un lamento:",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Oh! finalmente!",
+    "isStageDirection": false
+  },
+  {
+    "character": "VOCE",
+    "text": "Ohhhh... finalmente... con chi parlo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(nuovamente sorpreso) Maria... sei tu?",
+    "isStageDirection": false
+  },
+  {
+    "character": "VOCE",
+    "text": "Si, sono io, ma perché non rispondevi? (a questo punto, illuminata da un riflettore di scena, appare in un lato finora rimasto buio nel palcoscenico la figura)",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Ma sei impazzita! Adesso mi telefoni anche sul lavoro? Pensa se ci fosse stato qualcuno in casa!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Ma se mi hai detto tu stesso che i proprietari sono in campagna... e poi, scusami, ma non ne potevo più... ero preoccupata per. te... mi sentivo male...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Ma cara, cerca di ragionare...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Adesso ricomincia... fa il martire! C'è tanta gente che ruba, che rapina, anche a mano armata... e non fa tutte le storie che fai tu. Meno male che non fai il furto con raggiro e truffa... altrimenti povera me!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(che ha sentilo uno strano rumore dietro le spalle, tappando istintivamente il microfono) Zitta! (fortunatamente era solo il meccanismo della suoneria dell'orologio a pendolo che preannunciava il battere delle ore... suona la mezzanotte)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "- Che cosa è?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(riavendosi dallo spavento) ... E’ il pendolo. Meno male.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Che bel suono... deve essere un pendolo antico... Peserà molto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(distrattamente) ... Capace di pesare anche... (rendendosi conto ad un A tratto delle intenzioni della Moglie) dì... non pretenderai mica che te lo porti a casa... delle volte?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Oh no, figurati... Come puoi pensare che io pretenda una cosa simile... Tu con un pensiero gentile... Tu che pensi a farmi un regalino... quando mai!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Sei una incosciente, ecco quello che sei... Se mi carico quel catafalco addosso, mi dici tu dove metto l'argenteria e quello che riesco a trovare?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "E non alzare la voce, ti prego... Non sei a casa tua.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Scusami, ho perso la testa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "A parte che ti potrebbero sentire, faresti anche la figura del maleducato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Ho chiesto scusa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Comunque, mi basterebbe una cosettina qualsiasi... è il pensiero che conta... quindi fai tu. Sei tu che fai il regalo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Ma che vuoi che sappia io di quello che ti piace... e poi io ho altro per la testa... Ciao, ti saluto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Ma che fretta hai? Ma cosa ti costa... essere gentile almeno una volta con me, sono tua moglie dopo tutto... e mi hai sposato anche in chiesa, mica in municipio come una concubina qualsiasi!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(seccato) Ho detto ciao!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Almeno un bacino...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "E va bene... (atteggia le labbra in modo buffo e schiocca un sonoro bacio)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Mi vuoi bene?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Sì... ti voglio bene.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Tanto? Tanto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(sfinito) Tanto tanto! Ma adesso metti giù la cornetta...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Prima tu...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "E va bene... prima io. - (sta per abbassare la cornetta ma si sente la VOCE della Moglie che per l'ultima volta lo assale fortissima)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Ricordati il regalino! (il Ladro velocissimo abbassa il ricevitore guardandolo con odio. Nello stesso istante la figura della donna scompare nel buio. Finalmente solo, il Ladro si muove nell'appartamento alla ricerca del bottino. Apre un cassetto. Ha trovato quello buono... estrae da una tasca della giacca il sacco e si accinge a riempirlo quando lo scattare di una serratura a più mandate lo fa sussultare. Poi ecco delle voci provenire dall'anticamera)",
+    "isStageDirection": false
+  },
+  {
+    "character": "VOCE DONNA",
+    "text": "C'è la luce accesa in salotto... Mio Dio... ho paura, andiamo via!",
+    "isStageDirection": false
+  },
+  {
+    "character": "VOCE UOMO",
+    "text": "Stai calma... L'avrò lasciata accesa io... chi vuoi sia stato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "VOCE DONNA",
+    "text": "E se fosse tornata tua moglie? (intanto il Ladro, piuttosto spaventato, ha cercato di darsi alla fuga attraverso la finestra, ma ha perso troppo tempo ormai e non gli resta miglior campo che nascondersi nella capace cassa dell'orologio a pendolo)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(entrando piuttosto guardingo) Ma che dici... mia moglie! Per quale motivo dovrebbe essere tornata in città! (fa capolino negli altri locali) Non ci tornerebbe nemmeno se sapesse che le stanno svaligiando la casa... Hai visto? Non c’è nessuno!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(entrando guardinga e sospettosa) Mi sento tanto colpevole... (mentre l'Uomo l'aita a levarsi la pelliccia) Chissà cosa penserai di me... Forse ho fatto male a cederti così presto... Scommetto che tua moglie ti ha resistito molto di più di quanto non abbia saputo fare io...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Che c’entra mia moglie? E’ sempre stata una donna piena di complessi, di pregiudizi piccolo-borghesi... Mi ha resistito solo per potersi sposare in bianco.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(con tono polemico e risentito) Si, piccola borghese, piena di pregiudizi... intanto l’hai sposata... Vorrei vedere se faresti altrettanto con me.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(accarezzandola e cercando di spingerla verso il divano che sta nel centro della scena) Tesoro... Ti assicuro che se mia moglie non fosse di idee tanto antiquate, e se tuo marito non avesse niente in contrario... (la Donna , si è seduta e l 'Uomo le si fa appresso)",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(staccandosi dall'abbraccio) Ecco , hai rovinato tutto... (l'Uomo si trova sbilanciato e va a sbattere contro la spalliera che si ribalta. Resta lungo disteso sul divano) Perché hai voluto ricordarmi che ho un marito? E Adesso come potrò? Adesso che mi hai fatto rinascere il rimorso, il senso di colpa...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Scusami, non volevo. (si rialza, mette a posto la spalliera) Ma forse se proviamo a parlare un po' d’altro... del più e del meno... forse ti potresti distrarre di nuovo, e potremmo passare di là.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Di là dove?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(impacciato) In camera mia...",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Forse è la soluzione migliore... proviamo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(speranzoso) Ad andare in camera mia?",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "No. A parlare del più e del meno.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "E non si potrebbe andare di là a parlare del più e del meno?",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ti prego, non insistere. Parliamo... parliamo di te di quando eri bambino... mi piacciono tanto i bambini...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ecco, mi ricordo che a cinque anni ero ancora bambino... e che andavo per i sei... (scattando infastidito) Oh! no! senti... piantiamola... mi sento terribilmente stupido... E’ un'ora che mi stai prendendo in giro... Prima mia moglie, poi tuo marito... Pover'uomo, se anche lui ha dovuto sopportare tante manfrine...",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "No caro, con lui è stata tutt'altra cosa... lui ha ceduto subito.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(sorpreso) Come lui ha ceduto subito?",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Sicuro, in quel caso, sono stata io che l’ho invitato a casa mia, quindi toccava a me farlo cedere. Purtroppo mio marito, è sempre stata un uomo di una leggerezza vergognosa e ha ceduto subito. Per questo, lo disprezzo. Ma con te sento che sarà diverso... Sai insistere così bene tu! Insisti, ti prego... Insisti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Si, insisto, insisto moltissimo, andiamo di là. (i due stanno per uscire l’una nelle braccia dell'altro quando ecco suonare il telefono, si arrestano imbarazzati, non sanno cosa fare)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Chi può essere?",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Tua moglie?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(va verso il telefono, stacca la cornetta e la richiude nel cassetto del tavolino) Ecco fatto; adesso non ci darà più fastidio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(con tono disperato) Oh Dio! Che hai fatto! Ora avranno capito che sei in casa... Chi altri potrebbe aver staccato il ricevitore?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Forse un tale che passava di qui per caso...",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Un ladro magari...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "E si, magari... (accorgendosi dell'assurdità) Ma che dici “un ladro “! Se pensassero una cosa simile chiamerebbero subito la polizia.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(terrorizzata) Oh Dio! ci troveranno qui insieme, ci arresteranno, (quasi urlando) Oh Dio, la polizia! (così dicendo si precipita verso l'ingresso seguita dall'Uomo che cerca di trattenerla. Nello stesso istante il Ladro esce spaurito dal suo nascondiglio)",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "La polizia... Ci voleva anche questa... E adesso dove scappo io?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(dall'anticamera) Aspetta... Cerca di ragionare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ho paura... andiamo via, ti prego!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "E va bene, andiamo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(il Ladro che nel frattempo è rimasto indeciso se scappare dalla finestra o attendere che i due siano usciti, sentendoli rientrare ritorna velocissimo nel suo nascondiglio. Ma nel varcare l'ingresso alla cassa dell'orologio, batte la testa contro la pendola, facendone uscire un sonoro “don”)",
+    "isStageDirection": true
+  },
+  {
+    "character": "DONNA",
+    "text": "(entrando ha un moto di spavento) Oh! Che cos'è?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(sorridendo) Oh niente cara... è la pendola... ha suonato l’una.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Scusami, ma sono così nervosa. (l'Uomo ha in mano la pelliccia e sta per aiutare la Donna ad infilarsela. La Donna si accorge del ricevitore staccato) Ma anche tu hai perso la testa, guarda, stavamo uscendo senza riattaccare (così dicendo rimette il ricevitore sull’apparecchio. Ma non ha fatto in tempo a pronunciare queste ultime parole, che ecco il telefono ricomincia di nuovo a suonare. I due si guardano ancora più spauriti. L'Uomo, quasi ipnotizzato da quel suono, afferra la cornetta e lentamente se la porta all'orecchio)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(con VOCE innaturale) Pronto? (appare, come prima, la figura della Moglie del ladro e nello stesso tempo si ode la sua VOCE, piuttosto irritata)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Oh finalmente... è un'ora che chiamo! Si può sapere perché prima hai staccato la comunicazione?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ma scusi, con chi parlo? (l'amante accosta l‘orecchio al ricevitore per ascoltare anche lei)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEI. LADRO",
+    "text": "Ah, bene, adesso non riconosci più nemmeno la VOCE di tua moglie!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(sentendosi mancare) Tua moglie! Lo dicevo io... Oh mio Dio!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Chi c’è vicino a te? Mascalzone... ho sentilo la VOCE di una donna... chi è?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(rivolgendosi all'amante) Stai tranquilla, ci dev'essere un errore, non ho mai sentilo questa voce…",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Ma l'ho sentila io! È inutile che, cerchi di fare il furbo... Assassino, farabutto, ti ho scoperto finalmente... (il Ladro intanto ha f atto capolino fuori dal suo nascondiglio per meglio ascoltare il dialogo. Sentendo la VOCE di sua Moglie inveire in quel modo non può fare a meno che preoccuparsene seriamente).",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Guardi che c’è un errore... Lei ha sbagliato numero... lei sta parlando con casa Frazosi...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Lo so, lo so, casa Frazosi via Cenini quarantasette interno tre... e adesso smettila di fare il furbo e non cercare di camuffare anche la voce che tanto non ci riesci... mascalzone... Traditore, falso, bugiardo! È proprio vero che chi è bugiardo è ladro... cioè che chi è ladro è bugiardo!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Come si permette?... ladro, falso, ma con chi crede di parlare?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Con mio marito... e chi dunque?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Se suo marito è un ladro falso... sono affari suoi, ma io non sono suo marito, ma il marito di mia moglie che per sua fortuna... non è qui altrimenti...",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ci mancherebbe anche questa!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Se lei non è mio marito, che ci fa in quella casa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ma cara signora, questa e casa mia!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Bene. E lei sta a casa sua, con una donna che non è sua moglie... soli, a quest'ora, dopo aver fatto credere in giro che non era, in città.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Siamo stati scoperti!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Piuttosto, signora, mi vuol spiegare chi le ha detto che io non avrei dovuto essere in città?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Mio marito... Erano dieci giorni che vi stava facendo il filo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Come? Ma che interesse aveva suo marito a sapere...",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(coprendo con la mano il ricevitore) Ma non hai ancora capito? Tua moglie ti ha fatto pedinare da suo marito che evidentemente e un detective.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ah! Adesso capisco; e così suo marito fa di questi bei servizi!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Be', è il suo mestiere!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Bel mestiere davvero, ed io stupido che mi illudevo: “Mia moglie non è capace di certe azioni... è una donna all'antica, ingenua! “Sono io l’ingenuo!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Ma come, lei pensa che sua moglie e, mio marito?...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Come, penso? Ne sono più che sicuro ormai... e la prego di smetterla di fare la commedia!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE PEL LADRO",
+    "text": "Va bene, va bene, dov’è adesso mio marito?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Scommetto che adesso sarà già a Villa Ponente...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "A “Villa Ponente”? E che c'è andato a fare mio marito laggiù?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(ironico) Ma come? Non gliel'ha detto? Ad ogni modo l'accontento subito: a “Villa Ponente” via Aristide Zamboni 34, telefono-7845, c’è mia moglie... mia moglie ancora per poco! (così dicendo abbassa con rabbia il ricevitore del telefono, svanisce l'immagine della Moglie del ladro mentre l'altra Donna scoppia in un pianto disperato)",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Che vergogna, che scandalo... quando lo saprà mio marito, sarà un gran colpo per lui... poveretto!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "E per me non è forse peggio? Avevo deciso di ritirarmi definitivamente dall'assessorato del comune, ma adesso dopo questo scandalo, sono sicuro che mi proporranno come sindaco!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "E allora cosa possiamo fare? Non ci resta che fuggire o costituirci.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Be', adesso non esageriamo; costituirci! E a chi? E per che cosa? Ci hanno forse scoperti in flagrante? No.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "È vero. (attimo di riflessione di entrambi)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Non ci resta che aspettare che mia moglie arrivi da Villa Ponente, fra un'ora o due. (ripensandoci) Un'ora o due? Ma perché non approfittarne? Almeno ci condanneranno per qualcosa! (e si accosta alla Donna che è seduta sul divano)",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Non essere volgare, ti prego. (sospinge l’Uomo...che si tr ova come prima, lungo disteso con la faccia oltre la spalliera ribaltata)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(imprecando e battendo con la mano aperta sul divano «brevettato ) E l'ho comprato io! (dopo un attimo) Che rabbia, mi sparerei!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ecco, forse questa e l'unica soluzione, la migliore!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Cosa? Vuoi che mi spari davvero? E va bene mi sparo! (l'Uomo e strae dal cassetto una pistola e la Punta alla fronte) Così sarai contenta!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Noooo... Che fai?... Fermati. (e gli toglie di mano la pistola mentre l'Uomo che evidentemente ha fatto il gesto col solo intento di spaventarla, sorride sotto i baffi) (ironico e soddisfatto)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Come? Adesso non vuoi che mi spari?",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ma tesoro, se non levi la sicura e non metti la pallottola in canna... così (fa scattare il caricatore poi gli porge la pistola) Adesso sì che puoi spararti...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(con la voce stranamente di testa) Ah... ah... adesso posso...",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(sollevandogli la pistola all'altezza del viso) Su sbrigati, non vorrai farti trovare ancora vivo quando arriva tua moglie? (l'Uomo porta con terrore la canna alla fronte, e proprio in quel momento ecco la pendola suonare la mezzanotte e mezza. Ai primi rintocchi l'Uomo ha uno strano sussulto e guarda la canna spaven tato) Che strano orologio, prima ha suonato la una e adesso suona la mezzanotte... va indietro mi pare... cioè, all'incontrario...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "E’ strano davvero... non era mai successo... forse è un segno del cielo! La mano del destino che viene a fermare la mano suicida... Oh! grazie, mano del cielo benedetta... (così dicendo si avvicina alla pendola, e l'abbraccia con trasporto, quasi fosse una persona in carne ed ossa... la pendola continua a suonare e a un certo punto ecco che sembra davvero diventata viva)",
+    "isStageDirection": false
+  },
+  {
+    "character": "VOCE LADRO",
+    "text": "(che evidentemente non riesce a trattenere gli ahi di dolore procuratigli dalla grossa pendola sbattuta sulla testa) Ahi ahi!... Porco Giuda!... basta!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(facendo un balzo indietro, e andando ad abbracciare la Donna che letteralmente impallidita dal terrore) Il destino!!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(esce massaggiandosi la testa) Ahi! che botta, che botta!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ma si può sapere chi e lei? Che cosa fa in casa mia?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Che botta, ahiahiahi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(più che mai deciso puntandogli la pistola) Allora, vuole farmi perdere la pazienza? Chi è? Chi è?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(terrorizzato) Glielo dico subito... sono il... marito... insomma, quella donna che ha telefonato prima è mia moglie... e io sono il marito.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ah ... lei è il marito... bravo!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Si... Si... ci siamo sposati in chiesa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Mi fa piacere, così avrà la fortuna di essere seppellito in un suolo consacrato...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Come seppellito!... E no, e no... Lei non può farmi fuori così... (rivolgendosi alla Donna) Non ha il diritto... Signora, lei è testimone che io sono disarmato... Guardi che se mi spara avrà delle grane: articolo 127 del codice penale... lei può sparare al massimo per aria se io scappo... ma siccome io non scappo, lei non può. L'avviso che è omicidio premeditato!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Sicuro, la legge è sempre dalla vostra... ma se tutti si decidessero a spararvi alla schiena come si fa con le spie di guerra... (rivolta all'Uomo) Ecco che cosa devi fare; sparargli alla schiena!... (al Ladro) E lei si volti, per favore.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Un momento: da che ora stava qui dentro? (indicando la pendola)",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Dalle undici e quarantasette... ci sono entrato giusto quando siete arrivati voi. Perché?...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Allora se è stato sempre dentro l'orologio, non ha potuto telefonare! Forse se ci sbrighiamo, possiamo ancora salvarci.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Già, salvarci, con lui che andrà a spifferare tutto!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(senza capire di che si stia parlando, pur di allontanare la minaccia) No, no, io non spiffero, parola d'onore... non spiffero... non son capace... (so ffia nella canna della pistola che gli sta a pochi centimetri dalla bocca come fosse un piffero)...v ede?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Del resto, se lo ammazziamo, sarebbe una prova troppo evidente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Potremmo ferirlo gravemente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "A che servirebbe?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "E’ quello che dico anch'io, a che servirebbe?",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Lo so io a che servirebbe. Se si riuscisse a prendergli un determinato nervo. (lo tocca dietro la nuca) L'epistrofeo, per esempio, che passa proprio qui dietro, fra l'atlante e l'epistrofeo, perderebbe completamente la memoria...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(che si sente già la paralisi addosso) Ma per me, non andrebbe bene per niente. Non ci sarebbe un'altra maniera, un po' meno pericolosa? Su, signora, si faccia venire un'altra idea... Lei è così Brava!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(lusingata) Sì, forse ci sarebbe un'altra soluzione: ubriacarlo! Nessuno crederebbe alla testimonianza di un ubriaco!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "È vero! L'ho sempre detto che sei una donna formidabile!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(tirando il fiato) Sì, sì, la signora è molto formidabile... L'avevo capito subito, io... (fregandosi le ma ni) Allora che cosa si beve?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Whisky o gin: tre bei bicchieri, e sei sistemato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Veramente... a me l'whisky non mi va tanto, sa di petrolio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(che intanto ha preparato un bicchiere pieno) Questo non sa di petrolio, è vero scozzese. (glielo porge)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Com’è? com'è?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(assaporando con fare da intenditore) Ottimo! Davvero speciale! A proposito di mia moglie, mi fate il piacere di telefonarle subito e di spiegarle l'inghippo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ah il furbacchione, vuole un testimone... avevi ragione tu, è meglio sparargli addirittura... e non pensarci più.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Sì... sì... è meglio. (va per prendere la pistola che ha lasciato sul mobiletto bar, ma il Ladro è più svelto di lui e la afferra puntandogliela contro) ... Ehi... non facciamo scherzi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Siete voi che la dovete piantare di fare scherzi... Io sono venuto qui per rubare, mica per fare il pagliaccio!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Per rubare?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Sicuro, sono ladro, ma serio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "E’ meglio che si scelga qualche altro mestiere, perché questo non attacca.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Senta, lei che fa tanto lo spiritoso, non ha mai sentito parlare di una certa banda Martello.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(col tono di chi ripete a memoria) Banda Martello, composta dal Mangia, dal Serafini e dal Tornati Angelo detto lo Stanca...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Tornati Angelo detto lo Stanga e non stanca…stanga che vuol dire lungo... e se non le spiace, Tornati Angelo detto lo Stanga, sono io!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(illuminandosi dopo aver dato un'occhiata al documento) Ma è meraviglioso, è proprio lui, lo Stanca… pardon… lo Stanga! che piacere! Lei permette, vero? (lo abbraccia, lo bacia sulle guance) Un ladro, un ladro vero… non mi era mai capitato! Si lasci guardare...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(geloso ) Ma che fai adesso? Questo mascalzone viene qui a rubare in casa mia... e tu lo baci... È disgustoso!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ti prego! Modera i tuoi termini. È disgustoso…che ne sai tu? Hai mai baciato un ladro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "No.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "E allora? Prova, e poi mi dirai se è proprio disgustoso come dici! (in quell'istante si sente il trillare di un campanello)",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Chi può essere?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(apre la finestra e si affaccia) Chi è?",
+    "isStageDirection": false
+  },
+  {
+    "character": "VOCE DONNA",
+    "text": "E chi vuoi che sia, sono io, Anna.",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(impallidendo) Oh, cielo... questa volta è proprio sua moglie...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(cercando di essere il più possibile naturale) Ah, sei tu cara... Non ti aspettavo... ma come mai, che ti è successo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Domando a te cosa è successo! Mi ha telefonato una pazza... coprendomi d'insulti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Una pazza! È mia moglie... l'avrei giurato!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Ma cosa aspetti ad aprirmi?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ti apro subito... (staccandosi dalla finestra) Ci voleva anche questa... e adesso che le raccontiamo? (rivolgendosi anche alla Donna) Un momento... Forse se voi due vi faceste passare per marito e moglie... saremmo a cavallo!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ma come? Sposata con lui, con un uomo che non conosco nemmeno?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Non preoccuparti, l'amore verrà in seguito! E poi è sempre meglio passare per la moglie di un marito falso che per l'amante di un marito vero! (accingendosi ad andare incontro alla moglie) E adesso mi raccomando, non fate scherzi altrimenti... (e con fare minaccioso si mette in tasca la pistola che stava sul tavolo. Esce)",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Mio Dio, che guaio... Si alzi, si faccia vedere. - (osservando il Ladro da capo a piedi) Ma non aveva un abito un po' meno squallido da mettersi?... lo sa che quando il marito è in disordine la colpa è sempre della moglie?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "(la voce si sente venire dall'esterno) Allora si può sapere che cos'è questa storia? Chi c’è in casa con te?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Adesso ti spiegherò... c’è stato un equivoco ma adesso è tutto risolto...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Che equivoco? Piuttosto tu non dovevi essere da tua madre? Che ci fai in casa? _",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(entrando seguito dalla moglie) È appunto quello che volevo spiegarti…Permetti? Il mio amico... il dottor Angelo Tornato...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(correggendo seccato) Tornati...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(sorridendo amaro) Sì, scusa! Tornati e signora...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "È stato suo marito a farci sposare! L'amore verrà in seguito, l'ha detto lui.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(riparando) Già, quando ero ancora vicesindaco!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ci voglia perdonare per l’invasione… e a quest'ora poi, davvero sconveniente...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "(interrompendola seccata) Ma, piuttosto mi dica, è lei che mi ha telefonato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(intervenendo con foga) Si, sì! È lei... ma devi capire, la poverina era così sconvolta!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Mi perdoni, signora; ma è stata la gelosia a farmi perdere la testa, chissà perché mi ero convinta che mio marito avesse una relazione proprio con lei... Ma adesso che la vedo, mi domando come ho potuto pensare una cosa simile...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Perché, le faccio un'impressione tanto sgradevole forse? Dica pure che sono un mostro già che c’è!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ma no, signora, non volevo affatto dire questo! Anzi, lei ha un aspetto talmente distinto... che, conoscendo i gusti piuttosto volgari di mio marito...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Come, io ho i gusti volgari?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Mi spiace che lei si senta piuttosto volgare, mia cara, visto che suo marito l'ha sposata, ma ciò non significa che lei mi debba considerare talmente in basso da mettermi con un uomo come il suo qui presente consorte!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Adesso basta, prima volgare... poi in basso qui presente!!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(con l'evidente intento di sdrammatizzare il conflitto) Be', ora non esagerare, cara, non sarà un granché, è vero, ma può anche piacere!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Eh bravo, bell'esemplare di marito che ho sposato! Invece di sentirsi offeso perché si è dubitato dell'onestà della propria moglie, insiste perché trovi piacente il mio presunto amante! Ma è pazzesco!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Ma no, signora, suo marito non intendeva questo, ma voleva dire che una donna, quando è innamorata, pensa sempre che il proprio marito, anche se di gusti piuttosto volgari, possa piacere ad altre donne.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Bel modo di ragionare davvero! Come dire che siccome mio marito piace a me, deve piacere per forza anche a lei, per esempio! Già che c'è signora, perché non se lo prende addirittura come amante!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Grazie, no no.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "(rivolta al Ladro) E lei non dice niente?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "A dir la verità, anch'io preferirei prenderla come amante, la signora, invece che per moglie... sempre che suo marito non avesse niente in contrario... del resto è lui che deve decidere... è lui che ci ha sposati!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "(scoppiando a ridere divertita) Ah, ah... spiritoso, spiritoso davvero; adesso capisco perché sua moglie ha paura delle altre donne... Gli uomini spiritosi sono i più pericolosi... soprattutto se hanno gusti volgari!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(alla Donna) Mi ha detto volgare un'altra volta!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "( con affettuoso trasporto accarezzandolo) Ah sì, è davvero pericoloso... lei non immagina quanto!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(seccato) Be', adesso non esageriamo... (correggendosi) Tutti gli uomini, chi più, chi meno, sono Pericolosi! `",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Non è certo il caso tuo, tesoro! (guardando commossa il Ladro e la Donna che si tengono le mani nelle mani teneramente) Ma guardali come sono carini... sembrano proprio sposini freschi freschi! State proprio bene insieme...vero caro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "( perdendo le staffe) Sì, ma adesso... forse è - Meglio salutarci... è un po' tardi...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Non essere villano, ti prego... non fate complimenti, restate quanto vi pare. Anzi perché non beviamo qualcosa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Si, benissimo, l’whisky di prima... (afferra la bottiglia, ma la Donna gli fa cenno di no)",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Troppo gentile... ma abbiamo già approfittato abbastanza della vostra cortesia... (il Ladro si mette la bottiglia in tasca) e poi e davvero tardi, non vorrei che mio marito tornasse e non... (riprendendosi) ritornasse troppo tardi a casa... deve alzarsi molto presto domattina... vero, caro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Eh?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Ma allora perché non rimanete addirittura qui da noi a dormire; abbiamo giusto una camera libera... su via, diglielo anche tu caro!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(soprappensiero) Sì, ma perché non rimanete qui a dormire? (riprendendosi) Ma cosa mi fai dire? Forse loro preferiscono...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Si, si, noi preferiamo moltissimo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Bravo, hai visto? preferiscono restare! Lei non immagina che piacere mi fa...",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(tentando l'ultima resistenza) Ma veramente... siamo qui senza niente, e mio marito senza pigiama non riesce a dormire!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Se è per quello, (rivolta al marito) gli darai uno dei tuoi pigiami, quello nuovo, vero, caro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(disperato) Sì !",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Venga, signora, le faccio vedere la camera... Vi troverete proprio bene... ne sono sicura! (al Ladro) Gliela rubo un attimo. (le due donne escono, i due uomini rimasti soli si guardano, l'uno con imbarazzo, l'altro con un certo odio; il primo a parlare è il padrone di casa)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "C’era proprio bisogno di fare tanto lo spiritoso? Don Giovanni da strapazzo che non è altro... È venuto qui per rubare? e allora rubi, avanti! (apre il cassetto dell'argenteria) ... rubi , ci sono anche dei cucchiaini d'oro... s'accomodi!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(estrae il sacchetto dalla tasca, lo spiega ma poi ci ripensa.) No , grazie, ma rubare in questa maniera non mi va tanto... Grazie, sarà per un'altra volta...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(che comincia a innervosirsi. Fa il gesto di estrarre la pistola dalla tasca)",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Se proprio insiste... (afferra delicatamente un cucchiaino) Ecco... Tanto, tanto per gradire... (e se lo ficca nel taschino della giacca)",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(estraendo la pistola, minaccioso) Ho detto di rubare... Non si faccia scrupoli, avanti... (in quel preciso istante entra la Moglie del ladro che, vedendo il marito sotto il tiro della pistola del padrone di casa, non può fare a meno di lanciare un grido disperato... di gettarsi fra i due abbracciando il marito)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Ah, no! Per carità, signore, non ammazzatelo. Vi darà indietro tutto, ma non ammazzatelo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Maria!!! Da dove sei passata?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "C’era il portone aperto...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "E io, disgraziato, che mi sono arrampicato per tre piani per arrivare qui!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Perdonami... è tutta colpa mia, lo so... l’ho capito troppo tardi... Ma adesso è meglio che tu restituisca tutto al signore...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ci voleva anche la moglie!... E adesso che cosa dico a mia moglie quando verrà a sapere che lei ha due mogli!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Chi ha due mogli?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(col terrore che gli falsa la voce) ... Ma io non c’entro niente, eh! È stato lui che me l'ha data in moglie, per paura che sua moglie venisse a sapere che non era mia moglie... ma una moglie...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "(strappando la pistola dalle mani del padrone di casa e puntandola verso il marito) Ah, brutto traditore, spergiuro, assassino... e io che stupida credevo che tu te la facessi con sua moglie e invece hai già un’altra moglie... che non è neanche sua moglie... ma io ti ammazzo... (cerca di levare la sicura) Come si fa? come si fa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Non si fa niente! (strappa la pistola) Per carità non faccia tanto baccano... Se ci sentono le altre due mogli... io sono rovinato è vero... ma anche suo marito... insomma se vuol salvare suo marito... stia calma (si sentono alcuni passi che si avvicano) Accidenti... eccole... adesso che inventiamo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "(entrando) La sua cara mogliettina, signor Tornati... la sta aspettando... ho portato anche il pigiama per lei perché, se aspettavo che mio marito... (si arresta stupita nel vedere la nuova ospite che il marito e il Ladro cercano di nascondere alla sua vista) ... Ho... ma scusa, caro... chi è la signora?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(fingendo di cadere dalle nuvole) Chi?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Sono una moglie... Permette? Maria Tornati...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Ma come? Un'altra moglie?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Appunto, è la moglie del signore... (guardandola con cattiveria, quasi volesse ipnotizzarla) La prima moglie del mio amico Tornato...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(correggendo) ... ti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(incerto) ... to-ti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "... ti - ti - ti. Tornati.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "La prima moglie dalla quale Tornati ha divorziati...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": ".., to.",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "... to. (la Moglie del ladro vorrebbe interrompere, ma il marito le da di gomito)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Siete stranieri?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Eh?... no, non siamo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Allora come avete potuto divorziare?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(chiedendo aiuto al padrone di casa) Eh? potuto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(chiede aiuto alla Moglie del ladro) Potuto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Ah!... ho capito... il tuo amico lavora nel cinema!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Si, si, si, lavora nel cinema... è un produttore cinematografico.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Produttore?... E che genere di film fa ? (accorgendosi del sacco che tiee in mano) Scusi, che cos'e quello? (apre il sacco) Ma è la mia argenteria! Cosa stavate facendo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Rubavamo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Noo! Mi stava raccontando il soggetto di un suo nuovo film... dove c’era la scena di un furto... e mi faceva vedere...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Oh, che interessante! Allora lei è specializzato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Si, di padre in figlio ormai...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "E sua moglie?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "No ... io no, mio marito non vuole, mi lascia sempre a casa...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "No, dicevo... com’è questa storia del divorzio... se sono divorziati come mai sua moglie è ancora sua moglie?... anzi, e adesso ne ha due!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Appunto…si è divorziato…si è risposato… ma poi lo Stato, impugnando il diritto canonico, non ha ritenuto valido il divorzio pur avendo in un primo tempo, impugnando il diritto civile, ritenuto valido, il secondo matrimonio... così... così che il poverino si trova ad essere nello stesso tempo bigamo, concubino, pubblico peccatore e cattolico osservante...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Ma come? (al marito) E tu non mi dicevi niente?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Ma io non lo sapevo... (rivolto al padrone di c asa) Com’è che sono bigamo osservante?! (l'Uomo lo spinge lontano dalle donne)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "E, cara signora... certe cose è meglio non saperle... tanto, anche quando si sanno non ci si capisce niente... Poverino... e adesso chissà come andrà a finire… gli faranno magari il processo e lo manderanno in galera come un ladro qualsiasi! (rivolta al Ladro) A proposito, ma l'altra sua signora?... forse è meglio non farle sapere che è qui... (indica la Moglie) poverina anche lei... E poi come si farebbe! Anche mettendovi d'accordo, il letto è di una sola piazza e mezzo... e ci stareste scomodi!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Non preoccuparti, cara metteremo tutto a posto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "A posto un corno... Non crederete di passarla liscia tanto facilmente...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(vorrebbe prendere il sacco; ma è costretto ad abbandonarlo per sospingere la Moglie versa la porta di sinistra) Si, Si... ma adesso andiamo di là...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Venga, signora, le farò conoscere la moglie di suo marito... voglio dire… insomma, s’accomodi!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "(guarda uscire i tre e scuote la testa con commiserazione) Povera donna! (poi accorgendosi delle bottiglie sparse sul tavolo) Dio che disordine… e come hanno bevuto... (si versa da bere a sua volta. In quel mentre ecco che un uomo si affaccia alla porta e sottovoce la chiama)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Anna... sei sola?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Oh! mio Dio!... Antonio... cosa t'è saltato in testa? Vattene... vattene subito c' è in casa mio marito!...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Ma si può sapere cosa ti è successo? Per telefono non ti sei fatta capire per niente... Cos'è questa storia di mia moglie che ti ha telefonato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Niente, niente, è stato un equivoco... grazie al cielo! Ho ricevuto una telefonata da una donna... che mi insultava per via di suo marito...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "E tu hai pensato che fosse mia moglie?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Proprio così... io non conosco tua moglie e tanto meno la sua voce... ho preso un tale spavento... Ma adesso non rimanere qui... Vattene... ci vedremo domani...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Ah, devo andarmene... e no, cara, non ci casco, (avanzando verso il centro della stanza) ma a chi credi di darla a bere? La telefonata, l'equivoco, tuo marito che torna a casa, mentre invece dovrebbe essere da sua madre... e no, qui c’è sotto qualcosa... Tutto organizzato per mandare a monte il nostro appuntamento alla villa e per ritrovarti qui con, un altro... che non è certo tuo marito...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Ma sei matto, di'? Come puoi pensare queste cose?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Non mentire... e questi bicchieri? È chiaro... ci si preparava... spiritualmente... Dov'è... come si chiama?... È meglio per te, parla... (afferrandola per le spalle) Chi è? (in quel preciso istante ecco riapparire il Ladro con il pigiama ancora sottobraccio. È tornato per riprendersi il sacco. Ma alla vista di quella scena e di quel nuovo ospite, spaventato, lascia cadere lt sacco, al che l'uomo si volta)",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Disturbo? Volevo prendere questo sacco...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Ah, eccolo... e col pigiama sottobraccio... già pronto il signorino!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(aggredito dall'uomo che lo ha afferrato per il braccio) Ma scusi, a me lo ha dato la signora... Ma se lo vuole lei, se lo prenda.,. mica c’è bisogno di strozzarmi, per un pigiama.:",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Lo so, lo so che gliel'ha dato lei... ed è per questo che adesso me la pagherete tutti e due.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Ti prego... Antonio... stai commettendo un terribile errore... il signore è un amico di mio marito ed è qui nostro ospite con le sue mogli... (dalle altre stanze giungono le urla delle due donne che evidentemente stanno litigando)",
+    "isStageDirection": false
+  },
+  {
+    "character": "VOCI DUE DONNE",
+    "text": "E no, cara, non vengo mica giù dalla Val Brembana, io... non me la racconta giusta lei... cara la mia concubina... (altra voce) Moderi i termini la prego... a chi concubina?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "(mollando la presa) Sono le sue mogli? Ma quante ne ha? (il Ladro fa un gesto con la mano come per dire «abbastanza “)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "(rivolta al Ladro) Oh, la prego, signor Tornati... non dica niente a mio marito...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "No, no... io non dico niente...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "La ringrazio... e scusi per l'equivoco...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Equivoco più, equivoco meno... tanto è la serata...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Ma adesso vattene presto... Eccoli che arrivano, e adesso come si fa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Senta venga qua, ci sono stato io un paio d'ore. (apre la cassa dell'orologio) Non ci si sta mica tanto male... (facendolo accomodare) L'avverto che fra poco suonerà il tocco... attento al botto... e guardi che non si può fumare. (entrano le due donne seguite dal padrone di casa. Sono piuttosto scalmanate)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "(rivolgendosi a quest' ultimo) Visto che loro non vogliono spiegarmi, adesso andiamo a casa e me lo spiegherai tu.",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Perché vuoi andare a casa? Si sta così bene qui... sono così gentili... Guarda, mi hanno dato anche il pigiama.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(in quel preciso istante il grande orologio a pendolo batte il tocco. Un gran botto, un grido, e i l disgraziato inquilino del cassone esce imprecando)",
+    "isStageDirection": true
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Ahi! che male... la testa... ohiohiahi!",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Gliel'avevo detto... che faceva il botto!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "(terrorizzata) Ma quello è mio marito... (facendo la disinvolta) Ciao caro!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Cosa fai in questa casa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Come? conosci la moglie del signor Tornati?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "La moglie di chi?... Ma non facciamo scherzi …Giulia è mia moglie...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "(rivolgendosi alla moglie) No, no, cara, non ti preoccupare... c'è stato un equivoco…",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Un altro equivoco...Oh, ma quanti questa sera!",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Tu mi dovrai spiegare che cosa facevi in quell’orologio. ( al Ladro) C’era già quando c’era lei?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(dopo un attimo di perplessità ) Ma sa, è così buio là dentro!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Ma è chiaro... chiarissimo, solamente mi dovete permettere di spiegare l'equivoco... Dunque...",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "Dunque... un corno... Qui non c’è nessun equivoco... vi dico io cosa c'è... c'è che... (ma non fa in tempo a continuare che gli altri per paura che venga scoperta ogni loro tresca, lo interrompono subito)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Ma certo che c’è l’equivoco… è chiaro che c’è!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "sì, Sì, l’ho capito subito anch’io… anzi mi meraviglio che non se ne sia accorto",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "E’ così chiaro che lo capirebbe anche un bambino...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Dunque non c'è neanche bisogno di spiegarlo... Gli equivoci non si spiegano... altrimenti che equivoci Sarebbero?",
+    "isStageDirection": false
+  },
+  {
+    "character": "LADRO",
+    "text": "(alla moglie) Vieni, presto!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MOGLIE DEL LADRO",
+    "text": "Aspetta, non tirarmi così. (vanno verso la porta che il Ladro ha riaperto in precedenza. Passando vicino all'interruttore il Ladro spegne la luce)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANNA",
+    "text": "Chi ha spento la luce?",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Che succede?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ANTONIO",
+    "text": "Fermateli!... dove vanno quei due?",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "E’ talmente pazzo che sarebbe capace di andare a costituirsi... presto...",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "Presto, fermateli, non lasciateli scappare...",
+    "isStageDirection": false
+  },
+  {
+    "character": "DONNA",
+    "text": "Sono usciti per il giardino... correte!",
+    "isStageDirection": false
+  },
+  {
+    "character": "UOMO",
+    "text": "E’ impossibile... Ad ogni modo voi due andate da quella parte... tu vieni con me.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Escono tutti.",
+    "isStageDirection": true
+  },
+  {
+    "character": "STAGE",
+    "text": "FINE",
+    "isStageDirection": true
+  }
 ]

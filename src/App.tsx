@@ -143,8 +143,7 @@ export default function App() {
           if (!targetText) return;
 
           // Split into words for better matching
-          // For Italian, we keep short words (1+ chars) because they are meaningful (e.g., "e", "a", "sì")
-          const targetWords = targetText.split(/\s+/).filter(w => w.length >= 1);
+          const targetWords = targetText.split(/\s+/).filter(w => w.length > 1);
           
           if (targetWords.length === 0) {
             if (transcript.includes(targetText)) {
@@ -160,14 +159,6 @@ export default function App() {
           const matchedWords = targetWords.filter(word => transcript.includes(word));
           const matchRatio = matchedWords.length / targetWords.length;
           
-          // Filter out very common 1-letter Italian words for a "significant" ratio
-          // This helps with short lines like "E sarebbe?" where "E" might be missed
-          const significantTargetWords = targetWords.filter(w => w.length > 1);
-          const matchedSignificantWords = significantTargetWords.filter(word => transcript.includes(word));
-          const significantMatchRatio = significantTargetWords.length > 0 
-            ? matchedSignificantWords.length / significantTargetWords.length 
-            : matchRatio;
-
           // Check for the end of the line (last 2-3 significant words)
           const lastWordsCount = Math.min(3, targetWords.length);
           const lastWords = targetWords.slice(-lastWordsCount);
@@ -175,14 +166,14 @@ export default function App() {
           const lastWordsRatio = lastWordsMatched.length / lastWords.length;
 
           // Conditions to advance:
-          // 1. High overall match ratio (0.75) OR high significant match ratio
+          // 1. High overall match ratio (0.75)
           // 2. Good overall match (0.45) AND the end of the line is detected
-          // 3. For very short lines (1-2 words), require full inclusion or high significant ratio
+          // 3. For very short lines (1-2 words), require full inclusion
           // 4. The transcript contains the full target text
           const isShortLine = targetWords.length <= 2;
           const shouldAdvance = isShortLine 
-            ? transcript.includes(targetText) || significantMatchRatio >= 0.8 || matchRatio >= 0.9
-            : matchRatio >= 0.75 || significantMatchRatio >= 0.7 || (matchRatio >= 0.45 && lastWordsRatio >= 0.66) || transcript.includes(targetText);
+            ? transcript.includes(targetText) || matchRatio >= 0.8
+            : matchRatio >= 0.75 || (matchRatio >= 0.45 && lastWordsRatio >= 0.66) || transcript.includes(targetText);
 
           if (shouldAdvance) {
              console.log('Match found! Advancing...', { transcript, matchRatio, lastWordsRatio });

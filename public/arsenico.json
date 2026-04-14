@@ -1,392 +1,2167 @@
 [
-  {"character": "SCENA", "text": "Arsenico e vecchi merletti. ABBY è seduta al piano, accanto a lei, in piedi, c’è il sergente 'O HARA. TEDDY è davanti, in mezzo alla scena.", "isStageDirection": true},
-  {"character": "ABBY", "text": "Lei ha veramente del talento, lo sa, sergente 'O Hara...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Lo so, grazie. Le confesso che preferisco considerarmi più un artista che un poliziotto.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Un'altra tazza di tè?", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Volentieri...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si siedono al tavolo.", "isStageDirection": true},
-  {"character": "ABBY", "text": "Sono molto felice che una persona sensibile come lei sia stata destinata al nostro quartiere.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Già, un posto così tranquillo... e soprattutto questa casa, sì... sembra che qui, la violenza e la guerra non riusciranno mai a varcare la soglia del vostro giardino.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Questa è una delle più vecchie case di Brooklyn. È rimasta come nonno Brewster l'ha costruita e arredata, ad eccezione dell'elettricità che noi, peraltro, usiamo il meno possibile. È stato MORTIMER a persuaderci di installarla.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "MORTIMER?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Sì, nostro nipote. Ci viene a trovare di tanto in tanto. A proposito, Teddy, fra poco arriverà tuo fratello... Ora che si è fidanzato con la figlia del reverendo Dottor Harper, ci viene a trovare molto più spesso...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Chi, quella giovane che abita qui di fronte, dall'altra parte del cimitero?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Proprio lei!... Sa, il nostro ragazzo scrive per un giornale di New York...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "È meraviglioso!", "isStageDirection": false},
-  {"character": "ABBY", "text": "Oh, no, affatto. MORTIMER è critico teatrale e Dio sa quanto soffre per questo.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Soffre?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Sì, lui odia il teatro.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Dice davvero?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Scrive cose terribili sul teatro. Ma è anche comprensibile, poveretto. Era così contento, prima, quando si occupava di case e immobili di cui era veramente esperto... fino a quando l'hanno obbligato a questo terribile incarico notturno... Un altro biscotto, Teddy?", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Ma forse non è poi così terribile...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Cosa?", "isStageDirection": false},
-  {"character": "'O HARA", "text": "L'incarico notturno...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Oh, sì, invece. Fortunatamente, però, come dice lui stesso, il teatro non è come la musica, non avrà lunga vita... e nel frattempo gli dà da mangiare... ah, prima che mi dimentichi... ho preparato un po' di brodo caldo per il suo collega, il tenente Brophy...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Non si disturbi...", "isStageDirection": false},
-  {"character": "ABBY", "text": "So che ha avuto un incidente.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Sì, una brutta ferita al piede.", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Ah, ah, ah.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Ditegli che andrò presto a trovarlo.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Allora è vero quello che dicono... che è impossibile impedire a lei e a sua sorella di commettere buone azioni...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Oh, non esageriamo. D'altronde anche voi poliziotti ne fate del bene! Ora, per esempio con questa magnifica iniziativa di raccogliere i giocattoli per i bambini poveri...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Be', bene o male ci tiene occupati durante la giornata. Sa, dopo un po' ci si stanca di giocare sempre a carte e allora si comincia a pulire la pistola, e, prima che te ne accorgi, ti sei sparato su un piede...", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Caricaaaaa!!!!!", "isStageDirection": false},
-  {"character": "ABBY", "text": "Ora le do subito i giocattoli... Teddy, vai a prendere quella grande scatola, su, in camera di zia Marta... Mia sorella li ha già impacchettati... e le porto anche il brodo. Con permesso...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Prego.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Abby scompare in cucina. Entra MARTA dall'ingresso.", "isStageDirection": true},
-  {"character": "MARTA", "text": "Abby... Abby cara... Oh... buonasera...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Buonasera... Miss Marta, immagino...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Sì, molto piacere, signor...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Sergente 'O Hara agli ordini! Sostituisco il sergente Brophy momentaneamente infortunato...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Ah, ho saputo, un colpo di pistola...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "...al piede!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Stia pure comodo, sergente...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Sono venuto per i giocattoli per i bambini poveri...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Ah, già, l'esercito e la flotta di Teddy...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Appare TEDDY sulle scale. Lancia un terribile squillo di tromba.", "isStageDirection": true},
-  {"character": "MARTA", "text": "Ma Teddy, avevi promesso di non farlo più...", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Ma non posso, zia Marta! Devo convocare la riunione di gabinetto, per autorizzare il provvedimento!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Aveva l'abitudine di farlo nel cuore della notte e i vicini diventavano come delle belve. Ma è del tutto innocuo.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Innocuo?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Sì, crede di essere Theodore Roosevelt.", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Credo di essere Theodore Roosevelt.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Il presidente, Theodore Roosevelt?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Sì, e per fortuna non crede di essere qualcuno di peggio...", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Per fortuna!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Be', in fondo anche il Presidente Theodore Roosevelt credeva di essere Theodore Roosevelt!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra ABBY con il brodo.", "isStageDirection": true},
-  {"character": "ABBY", "text": "Oh, Marta, sei tornata... questo è il sergente 'O Hara.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Ci siamo già presentati.", "isStageDirection": false},
-  {"character": "ABBY", "text": "È venuto per i giocattoli...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Sembra però che il gabinetto debba dare l'ok.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Lo darà, stia certo.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra TEDDY con una grossa scatola.", "isStageDirection": true},
-  {"character": "'O HARA", "text": "Quanti sono!!", "isStageDirection": false},
-  {"character": "TEDDY", "text": "50!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Chissà quanti ragazzi faranno contenti!", "isStageDirection": false},
-  {"character": "TEDDY", "text": "50! Quello è il generale Miles. L'ho messo in congedo. È tutto vostro.", "isStageDirection": false},
-  {"character": "SCENA", "text": "'O Hara prende anche una nave. Teddy si altera.", "isStageDirection": true},
-  {"character": "TEDDY", "text": "Cosa ha preso? Ma quello è l'Oregon... Glielo strappa di mano.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Teddy caro, mettilo giù...", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Ma l'Oregon deve andare in Australia!", "isStageDirection": false},
-  {"character": "ABBY", "text": "Via, Teddy...", "isStageDirection": false},
-  {"character": "TEDDY", "text": "No, ho dato la mia parola al comandante Bob Evans!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Non fa niente, se ha dato la sua parola, se ci tiene tanto lo tenga.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Teddy dà la barchetta al poliziotto, poi esce urlando.", "isStageDirection": true},
-  {"character": "TEDDY", "text": "Caricaaaa...!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Be', si è fatto tardi... Oh, grazie... Avete mai provato a dissuaderlo di essere Theodore Roosevelt?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Oh, no...", "isStageDirection": false},
-  {"character": "MARTA", "text": "È così felice di essere Theodore Roosevelt.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Una volta, molto tempo fa, gli abbiamo suggerito di essere George Washington, giusto per cambiare un po'...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Ma si è infilato per giorni e giorni sotto il letto e non voleva essere più nessuno.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Be', contento lui... ma mi raccomando la tromba...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Oh, non si preoccupi, ci staremo molto attente...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Arrivederci allora...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Arrivederci, sergente... Sai, il sergente è un ottimo baritono. Abbiamo fatto un bel duetto, prima.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Magnifico. È per questo che avete preso il tè così tardi?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Oh no... per un altro motivo. Teddy! Teddy?! Buone nuove per te. Devi andare a Panama a scavare un'altra chiusa.", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Moolto lieto, perfetto. Vado a prepararmi per il viaggio. Caricaaaa!!!!!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Abby, mentre io ero fuori...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Sì, cara, proprio non ho potuto aspettarti. Non sapevo quando saresti tornata e il sergente stava per arrivare...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Scendo subito in cantina a vedere...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Oh, no! Non ce n'era il tempo, ed ero tutta sola... Guarda nella cassapanca...", "isStageDirection": false},
-  {"character": "VOCE ELENA", "text": "Permesso?", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra ELENA HARPER.", "isStageDirection": true},
-  {"character": "ABBY", "text": "Oh, Elena. Entra cara...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Buonasera Miss Abby, buonasera Miss Marta. MORTIMER non è ancora arrivato?", "isStageDirection": false},
-  {"character": "ABBY", "text": "No, cara, ma sarà qui a momenti. Perché non ti siedi, cara?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Grazie. Mi ha dato appuntamento qui. Vi dispiace se lo aspetto?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Affatto. Anzi, dobbiamo parlare seriamente a MORTIMER di come si comporta con te.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Perché, come si comporta?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Noi gli abbiamo insegnato che quando si invita una signorina, si va sempre a prenderla a casa!", "isStageDirection": false},
-  {"character": "ABBY", "text": "Si scoraggia troppo facilmente. Dovremo proprio parlargli.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ma quando 'la signorina' abita in un presbiterio, è comprensibile che si scoraggi un po'... andare a teatro tutte le sere, per me, è meraviglioso!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Be', questo conforta anche noi, giacché se MORTIMER è proprio obbligato a vedere certe cosacce, almeno lo fa accanto alla figlia di un pastore.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra MORTIMER con fare vivace.", "isStageDirection": true},
-  {"character": "MORTIMER", "text": "Perché non dai il bacio della buona notte prima a me?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Oh, ciao, MORTIMER...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Abby, è arrivato MORTIMER!", "isStageDirection": false},
-  {"character": "ABBY", "text": "Ciao MORTIMER! Come stai caro?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Benone, zia Abby. E trovo bene anche te. Non sei cambiata molto da ieri...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Oh, Dio mio, era solo ieri? Ultimamente ci vediamo molto più spesso. Bene siedi, siedi qui vicino a me.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Abby, non abbiamo qualcosa da fare in cucina?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Uh? Uh! Oh, certo, certo! Le tazze del tè!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Bene, voi due fate come se foste a casa vostra. Proprio...", "isStageDirection": false},
-  {"character": "MARTA/ABBY", "text": "...come se foste a casa vostra!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Escono cantando 'Noi siam le zingarelle'.", "isStageDirection": true},
-  {"character": "ELENA", "text": "Be', non raccogli l'invito?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Non ti fidare, ci tengono sotto tiro. Hanno occhi dappertutto. Piuttosto, dove vogliamo cenare stasera?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Per me è indifferente, tanto non ho molta fame.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Allora potremmo cenare dopo lo spettacolo, visto che oggi sono riuscito a pranzare...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ma non si farà troppo tardi? E poi, quello di stasera è una schifezza tale che alla fine del primo tempo...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Ci squagliamo anche stavolta? Ho prenotato l'ultima fila, vicino all'uscita. C'è anche una colonna che ci protegge la fuga.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Saremo da 'Blake' al massimo alle dieci?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Esattamente. Ti va bene?", "isStageDirection": false},
-  {"character": "ELENA", "text": "A me sì. Ma mi dispiace per quei poveretti. Dovresti avere un po' più di rispetto per questi spettacoli...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Perché, loro ne hanno per me?", "isStageDirection": false},
-  {"character": "ELENA", "text": "MORTIMER, tu stai peggiorando. È la prima volta che vuoi andar via a metà di un 'musical'.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Ma non è un musical quello di stasera! È stato rimandato per far debuttare quest'opera prima.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Un'opera prima? Di chi?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Scritta dal nipote del sindaco di Brooklyn.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Chi, quello che ha già l'appalto di onoranze funebri?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Proprio lui, il beccamorto! Pare che sia una riflessione sull'inutilità della vita...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ohh... preferisco la rivista. Sembra sia l'unico genere che ti interessi...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "E sarebbe?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Diciamo che mi interessano gli effetti psicologici che ha su di te. È vero che dopo quel dramma di Miller mi hai detto che ero graziosa e intelligente, ma è stato dopo il primo musical che mi hai detto che avevo delle belle gambe...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Per essere la figlia di un pastore, sei piuttosto birichina... dove le hai imparate queste cose?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Alle prove del coro della parrocchia. Spesso gli inni finivano in gloria.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Un coro molto affiatato... Senti, Elena, che ne diresti se dopo lo spettacolo ci sposassimo?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Dopo lo spettacolo?!", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Sì, sai, comincio ad avere una certa fretta...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ma MORTIMER, ho paura che sia papà a voler celebrare le nozze...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Tuo padre? Ma lui sarebbe capace di rendere banale anche la nostra cerimonia.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Non penserai, come in teatro, di andartene prima della fine...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Scusa, tesoro. È una deformazione professionale. Credo che stasera sarò generoso con questo spettacolo.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Via, amore, non pretendo poi che mi ami fino a questo punto...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra TEDDY dalle scale, in abiti tropicali.", "isStageDirection": true},
-  {"character": "TEDDY", "text": "Salve MORTIMER!", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Come state, presidente?", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Moolto bene, grazie, mooolto bene. Quali nuove mi portate?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Solo una, signore: 'il paese è compatto dietro di voi!'", "isStageDirection": false},
-  {"character": "TEDDY", "text": "Sì, lo so! Non è meraviglioso? Ed ora, arrivederci! Arrivederci!", "isStageDirection": false},
-  {"character": "ELENA", "text": "Dove siete diretto, Teddy?", "isStageDirection": false},
-  {"character": "TEDDY", "text": "A Panama!", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Panama è la cantina. Va lì giù a scavare le chiuse per il canale. È convinto di essere Theodore Roosevelt supervisionando i lavori.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Sei così carino con lui... e lui è così affezionato a te... Lo tratti con tanta pazienza.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Sì, Teddy è sempre stato il mio fratello preferito...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Preferito? Perché, ce ne sono altri?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Sì, un altro fratello: Jonathan. In effetti a noi non piace parlare di Jonathan. Ha lasciato Brooklyn molto presto. Jonathan era il tipo di ragazzo che tagliava i vermi in due... con i denti. Voleva diventare chirurgo come il nonno, ma senza andare all'università; e passare direttamente alla pratica, gli ha procurato qualche guaio.", "isStageDirection": false},
-  {"character": "SCENA", "text": "MORTIMER cerca nervosamente tra le carte sul tavolino.", "isStageDirection": true},
-  {"character": "MORTIMER", "text": "Avevo lasciato qui il necrologio dello spettacolo di ieri... l'hai visto? Erano due fogli dattiloscritti...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Devo fare una corsa per avvertire papà. Ogni volta che usciamo insieme, prima vuole sempre pregare un po' con me.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Fai in un attimo, tagliando per il cimitero...", "isStageDirection": false},
-  {"character": "ELENA", "text": "A più tardi, amore!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Elena esce. MORTIMER si avvicina alla cassapanca. Alza il coperchio e sussulta.", "isStageDirection": true},
-  {"character": "MORTIMER", "text": "...questa è piena... Santo cielo! Zia Abby! Zia Marta!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entrano le zie con calma.", "isStageDirection": true},
-  {"character": "MARTA", "text": "Sì, caro? Cosa c'è?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "C'è un cadavere nella cassapanca!", "isStageDirection": false},
-  {"character": "ABBY", "text": "Certo, caro, lo sappiamo.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Voi lo sapete?! Ma come... quando...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Certo che lo sappiamo. Ma questo non ha nulla a che vedere con Teddy.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Chi è? Chi è quell'uomo?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Si chiama Hoskins, Adam Hoskins. Un metodista. Portava un parrucchino di seconda mano.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Si vedeva benissimo che era appartenuto ad una testa più grande della sua...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "E come è morto? Cos'è successo?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Ha bevuto del vino con del veleno dentro. Quando ha starnutito, gli è caduto il parrucchino per terra...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "E il veleno nel vino chi ce l'ha messo?", "isStageDirection": false},
-  {"character": "ABBY/MARTA", "text": "Noi.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Voi?! Ma perché? Per quale ragione?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Lo mettiamo nel vino perché si sente meno. Nel tè ha un odore troppo distinto...", "isStageDirection": false},
-  {"character": "MARTA", "text": "È un'opera di carità cristiana, caro. Il primo fu il signor Midgely. Un battista. Venne qui per affittare una camera, era così solo...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Gli erano morti tutti i parenti ed amici, e lui era in miseria nel più completo abbandono. Ci faceva così pena...", "isStageDirection": false},
-  {"character": "MARTA", "text": "E quando gli venne l'infarto, con un'aria così serena e beata, abbiamo deciso che da allora, ogni qual volta avessimo potuto aiutare un povero vecchio solo a ritrovare quella stessa pace, l'avremmo fatto.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Quanti... quanti altri ci sono stati? Ditemi la verità!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Lascia pensare... Con Hoskins... Abby?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Dodici.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Dodici?! Dove sono?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Giù in cantina. Teddy li seppellisce a Panama. È convinto che siano vittime della febbre gialla.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Non posso denunciarvi... siete le mie zie... ma cosa devo fare?! C'è un morto nella cassapanca e undici... no, dodici in cantina!", "isStageDirection": false},
-  {"character": "ABBY", "text": "Cerca di dimenticare, caro. Fa' conto di non aver mai visto quel signore. Marta ed io avremo pur diritto ai nostri piccoli segreti.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Dimenticare?!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Mai avremmo pensato che saresti andato a curiosare là dentro!", "isStageDirection": false},
-  {"character": "ABBY", "text": "E non andare a dirlo ad Elena. È meglio che non sappia.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Escono in cucina. MORTIMER si riprende dallo shock. Arriva Elena.", "isStageDirection": true},
-  {"character": "ELENA", "text": "Ciao, MORTIMER! Che è successo, sei tutto sudato...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Davvero?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Scusami se ti ho fatto aspettare, ma papà si è accorto della mia eccitazione e così l'ho dovuto mettere al corrente della tua proposta.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Ah, bene... tornatene a casa, Elena, ti chiamerò domani...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Domani?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Ti chiamo sempre domani...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ma dobbiamo andare a teatro, stasera...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "No, non ci andremo.", "isStageDirection": false},
-  {"character": "ELENA", "text": "E perché no?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Elena, è successo qualcosa...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Non mi dirai che ti hanno licenziato...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "No, niente di tutto questo. Semplicemente non andrò io a fare la critica, stasera. Ora però tornatene a casa.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ma io devo sapere cosa è successo. Devi dirmelo!", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "No, tesoro, non posso...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ma noi stiamo per sposarci.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Sposarci?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ma MORTIMER me l'hai proposto cinque minuti fa... l'hai già dimenticato?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Io te l'ho proposto? E allora vuol dire che ci sposeremo, ma adesso tornatene a casa, che ho molto da fare.", "isStageDirection": false},
-  {"character": "ELENA", "text": "Senti, MORTIMER, tu non puoi prima chiedermi di sposarti e cacciarmi di casa subito dopo...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Io non ti sto cacciando di casa, cara... ma ora te ne vai, sì o no?!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Escono. Il campanello suona forte. Entrano JONATHAN ed EINSTEIN.", "isStageDirection": true},
-  {"character": "JONATHAN", "text": "Questa è la casa della mia infanzia. Quando ero piccolo non vedevo l'ora di andarmene, ora invece non mi dispiacerebbe restarci.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Certo, Chonny, sarebbe un nascondiglio ideale. Dopo quello che hai fatto abbiamo bisogno di un rifugio sicuro.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Guarda, Chonny, intanto c'è da bere!", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Sembra quasi ci stessero aspettando. Una buona accoglienza, non ti pare?", "isStageDirection": false},
-  {"character": "SCENA", "text": "ABBY accende la luce.", "isStageDirection": true},
-  {"character": "ABBY", "text": "Chi siete? Cosa fate qui?!", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "È tornato il vostro Jonathan!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Jonathan? No!!!", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Sono Jonathan, vostro nipote Jonathan... e questo è il dottor Einstein.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Lei non assomiglia affatto a Jonathan, e quindi non pretenda di esserlo.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Zia Abby, vedo che hai ancora l'anello che ha portato nonna Brewster dall'Inghilterra... e tu, zia Marta, porti sempre il colletto alto per nascondere quella cicatrice che il nonno ti ha fatto con l'acido...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Eppure la voce è quella di Jonathan.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Hai avuto qualche incidente, caro?", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "No. L'incidente è stato incontrare il dottor Einstein. È un chirurgo plastico. Cambia le facce alla gente.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Ma io l'ho già vista quella faccia! Ti ricordi al cinema? Boris Karloff!", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Calma, Chonny, calma. Non preoccupatevi, signore, negli ultimi cinque anni gli ho cambiato la faccia almeno tre volte. Mi sono lasciato un po' influenzare.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Lo vedi, dottore, lo vedi cosa mi hai fatto? Anche la mia stessa famiglia...", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Chonny, ora sei a casa, in questa deliziosa casetta... Loro ti riconoscono, Chonny... È vero, no?!... Diteglielo voi...", "isStageDirection": false},
-  {"character": "ABBY/MARTA", "text": "Eee... no!", "isStageDirection": false},
-  {"character": "ABBY", "text": "È passato tanto tempo... cosa hai fatto in tutti questi anni?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Sì, Jonathan, dove sei stato?", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Oh, in Inghilterra, Sud Africa, Australia...", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Io e il dottor Einstein abbiamo fatto degli affari, laggiù. Bene, è meraviglioso essere di nuovo a Brooklyn. E il caro Teddy è entrato in politica?", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Il mio fratellino, dottore, era deciso a diventare presidente...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Oh, è diventato presidente.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Il presidente Roosevelt!", "isStageDirection": false},
-  {"character": "ABBY", "text": "Sì, sì, Teddy sta bene, benissimo e MORTIMER altrettanto...", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "So di MORTIMER, ho visto la fotografia sopra un suo articolo. È riuscito a diventare quello che voleva e ha mantenuto anche quella faccia da lombrico che aveva già da ragazzino.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Noi siamo molto orgogliose di MORTIMER...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra MORTIMER.", "isStageDirection": true},
-  {"character": "MORTIMER", "text": "Jonathan?! Ma che faccia ti sei fatto! Sembri... un mostro del cinema!", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "MORTIMER. Sempre quella faccia da lombrico. Ti sei dimenticato gli scherzetti che ti facevo da ragazzo?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "È proprio Jonathan... dove hai preso quella faccia, a Hollywood?", "isStageDirection": false},
-  {"character": "ABBY", "text": "Forza, non vorrete ricominciare a litigare appena vi siete visti?...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Qui non resti. Fuori. Non voglio vederti in questa casa.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Il dottore ed io siamo stati invitati a restare.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Ma solo per stanotte...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Lui non resterà qui un minuto di più.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Forse è meglio se andiamo, Chonny... Brooklyn non è una buona piazza per te.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Dottore! Quando ho deciso una cosa...", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Sì, quando hai deciso una cosa, perdi la testa...", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "E se ti dicessi che ho un amico in macchina che non respira più? Si chiama Spenalzo.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Una brava persona, ci ha dato anche un passaggio... non avresti dovuto ucciderlo, Chonny!", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Ha detto che somigliavo a Boris Karloff... ed è per colpa tua, dottore!", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Un altro morto? A me ne avanzano dodici in cantina.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Cosa?", "isStageDirection": false},
-  {"character": "MARTA", "text": "È vero, Jonathan. Abbiamo aiutato dodici signori a trovare la pace.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Voi? Due vecchiette? Che cosa avete fatto, cantato loro delle ninna nanne?", "isStageDirection": false},
-  {"character": "ABBY", "text": "È un'opera di carità cristiana! Quello che facciamo è solo per carità!", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Come avete fatto, signore? Con che metodo?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Con il vino di sambuco. Una ricetta speciale: arsenico, stricnina e un pizzico di cianuro.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Himmel! Un cocktail micidiale!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra il SERGENTE 'O HARA.", "isStageDirection": true},
-  {"character": "'O HARA", "text": "Salve, Miss Abby... oh, vedo che avete degli ospiti. Non vorrei avervi disturbato...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Ma niente affatto, sergente, si accomodi pure. Questo è mio fratello Jonathan...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "La sua faccia mi è familiare... sembra Boris Karloff. Dica, ma noi non ci siamo già visti da qualche parte?", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Non credo proprio.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Eppure la sua faccia non mi è nuova... forse al cinema?", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Io non vado mai al cinema. Non mi piace.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Sergente, lei è un commediografo, vero? Mi racconti della sua opera. Sono curioso!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Davvero? Allora si sieda! La storia comincia nel camerino di mia madre, quando non ero ancora nato...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Ma andiamo in cucina… le mie zie ci prepareranno qualcosa di buono…", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "MORTIMER, vorrei dirti una parola...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Una sola, è tutto quello che ti concedo. Devi andare via il più presto possibile, diciamo pure subito.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Mi spiace, MORTIMER. Sarai tu ad andartene.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Jonathan, stai cominciando a seccarmi. La tua notte a Brooklyn è durata anche troppo. Fila!", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Invece io resto qui e tu te ne vai. Levati dai piedi o...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Se credi di farmi paura...", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Ho fatto una vita strana, MORTIMER, e ho imparato diverse cose…", "isStageDirection": false},
-  {"character": "SCENA", "text": "Jonathan lega MORTIMER alla sedia.", "isStageDirection": true},
-  {"character": "JONATHAN", "text": "Adesso, dottore, mettiamoci al lavoro... Prego, dottore, è tutto pronto...", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Prima devo bere, Chonny... Dove l'avranno messa? Oh, ecco... tieni, Chonny, bevine un goccio anche tu.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Alla salute del mia caro e affettuoso fratello...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Teddy suona la tromba. I due lasciano cadere i bicchieri.", "isStageDirection": true},
-  {"character": "JONATHAN", "text": "... dannato idiota! Il prossimo sarà lui...", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "No, Chonny, un altro no, io mi fermo a questo.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Lo sistemeremo dopo. E adesso al lavoro, facciamo presto.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Appunto, Chonny, usiamo il metodo spiccio.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Va bene, dottore, hai ragione tu. Il metodo di Londra.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra 'O HARA.", "isStageDirection": true},
-  {"character": "'O HARA", "text": "Ehi, il presidente aveva promesso di non suonare più la tromba nel cuore della notte!", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Non si preoccupi, sergente, gliela togliamo subito.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "C’è da andare al manicomio con tutte le proteste dei vicini.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Non accadrà più, sergente. Buonanotte.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Sarà meglio che gli parli di persona. Dove sono le luci? Ehi, lei, prima mi ha piantato in asso... Ma cosa gli è successo? Che ha fatto?", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Ci stava raccontando la commedia. Questo, per l'appunto, non capitava ad un personaggio dello spettacolo?", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Si esatto! Succede praticamente la stessa cosa nel secondo atto della mia commedia... dunque, la storia comincia nel camerino di mia madre, quando non ero ancora nato...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Passa il tempo. È l'alba. MORTIMER è ancora legato.", "isStageDirection": true},
-  {"character": "'O HARA", "text": "Secondo atto... quella voce, quel finale del primo atto, quando sento il pericolo, mi martella sempre le orecchie... A già...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Il telefono squilla.", "isStageDirection": true},
-  {"character": "'O HARA", "text": "Hallo?... Sergente 'O Hara agli ordini!... Proprio io, tenente! Come dov'ero?... Sono qui, a casa Brewster… stavo raccontando il soggetto della mia commedia... Caspita! Le otto del mattino!... E manca ancora il terzo atto!...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Jonathan tenta di strozzare 'O Hara.", "isStageDirection": true},
-  {"character": "'O HARA", "text": "Aiuto, tenente, miii stanno strozzando...", "isStageDirection": false},
-  {"character": "VOCE ELENA", "text": "Permesso? Miss Abby?...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "... Come?... Fuggito dal manicomio crimin... Aiuto... presto tenen... soffoc...", "isStageDirection": false},
-  {"character": "SCENA", "text": "Elena colpisce Jonathan con la borsa. Jonathan sviene.", "isStageDirection": true},
-  {"character": "'O HARA", "text": "Ok, tenente, l'ho preso... ora ve lo impacchetto ben bene... grazie, tenente!", "isStageDirection": false},
-  {"character": "ELENA", "text": "Avevo visto l'ombra di un uomo con la pistola puntata e...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Ero io. Stavo… ehmmm… arrestando questo criminale... Stava tentando di strozzarmi...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Ah, mi hanno raccontato di lui…", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Dev'essere una mania... grazie signorina... signorina?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Elena Harper...", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Ah, la figlia del pastore. Sergente 'O Hara agli ordini...", "isStageDirection": false},
-  {"character": "ELENA", "text": "Comodo, comodo... piuttosto, MORTIMER?!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Entra TEDDY.", "isStageDirection": true},
-  {"character": "TEDDY", "text": "Un'altra vittima della febbre gialla! Acciderboli! Sarà una brutta notizia per il generale Goethals!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Febbre gialla? Qui a Brooklyn?", "isStageDirection": false},
-  {"character": "SCENA", "text": "Rientrano le zie.", "isStageDirection": true},
-  {"character": "ABBY", "text": "Sì, sergente. In cantina ci sono dodici signori che riposano in pace. Tutte vittime dell'epidemia.", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Tredici! Con Spenalzo!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Dodici! Uno è morto di polmonite!", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Non sarebbe morto se non gli avessi bucato un polmone!", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Chonny, non puoi contare l'ultimo... è morto di polmonite!", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Non gli sarebbe venuta se io non gli avessi bucato un polmone!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Ma... state parlando di omicidi?! Tredici... dodici... polmoni bucati...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "No, no! Sono solo... fantasie di famiglia! Teddy crede di essere Roosevelt, le zie hanno l'immaginazione vivace... è tutta opera di Jonathan!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Ah! Come nella mia commedia! Secondo atto: il mostro entra in casa, tutti parlano di morti ma la colpa è di uno solo!", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Esattamente, sergente! E quest'uomo, questo 'mostro', è Jonathan Brewster, ricercato in diversi stati!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Davvero? Allora vieni con me, Boris. Tredici omicidi, dicevi? La taglia dev'essere sostanziosa...", "isStageDirection": false},
-  {"character": "JONATHAN", "text": "Ma loro ne hanno fatti dodici! Dodici! Guardate in cantina! Sono due assassine!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Racconterai tutto al tenente. Forse ti daranno uno sconto per la collaborazione.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Tschüss, Chonny... era prevedibile.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Dottore, quello è vino di sambuco. Speciale.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Oh! Danke, danke... forse è meglio se vado anch'io...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Ora ascoltatemi bene. Dovete firmare queste carte per Happy Dale. Ci andrete con Teddy.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Ma noi non siamo pazze!", "isStageDirection": false},
-  {"character": "MARTA", "text": "È una casa di cura...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "È l'unico modo per proteggervi. Se qualcuno scoprisse la cantina...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Per Teddy faremmo qualsiasi cosa.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Firmiamo.", "isStageDirection": false},
-  {"character": "SCENA", "text": "Firmano. Entra Einstein con valigie.", "isStageDirection": true},
-  {"character": "EINSTEIN", "text": "Devo andare via, subito. Chonny è finito...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Un momento, dottore. Firma anche lei queste carte. Come medico. O chiamo il tenente e gli dico che il chirurgo plastico di Jonathan è qui.", "isStageDirection": false},
-  {"character": "EINSTEIN", "text": "Dove devo firmare? Ecco. Addio!", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Tutto sistemato. Jonathan è in cella. Ora, MORTIMER, il terzo atto della mia commedia...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Un momento, sergente. Ziette, voglio abbracciarvi un'ultima volta prima che partiate.", "isStageDirection": false},
-  {"character": "ABBY", "text": "MORTIMER, siamo un po' preoccupate...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Non vorremmo che sorgessero delle complicazioni...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Pensi che andranno a controllare quelle firme?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Ma di cosa avete paura? Fra poco nessuno si ricorderà più del dottor Einstein.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Ma non è la sua firma che ci preoccupa, caro, è la tua...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Vedi, tu hai firmato come parente più prossimo...", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Mi sembra chiaro. Sono vostro nipote.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Noi... noi non avremmo mai voluto dirtelo, ma... ormai sei grande e poi... è giusto che Elena lo sappia...", "isStageDirection": false},
-  {"character": "ABBY", "text": "Tu non sei un vero Brewster!", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Cosa?! Ma state scherzando, vero?", "isStageDirection": false},
-  {"character": "MARTA", "text": "Tua madre venne assunta da noi come cuoca e tu nascesti tre mesi dopo...", "isStageDirection": false},
-  {"character": "ABBY", "text": "E siccome era una cuoca molto brava e noi non volevamo perderla, nostro fratello la sposò...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Era una donna tanto buona e paziente... ti abbiamo sempre voluto bene come un vero nipote.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Ti dispiace molto, caro?", "isStageDirection": false},
-  {"character": "ELENA", "text": "Aspettate... state dicendo che MORTIMER... non è vostro nipote di sangue?", "isStageDirection": false},
-  {"character": "MARTA", "text": "No, cara. Ma per noi è sempre stato come un figlio.", "isStageDirection": false},
-  {"character": "ELENA", "text": "E a te... cosa importa davvero? Il sangue o l'amore che ti hanno dato?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Importa... che non sono un Brewster! Elena! Hai sentito? Sono un bastardo! Non ho il sangue dei Brewster! Non sono pazzo!", "isStageDirection": false},
-  {"character": "ELENA", "text": "MORTIMER, smettila di saltare come un matto! Che cosa stai dicendo?", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Sto dicendo che posso sposarti! Posso sposarti senza paura di tramandare la pazzia dei Brewster! Sono libero!", "isStageDirection": false},
-  {"character": "ELENA", "text": "Amore, tu non sei pazzo. Sei solo... un po' eccentrico. Come tutti gli artisti.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "No, Elena, non capisci! I Brewster hanno una storia di pazzia! Ma io... io non sono uno di loro!", "isStageDirection": false},
-  {"character": "ELENA", "text": "Sei te, MORTIMER. Sei l'uomo che amo. Brewster o no, bastardo o no, non mi importa. Voglio sposarti.", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Allora sposiamoci! Subito! Oggi stesso!", "isStageDirection": false},
-  {"character": "ELENA", "text": "Calma, pazzo! Dobbiamo almeno aspettare che papà celebri la cerimonia!", "isStageDirection": false},
-  {"character": "MORTIMER", "text": "Hai ragione! Andiamo subito da lui! Ziette! Vi voglio bene! Verrò a trovarvi a Happy Dale!", "isStageDirection": false},
-  {"character": "ELENA", "text": "E io vi porterò il caffè! Addio, Miss Abby! Addio, Miss Marta!", "isStageDirection": false},
-  {"character": "SCENA", "text": "Si baciano e fuggono ridendo.", "isStageDirection": true},
-  {"character": "'O HARA", "text": "Ehi! E il mio terzo atto?! Mi hai piantato in asso due volte! Sono un artista, ho bisogno di un pubblico!", "isStageDirection": false},
-  {"character": "MARTA", "text": "Non si preoccupi, sergente. Resti con noi. Beviamo un goccio di vino di sambuco.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Lo facciamo noi, con le nostre mani. È una ricetta speciale.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Ma veramente... sono in servizio... Beh, per un goccetto... è tanto che non bevo vino di sambuco.", "isStageDirection": false},
-  {"character": "MARTA", "text": "Eccolo qui! Alla sua salute, sergente. E alla sua commedia.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Mmm... delizioso. Sa di... di...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Di pace, sergente.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Di pace eterna.", "isStageDirection": false},
-  {"character": "'O HARA", "text": "Sì... pace... forse il terzo atto potrebbe essere proprio così... il protagonista trova finalmente la pace...", "isStageDirection": false},
-  {"character": "MARTA", "text": "Sarebbe un bel finale, sergente.", "isStageDirection": false},
-  {"character": "ABBY", "text": "Un finale perfetto.", "isStageDirection": false},
-  {"character": "SCENA", "text": "FINE.", "isStageDirection": true}
+  {
+    "character": "STAGE",
+    "text": "Arsenico e vecchi merletti",
+    "isStageDirection": true
+  },
+  {
+    "character": "STAGE",
+    "text": "ABBY è seduta al piano, accanto a lei, in piedi, c’è il sergente 'O HARA. Stanno cantando assieme con molta passione un pezzo lirico famoso dal \"Don Giovanni\" di Mozart. TEDDY è davanti, in mezzo alla scena, assorto nei suoi pensieri. Sorseggia tè.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "(Appena finito di cantare) Lei ha veramente del talento, lo sa, sergente 'O...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "(Sulla sinistra del piano) Lo so, grazie. Le confesso che preferisco considerarmi più un artista che un poliziotto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Alzandosi dal pianoforte) Un'altra tazza di tè?",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Volentieri...",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Si siedono al tavolo.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "Sono molto felice che persone sensibili come voi siano state destinate al nostro quartiere.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Già, un posto così tranquillo... e soprattutto questa casa, sì... sembra che qui, la violenza e la guerra non riusciranno mai a varcare la soglia del vostro giardino.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Questa è una delle più vecchie case di Brooklyn. È rimasta come nonno Brewster l'ha costruita e arredata, ad eccezione dell'elettricità che noi, peraltro, usiamo il meno possibile. È stato Mortimer a persuaderci di installarla.",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Mortimer?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Sì, nostro nipote. Ci viene a trovare di tanto in tanto. A proposito, Teddy, fra poco arriverà tuo fratello... (Teddy non risponde) Ora che si è fidanzato con la figlia del reverendo Dottor Harper, ci viene a trovare molto più spesso...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Chi, quella giovane che abita qui di fronte, dall'altra parte del cimitero?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Proprio lei!... Sa, il nostro ragazzo scrive per un giornale di New York...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "È meraviglioso!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, no, affatto. Mortimer è critico teatrale e Dio sa quanto soffre per questo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Soffre?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Sì, lui odia il teatro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Dice davvero?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Scrive cose terribili sul teatro. Ma è anche comprensibile, poveretto. Era così contento, prima, quando si occupava di case e immobili di cui era veramente esperto... fino a quando l'hanno obbligato a questo terribile incarico notturno... (Poi si rivolge a Teddy che sta tentando di infilarsi in bocca 4-5 biscotti) Un altro biscotto, Teddy?",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Ma forse non è poi così terribile...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Che ha perso il filo) Cosa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "L'incarico notturno...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Riprendendo) Oh, sì, invece. Fortunatamente, però, come dice lui stesso, il teatro non è come la musica, non avrà lunga vita... (‘O Hara prende un biscotto) ...e nel frattempo gli dà da mangiare... ah, prima che mi dimentichi... ho preparato un po' di brodo caldo per il vostro collega, il tenente Brophy...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Non si disturbi...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "So che ha avuto un incidente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Sì, una brutta ferita al piede.",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "Ah, ah, ah.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Ditegli che andrò presto a trovarlo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Allora è vero quello che dicono... che è impossibile impedire a lei e a sua sorella di commettere buone azioni...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, non esageriamo. D'altronde anche voi poliziotti ne fate del bene! Ora, per esempio con questa magnifica iniziativa di raccogliere i giocattoli per i bambini poveri...",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "(Si alza di scatto davanti alle scale lanciando un grido animalesco) Caricaaaaa!!!!!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Come se niente fosse) Ora le do subito i giocattoli... Teddy, vai a prendere quella grande scatola, su, in camera di zia Marta... (Ad ‘O Hara) Mia sorella li ha già impacchettati... e le porto anche il brodo. Con permesso... (Si alza)",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "(Alzandosi) Prego.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Abby scompare in cucina. Il sergente rimane interdetto. Entra MARTA dall'ingresso.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MARTA",
+    "text": "(Chiamando e togliendosi i guanti) Abby... Abby cara... (Si accorge di 'O Hara) Oh... buonasera...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Buonasera... Miss Marta, immagino...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Sì, molto piacere, signora..",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "(Vicino al piano) Siamo il Sergente 'O e il sergente Hara! Sostituiamo il sergente Brophy momentaneamente infortunato...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Ah, ho saputo, un colpo di pistola...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "...al piede!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "State pure comodi, sergenti...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Siamo venute per i giocattoli per i bambini poveri...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Ah, già, l'esercito e la flotta di Teddy...",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "In quel momento appare TEDDY sulle scale. Lancia un terribile squillo di tromba, che fa inorridire il sergente.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MARTA",
+    "text": "Ma Teddy, avevi promesso di non farlo più...",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "Ma non posso, zia Marta! Devo convocare la riunione di gabinetto, per autorizzare il provvedimento!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Si leva il cappello e la mantella) Aveva l'abitudine di farlo nel cuore della notte e i vicini diventavano come delle belve e andavano a protestare alla polizia. Qui non osavano, perché di lui hanno un certo timore. Ma è del tutto innocuo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Innocuo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Sì, crede di essere Theodore Roosevelt.",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "Credo di essere Theodore Roosevelt.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Il presidente, Theodore Roosevelt?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Sì, e per fortuna non crede di essere qualcuno di peggio...",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "Per fortuna!",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Be', in fondo anche il Presidente Theodore Roosevelt credeva di essere Theodore Roosevelt!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Entra ABBY con il brodo.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, Marta, sei tornata... questi sono il sergente 'O e il sergente Hara.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Ci siamo già presentati.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Sono venute per i giocattoli...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "(Tentando dello spirito) Sembra però che il gabinetto debba dare l'ok.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Lo darà, stia certa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Entra TEDDY con una grossa scatola, cantando. La posa sul tavolo. ‘O Hara va a curiosare.",
+    "isStageDirection": true
+  },
+  {
+    "character": "'O",
+    "text": "(Sorpreso) Quanti sono!!",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "50!",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Chissà quanti ragazzi faranno contenti!",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "50!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "‘O Hara tira fuori un soldato. Teddy gli si mette alle spalle.",
+    "isStageDirection": true
+  },
+  {
+    "character": "TEDDY",
+    "text": "Quello è il generale Miles. L'ho messo in congedo. È tutto vostro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "‘O Hara prende anche una nave. Teddy si altera.",
+    "isStageDirection": true
+  },
+  {
+    "character": "TEDDY",
+    "text": "Cosa ha preso? Ma quello è l'Oregon... (Glielo strappa di mano)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Teddy caro, mettilo giù...",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "Ma l'Oregon deve andare in Australia!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Via, Teddy...",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "No, ho dato la mia parola al comandante Bob Evans!",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "(Indietreggiando impaurito) Non fa niente, se ha dato la sua parola, se ci tiene tanto lo tenga.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Teddy ci ripensa e dà la barchetta al poliziotto, poi esce urlando.",
+    "isStageDirection": true
+  },
+  {
+    "character": "TEDDY",
+    "text": "Caricaaaa...!",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "(Molto imbarazzato) Be', si è fatto tardi... (Prende la scatola)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, sergente... il brodo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Oh, grazie... (Che stava uscendo, si ferma) Avete mai provato a dissuaderlo di essere Theodore Roosevelt?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, no...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "È così felice di essere Theodore Roosevelt.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Una volta, molto tempo fa, gli abbiamo suggerito di essere George Washington, giusto per cambiare un po'...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Ma si è infilato per giorni e giorni sotto il letto e non voleva essere più nessuno.",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Be', contento lui... ma mi raccomando la tromba...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Oh, non si preoccupi, ci staremo molto attente...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Arrivederci allora...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Arrivederci... (‘O Hara esce) Sai, il sergente è un’ottima soprano. Abbiamo fatto un bel duetto, prima.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Si avvicina al tavolo) Magnifico. È per questo che avete preso il tè così tardi?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh no... (Con complicità) per un altro motivo. (Chiama) Teddy!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Teddy si affaccia dal pianerottolo.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "Teddy?! Buone nuove per te. Devi andare a Panama a scavare un'altra chiusa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "Moolto lieto, perfetto. Vado a prepararmi per il viaggio. Caricaaaa!!!!!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Teddy esce di corsa.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MARTA",
+    "text": "(Che ha intuito) Abby, mentre io ero fuori...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Sì, cara, proprio non ho potuto aspettarti. Non sapevo quando saresti tornata e il sergente stava per arrivare...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Scendo subito in cantina a vedere... (Fa per uscire)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, no! Non ce n'era il tempo, ed ero tutta sola...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Ebbene?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Timidamente) Guarda nella cassapanca...",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Marta si affretta verso la cassapanca, ma prima che vi arrivi si sente la voce di Elena.",
+    "isStageDirection": true
+  },
+  {
+    "character": "VOCE ELENA",
+    "text": "Permesso?",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Entra ELENA HARPER, un’attraente ragazza di una ventina d’anni, sorprendentemente elegante.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, Elena.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Entra cara...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Entra, sorprendentemente elegante per essere la figlia di un pastore) Permesso? Buonasera Miss Abby, buonasera Miss Marta.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, Elena. Entra cara...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Mortimer non è ancora arrivato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "No, cara, ma sarà qui a momenti. Perché non ti siedi, cara?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Grazie. (Si siede) Mi ha dato appuntamento qui. Vi dispiace se lo aspetto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Affatto, cara. Anzi, dobbiamo parlare seriamente a Mortimer di come si comporta con te.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Perché, come si comporta?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Noi gli abbiamo insegnato che quando si invita una signorina, si va sempre a prenderla a casa!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Si siede accanto a Elena) Si scoraggia troppo facilmente. Dovremo proprio parlargli.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Ma quando \"la signorina\" abita in un presbiterio, è comprensibile che si scoraggi un po'... Dopo corteggiatori per cui il massimo della vita notturna erano i meeting di preghiera, andare a teatro tutte le sere, per me, è meraviglioso!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Be', questo conforta anche noi, giacché se Mortimer è proprio obbligato a vedere certe cosacce, almeno lo fa accanto alla figlia di un pastore.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Entra MORTIMER con fare vivace.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Perché non dai il bacio della buona notte prima a me?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Oh, ciao, Mortimer... (Si lancia ad abbracciarlo, ma la zia Marta arriva prima e glielo \"ruba\")",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Abbracciandolo forte) Abby, è arrivato Mortimer!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Abby si lancia a sua volta nelle braccia del nipote.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "Ciao Mortimer! Come stai caro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Abbracciandola e baciandola) Benone, zia Abby. E trovo bene anche te. Non sei cambiata molto da ieri...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, Dio mio, era solo ieri? Ultimamente ci vediamo molto più spesso. Bene siedi, siedi qui vicino a me.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Fermamente, mentre Mortimer sta sedendo) Abby, non abbiamo qualcosa da fare in cucina?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Uh? Uh! (Poi realizza) Oh, certo, certo! Le tazze del tè!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Bene, voi due fate come se foste a casa vostra. Proprio...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA/ABBY",
+    "text": "...come se foste a casa vostra! (indicando i biscotti)",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Escono cantando \"Noi siam le zingarelle\".",
+    "isStageDirection": true
+  },
+  {
+    "character": "ELENA",
+    "text": "Be', non raccogli l'invito?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Non ti fidare, ci tengono sotto tiro. Hanno occhi dappertutto. Piuttosto, dove vogliamo cenare stasera?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Guardandosi in uno specchietto) Per me è indifferente, tanto non ho molta fame.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Allora potremmo cenare dopo lo spettacolo, visto che oggi sono riuscito a pranzare...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Ma non si farà troppo tardi? E poi, quello di stasera è una schifezza tale che alla fine del primo tempo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Ci squagliamo anche stavolta? Ho prenotato l'ultima fila, vicino all'uscita. C'è anche una colonna che ci protegge la fuga.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Saremo da \"Blake\" al massimo alle dieci?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Esattamente. Ti va bene?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "A me sì. Ma mi dispiace per quei poveretti. Dovresti avere un po' più di rispetto per questi spettacoli...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Perché, loro ne hanno per me?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Mortimer, tu stai peggiorando. È la prima volta che vuoi andar via a metà di un \"musical\".",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Ma non è un musical quello di stasera! È stato rimandato per far debuttare quest'\"opera prima\".",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Un'\"opera prima\"? Di chi?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Scritta dal nipote del sindaco di Brooklyn.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Chi, quello che ha già l'appalto di onoranze funebri?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Proprio lui, il beccamorto! Pare che sia una riflessione sull'inutilità della vita...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Ohh... preferisco la rivista. Sembra sia l'unico genere che ti interessi...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "E sarebbe?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Diciamo che mi interessano gli effetti psicologici che ha su di te. È vero che dopo quel dramma di Miller mi hai detto che ero graziosa e intelligente e questo mi ha fatto molto piacere, ma è stato dopo il primo musical che mi hai detto che avevo delle belle gambe... e non ti sei fermato lì...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Per essere la figlia di un pastore, sei piuttosto birichina... dove le hai imparate queste cose?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Alle prove del coro della parrocchia. Spesso gli inni finivano in gloria.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Un coro molto affiatato... Senti, Elena, che ne diresti se dopo lo spettacolo ci sposassimo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Dopo lo spettacolo?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Sì, sai, comincio ad avere una certa fretta... (L'abbraccia)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Ma Mortimer, ho paura che sia papà a voler celebrare le nozze...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Tuo padre? Ma lui sarebbe capace di rendere banale anche la nostra cerimonia.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Non penserai, come in teatro, di andartene prima della fine...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Scusa, tesoro. È una deformazione professionale. Credo che stasera sarò generoso con questo spettacolo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Via, amore, non pretendo poi che mi ami fino a questo punto...",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Entra TEDDY dalle scale, in abiti tropicali completi di parasole. Marcia solenne verso Mortimer.",
+    "isStageDirection": true
+  },
+  {
+    "character": "TEDDY",
+    "text": "Salve Mortimer!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Con tono grave e cerimonioso) Come state, presidente?",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "Moolto bene, grazie, mooolto bene. Quali nuove mi portate?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Solo una, signore: \"il paese è compatto dietro di voi!\"",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "(Gongolante, stringe vigorosamente la mano di Mortimer) Sì, lo so! Non è meraviglioso? Ed ora, arrivederci! (Si volta verso Elena e le stringe anche la mano) Arrivederci! (Si dirige con passo deciso verso la porta della cantina)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Dove siete diretto, Teddy?",
+    "isStageDirection": false
+  },
+  {
+    "character": "TEDDY",
+    "text": "A Panama! (Esce dalla porta della cantina)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Panama è la cantina. Va lì giù a scavare le chiuse per il canale. È convinto di essere Theodore Roosevelt supervisionando i lavori.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Prendendogli le mani) Sei così carino con lui... e lui è così affezionato a te... Lo tratti con tanta pazienza.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Sì, Teddy è sempre stato il mio fratello preferito...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Preferito? Perché, ce ne sono altri?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Sì, un altro fratello: Jonathan.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Jonathan? Le tue zie non me ne hanno mai parlato.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "In effetti a noi non piace parlare di Jonathan. Ha lasciato Brooklyn molto presto. Diciamo... su richiesta. Jonathan era il tipo di ragazzo che tagliava i vermi in due... con i denti. Voleva diventare chirurgo come il nonno, ma senza andare all'università; e passare direttamente alla pratica, gli ha procurato qualche guaio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Mortimer cerca nervosamente tra le carte sul tavolino.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Avevo lasciato qui il necrologio dello spettacolo di ieri... l'hai visto? Erano due fogli dattiloscritti...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Devo fare una corsa per avvertire papà. Ogni volta che usciamo insieme, prima vuole sempre pregare un po' con me.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Fai in un attimo, tagliando per il cimitero... (Con un sorriso)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Ride e gli lancia un bacio) A più tardi, amore! (Esce veloce)",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Mortimer, rimasto solo, continua a cercare. Si avvicina alla cassapanca pensando di averci poggiato le carte sopra. Alza il coperchio e sussulta violentemente.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Non credendo ai suoi occhi, lascia ricadere il coperchio e guarda il pubblico) ...questa è piena... (Guarda di nuovo dentro, fissando il contenuto) Santo cielo! Zia Abby! Zia Marta!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Entrano le zie con calma, Abby asciugandosi le mani su un canovaccio.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MARTA",
+    "text": "Sì, caro? Cosa c'è?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Indica la cassapanca con mano tremante) C'è un cadavere nella cassapanca!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Certo, caro, lo sappiamo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Voi lo sapete?! Ma come... quando...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Certo che lo sappiamo. Ma questo non ha nulla a che vedere con Teddy.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Chi è? Chi è quell'uomo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Si chiama Hoskins, Adam Hoskins. Un metodista. Portava un parrucchino di seconda mano.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Si vedeva benissimo che era appartenuto ad una testa più grande della sua...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "E come è morto? Cos'è successo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Ha bevuto del vino con del veleno dentro. Quando ha starnutito, gli è caduto il parrucchino per terra...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "E il veleno nel vino chi ce l'ha messo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY/MARTA",
+    "text": "Noi.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Voi?! Ma perché? Per quale ragione?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Lo mettiamo nel vino perché si sente meno. Nel tè ha un odore troppo distinto...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "È un'opera di carità cristiana, caro. Il primo fu il signor Midgely. Un battista. Venne qui per affittare una camera, era così solo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Gli erano morti tutti i parenti ed amici, e lui era in miseria nel più completo abbandono. Ci faceva così pena...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "E quando gli venne l'infarto, con un'aria così serena e beata, abbiamo deciso che da allora, ogni qual volta avessimo potuto aiutare un povero vecchio solo a ritrovare quella stessa pace, l'avremmo fatto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Quanti... quanti altri ci sono stati? Ditemi la verità!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Lascia pensare... (Conta mentalmente) Con Hoskins... Abby?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Dodici.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Dodici?! Dove sono?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Giù in cantina. Teddy li seppellisce a Panama. È convinto che siano vittime della febbre gialla.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Cammina su e giù, passandosi una mano sulla fronte) Non posso denunciarvi... siete le mie zie... ma cosa devo fare?! C'è un morto nella cassapanca e undici... no, dodici in cantina!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Cerca di dimenticare, caro. Fa' conto di non aver mai visto quel signore. Marta ed io avremo pur diritto ai nostri piccoli segreti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Dimenticare?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Mai avremmo pensato che saresti andato a curiosare là dentro!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "E non andare a dirlo ad Elena. È meglio che non sappia. (escono in cucina)",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Dopo qualche istante Mortimer si riprende dallo shok e si avvicina alla cassapanca. Ne alza il coperchio e guarda il cadavere: Come se non ci credesse si stropiccia gli occhi, poi, terrorizzato, lascia cadere il coperchio. Lo rialza e lo riabbassa velocemente. Prende allora, tutto proteso in avanti, con le punte delle dita, le tende e le chiude rapidamente. Poi fissa la cassapanca e comincia ad indietreggiare fino alla porta delta cantina, da dove si sente cantare Teddy. In quel momento arriva Elena e Mortimer si schioda contro la porta della cantina.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ELENA",
+    "text": "Ciao, Mortimer! (candidamente ignara va verso la cassapanca per posarvi la borsa...Mortimer inizia a tossire forzatamente per distogliere l'attenzione di Elena dalla cassapanca.) Che è successo, Mortimer, sei tutto sudato...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Davvero?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Scusami se ti ho fatto aspettare, ma papà si è accorto della mia eccitazione e così l'ho dovuto mettere al corrente della tua proposta. Ma in compenso... mi ha detto che non mi aspetterà stanotte.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(sempre fissando la cassapanca) Ah, bene... tornatene a casa, Elena, ti chiamerò domani...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Domani?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(irritato) Ti chiamo sempre domani...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Ma dobbiamo andare a teatro, stasera...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "No, non ci andremo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "E perché no?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(guardandola) Elena, è successo qualcosa...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Non mi dirai che ti hanno licenziato...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "No, niente di tutto questo. Semplicemente non andrò io a fare la critica, stasera. Ora però tornatene a casa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Ma io devo sapere cosa è successo. Devi dirmelo!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "No, tesoro, non posso...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELÉNA",
+    "text": "Ma noi stiamo per sposarci.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Sposarci?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Ma Mortimer me l'hai proposto cinque minuti fa... l'hai già dimenticato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(vagamente) Io te l'ho proposto? E allora vuol dire che ci sposeremo, ma adesso tornatene a casa, che ho molto da fare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Senti, Mortimer, tu non puoi prima chiedermi di sposarti e cacciarmi di casa subito dopo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Io non ti sto cacciando di casa, cara... (spingendola verso la porta) ma ora te ne vai, sì o no?! (escono)",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Il campanello suona forte, seguito da bussate insistenti.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MARTA",
+    "text": "Chi sarà a quest'ora? Sono quasi le dieci...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Spegniamo le luci. Facciamogli credere di non essere in casa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Spengono rapidamente le luci. La stanza è immersa nella penombra. Si sente aprire la porta con una violenta spallata.\nNella penombra entra JONATHAN, dalla figura sinistra, che per movenze e tratti ricorda Boris Karloff. Nella stanza semibuia si muove a proprio agio, come se conoscesse molto bene il posto. Poco dopo si affaccia sulla porta un altro uomo, il dottor EINSTEIN. Il suo aspetto ricorda quello di un topo. Ha un'espressione beata di chi naviga piacevolmente nell'alcool.",
+    "isStageDirection": true
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Questa è la casa della mia infanzia. Quando ero piccolo non vedevo l'ora di andarmene, ora invece non mi dispiacerebbe restarci.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(Con forte accento tedesco) Certo, Chonny, sarebbe un nascondiglio ideale. Dopo quello che hai fatto abbiamo bisogno di un rifugio sicuro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Vedono subito due bicchieri di vino sul tavolo, naturalmente è il vino avvelenato.",
+    "isStageDirection": true
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Guarda, Chonny, intanto c'è da bere! (Si precipita al tavolo)",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Si avvicina dall'altra parte) Sembra quasi ci stessero aspettando. Una buona accoglienza, non ti pare?",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Stanno per bere quando ABBY accende bruscamente la luce.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "Chi siete? Cosa fate qui?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "I due mettono giù i bicchieri. Einstein, che è una persona educata, si toglie immediatamente il cappello.",
+    "isStageDirection": true
+  },
+  {
+    "character": "JONATHAN",
+    "text": "È tornato il vostro Jonathan!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Rientra in salotto) Jonathan? No!!!",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Andando verso di loro) Sono Jonathan, vostro nipote Jonathan... e questo è il dottor Einstein.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Lei non assomiglia affatto a Jonathan, e quindi non pretenda di esserlo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Prende la mano di Abby con una certa violenza) Zia Abby, vedo che hai ancora l'anello che ha portato nonna Brewster dall'Inghilterra...",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Abby sobbalza e si guarda l'anello.",
+    "isStageDirection": true
+  },
+  {
+    "character": "JONATHAN",
+    "text": "...e tu, zia Marta, porti sempre il colletto alto per nascondere quella cicatrice che il nonno ti ha fatto con l'acido...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Si porta la mano alla gola) Eppure la voce è quella di Jonathan.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Scendendo le scale) Hai avuto qualche incidente, caro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Passandosi una mano sulla faccia) No. L'incidente è stato incontrare il dottor Einstein. È un chirurgo plastico. Cambia le facce alla gente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Raggiungendo Abby) Ma io l'ho già vista quella faccia! Ti ricordi al cinema? Boris Karloff!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Jonathan si gira minaccioso verso Einstein che svicola verso le zie in cerca di protezione.",
+    "isStageDirection": true
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Calma, Chonny, calma. Non preoccupatevi, signore, negli ultimi cinque anni gli ho cambiato la faccia almeno tre volte. Gliene farò subito un'altra... questa mi è venuta così perché anch'io ho visto quel film, proprio prima di operarlo. Mi sono lasciato un po' influenzare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Andando verso di lui sempre minacciosamente) Lo vedi, dottore, lo vedi cosa mi hai fatto? Anche la mia stessa famiglia...",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(Indietreggiando e cercando di calmarlo) Chonny, ora sei a casa, in questa deliziosa casetta... (Alle zie) Sapeste quante volte mi ha parlato di Brooklyn... di questa casa, delle sue zie che lui ama tanto... (A Jonathan) Loro ti riconoscono, Chonny... (Alle zie) È vero, no?!... Diteglielo voi... (Si ripara dietro il tavolo)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY/MARTA",
+    "text": "(Non sapendo che rispondere) Eee... no!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "È passato tanto tempo... cosa hai fatto in tutti questi anni?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Segue Abby con prudenza) Sì, Jonathan, dove sei stato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Ricomponendosi) Oh, in Inghilterra, Sud Africa, Australia... (Accende un'altra luce)",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Le zie finalmente lo vedono chiaramente: non possono trattenere un urletto di spavento.",
+    "isStageDirection": true
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Io e il dottor Einstein abbiamo fatto degli affari, laggiù. (Mettendosi a sedere sulla poltrona) Bene, è meraviglioso essere di nuovo a Brooklyn. E voi, zia Abby, zia Marta, non siete invecchiate neanche di un giorno... e il caro Teddy (fa il gesto con la mano di un ragazzino di 8-10 anni) è entrato in politica?",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(A EINSTEIN) Il mio fratellino, dottore, era deciso a diventare presidente...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Oh, è diventato presidente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Il presidente Roosevelt!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Sì, sì, Teddy sta bene, benissimo e Mortimer altrettanto...",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Incupendosi) So di Mortimer, ho visto la fotografia sopra un suo articolo. È riuscito a diventare quello che voleva e ha mantenuto anche quella faccia da lombrico che aveva già da ragazzino.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Non sopporta che si parli così del nipote preferito) Noi siamo molto orgogliose di Mortimer...",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "C'è un silenzio pesante e di fortissima tensione. In quel momento entra MORTIMER.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Jonathan?! Ma che faccia ti sei fatto! Sembri... un mostro del cinema!",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Mortimer. Sempre quella faccia da lombrico. Ti sei dimenticato gli scherzetti che ti facevo da ragazzo? Vuoi finire di nuovo attaccato alla spalliera del letto con gli aghi infilati sotto le unghie?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Avvicinandosi per guardarlo negli occhi) È proprio Jonathan... dove hai preso quella faccia, a Hollywood?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Mettendosi tra loro) Forza, non vorrete ricominciare a litigare appena vi siete visti?...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Qui non resti. Fuori. Non voglio vederti in questa casa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Il dottore ed io siamo stati invitati a restare.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Ma solo per stanotte...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Lui non resterà qui un minuto di più.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(Timidamente) Forse è meglio se andiamo, Chonny... Brooklyn non è una buona piazza per te.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Dottore! Quando ho deciso una cosa...",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Sì, quando hai deciso una cosa, perdi la testa...",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "E se ti dicessi che ho un amico in macchina che non respira più? Si chiama Spenalzo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Una brava persona, ci ha dato anche un passaggio... non avresti dovuto ucciderlo, Chonny!",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Ha detto che somigliavo a Boris Karloff... ed è per colpa tua, dottore!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Un altro morto? A me ne avanzano dodici in cantina.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Sorpreso) Cosa?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "È vero, Jonathan. Abbiamo aiutato dodici signori a trovare la pace.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Ridendo sarcastico) Voi? Due vecchiette? Che cosa avete fatto, cantato loro delle ninna nanne?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "È un'opera di carità cristiana! Quello che facciamo è solo per carità!",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(Interessato) Come avete fatto, signore? Con che metodo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Con il vino di sambuco. Una ricetta speciale: arsenico, stricnina e un pizzico di cianuro.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(Fischia, impressionato) Himmel! Un cocktail micidiale!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Entra il SERGENTE 'O HARA con fare disinvolto.",
+    "isStageDirection": true
+  },
+  {
+    "character": "'O",
+    "text": "Salve, Miss Abby... oh, vedo che avete degli ospiti. Non vorremmo avervi disturbato...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Ma niente affatto, sergente, si accomodi pure. Questo è mio fratello Jonathan...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "La sua faccia mi è familiare... sembra Boris Karloff. Dica, ma noi non ci siamo già visti da qualche parte?",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Rigido) Non credo proprio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Eppure la sua faccia non mi è nuova... forse al cinema?",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Io non vado mai al cinema. Non mi piace. Mia madre diceva sempre che è un'arte bastarda...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Cercando disperatamente di distrarlo) Sergente, lei è un commediografo, vero? Mi racconti della sua opera. Sono curioso!",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "(Si illumina) Davvero? Allora si sieda! La storia comincia nel camerino di mia madre, quando non ero ancora nato... Mia madre era una grandissima cantante lirica. Un magnifico soprano leggero...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Ma andiamo in cucina… le mie zie ci prepareranno qualcosa di buono…",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(entrando da sopra) Mortimer, vorrei dirti una parola...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Una sola, è tutto quello che ti concedo. Devi andare via il più presto possibile, diciamo pure subito.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Mi spiace, Mortimer. Sarai tu ad andartene.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Jonathan, stai cominciando a seccarmi. La tua notte a Brooklyn è durata anche troppo. Fila!",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Invece io resto qui e tu te ne vai. Levati dai piedi o...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Se credi di farmi paura...",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Ho fatto una vita strana, Mortimer, e ho imparato diverse cose…",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Jonathan piomba su diluì legandolo alla sedia mentre Einstein gli infila un fazzoletto in bocca.",
+    "isStageDirection": true
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(spegne le luci e accende le candele sui candelabri) Sai, sono Stato fuori per molti anni, ma non una volta, in tutto questo tempo, sei stato lontano dai miei pensieri. Una notte, a Melbourne, ti ho sognato e questo mi ha ispirato per un'opera d'arte che ho fatto il giorno dopo, (appoggia la borsa dei ferri sul tavolo, fra i due candelabri. La apre mettendo in mostra tutti i ferri da chirurgo) Adesso, dottore, mettiamoci al lavoro... (tira fuori il bisturi e lo accarezza delicatamente)",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "( si avvicina con un'espressione poco felice) Ti prego, Chonny, metodo sbrigativo, eh?",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Dottore, questo dev'essere il mio capolavoro. Ci stiamo esibendo davanti ad un autorevole critico, (tira fuori dei ferri da chirurgo disponendoli sul tavolo) Prego, dottore, è tutto pronto...",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Prima devo bere, Chonny... (prende la sua bottiglietta ma è vuota) Quando siamo arrivati qui, c'era del vino sulla tavola, ricordi?",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Fai presto, dottore.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Dove l'avranno messa? (vede la credenza) Oh, ecco... (prende la bottìglia del vino avvelenato e due bicchieri) ... tieni, Chonny, bevine un goccio anche tu. ( Mortimer che fino a quel momento si era agitato mugolando, si ferma di colpo e li guarda con molta attenzione. I due portano i bicchieri alle labbra, ma...)",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Un momento, dottore,: che razza di modi, (alzando il bicchiere verso Mortimer) Alla salute del mia caro e affettuoso fratello... (Stanno per bere quando Teddy esce dalle scale emanando un acutissimo squillo di tromba. Einstein e Jonathan per lo spavento lasciano cadere in terrai bicchieri. Teddy esce subito.) ... dannato idiota! (si avvia per le scale) Il prossimo sarà lui...",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(tirandolo per la giacca) No, Chonny, un altro no, io mi fermo a questo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Lo sistemeremo dopo. E adesso al lavoro, facciamo presto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Appunto, Chonny, usiamo il metodo spiccio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Va bene, dottore, hai ragione tu. Il metodo di Londra.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Jonathan prende dalla tasca una sciarpa dì seta e la avvolge al collo di Mortimer. Ormai sembra alla fine quando...",
+    "isStageDirection": true
+  },
+  {
+    "character": "‘O",
+    "text": "(entrando dalla porta della comune, ammonendo) Ehi, il presidente aveva promesso di non suonare più la tromba nel cuore della notte!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Jonathan ed Einstein si parano davanti a Mortimer per non farlo vedere a '0 Hara.",
+    "isStageDirection": true
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Non si preoccupi, sergente, gliela togliamo subito.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "C’è da andare al manicomio con tutte le proteste dei vicini.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Non accadrà più, sergente. Buonanotte.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Sarà meglio che gli parli di persona. Dove sono le luci? (le accende e vede Mortimer)",
+    "isStageDirection": false
+  },
+  {
+    "character": "‘O",
+    "text": "Ehi, lei, prima mi ha piantato in asso... l’ho aspettata in cucina. (gli va incontro e, accorgendosi che è legato, chiede ai due) Ma cosa gli è successo? Che ha fatto?",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(pronto) Ci stava raccontando la commedia. Questo, per l'appunto, non capitava ad un personaggio dello spettacolo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Si esatto! Succede praticamente la stessa cosa nel secondo atto della mia commedia... sì, perché, alla fine del primo, il protagonista, che sarei io... ma forse è meglio cominciare dall'inizio...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "(prende dalla tasca una bottiglietta di liquore) ci beviamo un goccetto...",
+    "isStageDirection": false
+  },
+  {
+    "character": "‘O",
+    "text": "dunque, la storia comincia nel camerino di mia madre, quando non ero ancora nata...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "(Mortimer fa di tutto per richiamare l'attenzione,) ... cosa c'è? Ah, certo... (fa per slegarlo, ma ‘O la ferma)",
+    "isStageDirection": false
+  },
+  {
+    "character": "‘O",
+    "text": "e no, adesso prima ascolterà tutta la trama. Dunque, lei stava nel suo camerino e durante l'overture, lei conosce l'overture della Traviata, no?... avverte che forse il momento è arrivato. Improvvisamente, un uomo inquietante, dai grandi baffi, entra facendo cigolare la porta. \"Chi è?\", chiede preoccupata mia madre...",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Durante le ultime battute, la voce del sergente va calando, come una radio che pian piano si spegne, e con la voce, lentamente calano le tenebre. Un attimo di buio. Appena un russare interrotto. Poi dalla finestra entra la luce dell'alba che pian piano va a illuminare la scena. Mortimer è sempre legato, Jonathan dorme profondamente sulla poltrona, il dottore, sulla cassapanca, sta bevendo ed è piuttosto ubriaco.",
+    "isStageDirection": true
+  },
+  {
+    "character": "'O",
+    "text": "(impavido, al centro della scena sta cantando la fine del primo atto della Traviata \"Sempre libera\",,, la sua voce, come prima è caduta pian piano nel nulla, sale dal nulla. Appena terminato il finale, riprende il racconto) Secondo atto... quella voce, quel finale del primo atto, quando sento il pericolo, mi martella sempre le orecchie... (Mortimer mugugna.) ... (lo guarda) A già... (va da Mortimer come se lo volesse slegare, invece il telefono squilla)",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Hallo?... Sergente Hara agli ordini!... Proprio io, tenente! Come dov'ero?... Sono qui, a casa Brewster.,, C’è anche ‘O, stava raccontando il soggetto della sua commedia al critico mister Brewster... lo so, si è fatto un po' tardi... ci avete cercato tutta la notte?... Ma perché, che ore sono? (guarda l'orologio) Caspita! Le otto del mattino!...",
+    "isStageDirection": false
+  },
+  {
+    "character": "‘O",
+    "text": "(a Mortimer) E manca ancora il terzo atto!...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Certo tenente... senz'altro, tenente... sollevata dall'incarico? Benissimo tenen... come, sollevata?... Certo, non si alteri, tenente... Ah... volete parlare con mister Brewster... glielo passo subito... (Jonathan che nel frattempo si è svegliato non può trattenere un'esplosione d'ira. Con rabbia animale, incurante della pistola getta le mani sul collo del povero sergente.) ... (sebbene in difficoltà respiratorie, continua a parlare al telefono)",
+    "isStageDirection": false
+  },
+  {
+    "character": "‘O",
+    "text": "Aiuto, sergente, miii stanno strozzando... (Hara è paralizzata ma ha ancora la cornetta all’orecchio)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(fuori scena) Permesso?... (poi appare dall'ingresso e vede la scena) Miss Abby?...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "... Come?... Fuggito dal manicomio crimin...",
+    "isStageDirection": false
+  },
+  {
+    "character": "‘O",
+    "text": "Aiuto... presto sergen... soffoc... (Elena che si è resa conto della situazione, scivola silenziosamente dietro a Jonathan e, con la propria borsetta, inizia a picchiarlo Sulla testa: Jonathan cade a terra svenuto, lasciando, così, il collo del sergente. Einstein, visto Jonathan a terra, si sente all'improvviso non protetto e fugge per le scale.) ... (quando è sicuro che Jonathan è fuori combattimento, riprende il telefono)",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Ok, tenente, l'ho preso... ora ve lo impacchetto ben bene e potete venirlo a prendere tranquillamente... grazie, tenente! (attacca)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Avevo visto l'ombra di un uomo con la pistola puntata e...",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Ero io. Stavo… ehmmm… arrestando questo criminale...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "... e allora sono corsa qui...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Stava tentando di strozzarmi... (tira fuori le manette e le infila a Jonathan)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Ah, mi hanno raccontato di lui…",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "grazie signorina... signorina?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Elena Harper...",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "Ah, la figlia del pastore. Sergente 'O agli ordini e lei è il sergente Hara...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "Comode, comode... piuttosto, Mortimer?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Jonathan intanto inizia a riprendersi dalla botta in testa.",
+    "isStageDirection": true
+  },
+  {
+    "character": "TEDDY",
+    "text": "(Entra dalla cantina con un parrucchino in mano) Un'altra vittima della febbre gialla! Acciderboli! Sarà una brutta notizia per il generale Goethals!",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Febbre gialla? Qui a Brooklyn?",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "(rientrano le zie)",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "Sì, sergente. In cantina ci sono dodici signori che riposano in pace. Tutte vittime dell'epidemia.",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Tredici! Con Spenalzo!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Dodici! Uno è morto di polmonite!",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "Non sarebbe morto se non gli avessi bucato un polmone!",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(A Jonathan, sussurrando) Chonny, non puoi contare l'ultimo... è morto di polmonite!",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(A Einstein, furioso) Non gli sarebbe venuta se io non gli avessi bucato un polmone!",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "(Confuso, guarda tutti uno per uno) Ma... state parlando di omicidi?!",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Tredici... dodici... polmoni bucati...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(nel frattempo liberato da Elena) No, no! Sono solo... fantasie di famiglia! Teddy crede di essere Roosevelt, le zie hanno l'immaginazione vivace... è tutta opera di Jonathan!",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "(Si illumina) Ah! Come nella mia commedia! Secondo atto: il mostro entra in casa, tutti parlano di morti ma la colpa è di uno solo! (Indica Jonathan)",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Approfittando) Esattamente, sergente! Questo \"mostro\", Jonathan Brewster, va arrestato e tenuto in carcere!",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Certo! (lo solleva) Allora vieni con me, Boris. Tredici omicidi, dicevi? La taglia dev'essere sostanziosa...",
+    "isStageDirection": false
+  },
+  {
+    "character": "JONATHAN",
+    "text": "(Mentre viene portato via, si divincola) Ma loro ne hanno commessi dodici! Dodici! Sono due assassine! Due vecchie assassine!",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Racconterai tutto al tenente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "‘O",
+    "text": "Forse ti daranno uno sconto per la collaborazione. Ahahah! (Lo spinge verso l'uscita)",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(Guardando Jonathan essere portato via, si stringe nelle spalle) Tschüss, Chonny... era prevedibile. (Si versa un bicchiere di vino dal tavolo)",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Con voce gelida) Dottore, quello è vino di sambuco. Speciale.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(Mette giù il bicchiere come se fosse rovente) Oh! Danke, danke... forse è meglio se vado anch'io...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Respira di sollievo, poi alle zie) Ora ascoltatemi bene. Dovete firmare queste carte per Happy Dale. Ci andrete con Teddy.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Ma noi non siamo pazze!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "È una casa di cura...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "È l'unico modo per proteggervi. Se qualcuno scoprisse la cantina...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Dopo una pausa) Per Teddy faremmo qualsiasi cosa.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Firmiamo.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Firmano. Entra Einstein di nascosto, con valigie.",
+    "isStageDirection": true
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Devo andare via, subito. Chonny è finito...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Un momento, dottore. Firma anche lei queste carte. Come medico.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "Ma veramente...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "O chiamo il tenente e gli dico che il chirurgo plastico di Jonathan è qui.",
+    "isStageDirection": false
+  },
+  {
+    "character": "EINSTEIN",
+    "text": "(Firma in fretta) Dove devo firmare? Ecco. Addio! (Fugge)",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "(Rientra) Tutto sistemato. Jonathan è in cella.",
+    "isStageDirection": false
+  },
+  {
+    "character": "‘O",
+    "text": "Ora, Mortimer, il terzo atto della mia commedia...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Un momento, sergente. (Apre le braccia) Ziette, voglio abbracciarvi un'ultima volta prima che partiate.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Le zie si avvicinano. Mortimer le abbraccia entrambe.",
+    "isStageDirection": true
+  },
+  {
+    "character": "ABBY",
+    "text": "(Con voce emotiva) Mortimer, siamo un po' preoccupate...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Non vorremmo che sorgessero delle complicazioni...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Pensi che andranno a controllare quelle firme?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Ma di cosa avete paura? Fra poco nessuno si ricorderà più del dottor Einstein.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Ma non è la sua firma che ci preoccupa, caro, è la tua...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Vedi, tu hai firmato come parente più prossimo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Mi sembra chiaro. Sono vostro nipote.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Prende la mano a Mortimer, con dolce fermezza) Noi... noi non avremmo mai voluto dirtelo, ma... ormai sei grande e poi... è giusto che Elena lo sappia...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Abbassa la voce, quasi sussurrando) Tu non sei un vero Brewster!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Mortimer rimane sconcertato, poi scoppia a ridere.",
+    "isStageDirection": true
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Cosa?! Ma state scherzando, vero?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Tua madre venne assunta da noi come cuoca e tu nascesti tre mesi dopo...",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "E siccome era una cuoca molto brava e noi non volevamo perderla, nostro fratello la sposò...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Era una donna tanto buona e paziente... ti abbiamo sempre voluto bene come un vero nipote.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Ti dispiace molto, caro?",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Che ha ascoltato in silenzio, ora si avvicina) Aspettate... state dicendo che Mortimer... non è vostro nipote di sangue?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "No, cara. Ma per noi è sempre stato come un figlio.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(A Mortimer, con dolcezza) E a te... cosa importa davvero? Il sangue o l'amore che ti hanno dato?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(Resta in silenzio un momento, poi il suo viso si illumina) Importa... che non sono un Brewster! (Al culmine della gioia, correndo e chiamando a gran voce) Elena! Hai sentito? Sono un bastardo! Non ho il sangue dei Brewster! Non sono pazzo! O almeno, non ereditariamente!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Ridendo, gli prende le mani) Mortimer, smettila di saltare come un matto! Che cosa stai dicendo?",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Sto dicendo che posso sposarti! Posso sposarti senza paura di tramandare la pazzia dei Brewster! Sono libero! Libero dalla maledizione di famiglia!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Lo guarda con tenerezza e un po' di preoccupazione) Amore, tu non sei pazzo. Sei solo... un po' eccentrico. Come tutti gli artisti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "No, Elena, non capisci! I Brewster hanno una storia di pazzia! Il primo Brewster scotennava gli indiani! Mio nonno sperimentava medicine sui morti! Jonathan è un maniaco assassino! Teddy crede di essere Roosevelt! Ma io... io non sono uno di loro!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Lo abbraccia) Sei te, Mortimer. Sei l'uomo che amo. Brewster o no, bastardo o no, non mi importa. Voglio sposarti.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "(La solleva e la fa girare) Allora sposiamoci! Subito! Oggi stesso!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Ridendo) Calma, pazzo! Dobbiamo almeno aspettare che papà celebri la cerimonia!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MORTIMER",
+    "text": "Hai ragione! Andiamo subito da lui! (Prende Elena per mano e inizia a correre verso l'uscita, poi si ferma e torna indietro) Ziette! Vi voglio bene! Verrò a trovarvi a Happy Dale! Vi porterò i biscotti!",
+    "isStageDirection": false
+  },
+  {
+    "character": "ELENA",
+    "text": "(Aiutando Mortimer a infilarsi il cappotto) E io vi porterò il caffè! Addio, Miss Abby! Addio, Miss Marta!",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Si baciano appassionatamente e fuggono ridendo.",
+    "isStageDirection": true
+  },
+  {
+    "character": "'O",
+    "text": "(Con le mani ai fianchi, sconsolato) Ehi! E il mio terzo atto?! Mi hai piantato in asso due volte! Sono un artista, ho bisogno di un pubblico!",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "(Si avvicina al sergente con fare materno) Non si preoccupi, sergente. Resti con noi. Anche lei sergente Hara. Beviamo un goccio di vino di sambuco.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Versa da una bottiglia) Lo facciamo noi, con le nostre mani. È una ricetta speciale.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "Ma veramente... sono in servizio... (Poi si scioglie) Beh, per un goccetto... è tanto che non bevo vino di sambuco.",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Eccolo qui! (Gli porge il bicchiere) Alla vostra salute. E alla sua commedia.",
+    "isStageDirection": false
+  },
+  {
+    "character": "HARA",
+    "text": "(Beve) Mmm... delizioso. Sa di... di...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Di pace, sergente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "(Sorridendo dolcemente) Di pace eterna.",
+    "isStageDirection": false
+  },
+  {
+    "character": "'O",
+    "text": "(Beve ancora, sembra rilassarsi) Sì... pace... forse il terzo atto potrebbe essere proprio così... il protagonista trova finalmente la pace...",
+    "isStageDirection": false
+  },
+  {
+    "character": "MARTA",
+    "text": "Sarebbe un bel finale, sergente.",
+    "isStageDirection": false
+  },
+  {
+    "character": "ABBY",
+    "text": "Un finale perfetto.",
+    "isStageDirection": false
+  },
+  {
+    "character": "STAGE",
+    "text": "Le zie sorridono dolcemente. 'O Hara sorride, poi ha un attimo di esitazione. Guarda il bicchiere, poi le zie, che continuano a sorridere.",
+    "isStageDirection": true
+  },
+  {
+    "character": "STAGE",
+    "text": "BUIO",
+    "isStageDirection": true
+  }
 ]
